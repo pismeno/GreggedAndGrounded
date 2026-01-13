@@ -480,8 +480,8 @@ minecraft:fish:3, Pufferfish
 minecraft:cooked_fish:0, Cooked Fish
 minecraft:cooked_fish:1, Cooked Salmon
 minecraft:dye:0, Ink Sac
-minecraft:dye:1, Rose Red
-minecraft:dye:2, Cactus Green
+minecraft:dye:1, Red Dye
+minecraft:dye:2, Green Dye
 minecraft:dye:3, Cocoa Beans
 minecraft:dye:4, Lapis Lazuli
 minecraft:dye:5, Purple Dye
@@ -490,7 +490,7 @@ minecraft:dye:7, Light Gray Dye
 minecraft:dye:8, Gray Dye
 minecraft:dye:9, Pink Dye
 minecraft:dye:10, Lime Dye
-minecraft:dye:11, Dandelion Yellow
+minecraft:dye:11, Yellow Dye
 minecraft:dye:12, Light Blue Dye
 minecraft:dye:13, Magenta Dye
 minecraft:dye:14, Orange Dye
@@ -645,9 +645,9 @@ minecraft:record_11, Music Disc
 minecraft:record_wait, Music Disc
 avaritia:resource:0, Diamond Lattice
 avaritia:resource:1, Crystal Matrix Ingot
-avaritia:resource:2, Pile of Neutrons
-avaritia:resource:3, Neutronium Nugget
-avaritia:resource:4, Neutronium Ingot
+avaritia:resource:2, Tiny Pile of Neutronite
+avaritia:resource:3, Neutronite Nugget
+avaritia:resource:4, Neutronite Ingot
 avaritia:resource:5, Infinity Catalyst
 avaritia:resource:6, Infinity Ingot
 avaritia:resource:7, Record Fragment
@@ -684,7 +684,7 @@ avaritia:matter_cluster, Matter Cluster
 avaritia:compressed_crafting_table, Compressed Crafting Table
 avaritia:double_compressed_crafting_table, Double Compressed Crafting Table
 avaritia:extreme_crafting_table, Extreme Crafting Table
-avaritia:block_resource:0, Neutronium Block
+avaritia:block_resource:0, Block of Neutronite
 avaritia:block_resource:1, Infinity Block
 avaritia:block_resource:2, Crystal Matrix
 avaritia:neutron_collector, Neutron Collector
@@ -766,7 +766,7 @@ extrautils2:ingredients:13, Wireless RF Heating Coil
 extrautils2:ingredients:14, Blue Dye
 extrautils2:ingredients:15, Upgrade Speed (Magical)
 extrautils2:ingredients:16, Upgrade Speed (Ultimate)
-extrautils2:ingredients:17, Evil Infused Iron Ingot
+extrautils2:ingredients:17, Evil Infused Metal Ingot
 extrautils2:goldenlasso:0, Golden Lasso
 extrautils2:goldenlasso:1, Cursed Lasso
 extrautils2:angelring:0, Angel Ring
@@ -795,7 +795,7 @@ extrautils2:redstonelantern, Redstone Lantern
 extrautils2:largishchest, Slightly-Larger Chest
 extrautils2:simpledecorative:0, Block of Enchanted Metal
 extrautils2:simpledecorative:1, Block of Demon Metal
-extrautils2:simpledecorative:2, Block of Evil Infused Iron
+extrautils2:simpledecorative:2, Block of Evil Infused Metal
 extrautils2:opinium:0, Opinium Core (Pathetic)
 extrautils2:opinium:1, Opinium Core (Mediocre)
 extrautils2:opinium:2, Opinium Core (Passable)
@@ -885,22 +885,12 @@ forestry:resource_storage:2, Block of Tin
 forestry:resource_storage:3, Block of Bronze
 forestry:ash_brick:0, Ash Bricks
 forestry:ash_stairs:0, Ash Brick Stairs
-forestry:worktable:0, Worktable
+forestry:habitat_former:0, Habitat Former
+forestry:habitat_screen, Habitat Screen
+forestry:book_forester, Forester's Manual
 forestry:honeyed_slice, Honeyed Slice
 forestry:ambrosia, Ambrosia
 forestry:honey_pot, Honey Pot
-forestry:fluid.bio.ethanol, Ethanol
-forestry:fluid.biomass, Biomass
-forestry:fluid.glass, Liquid Glass
-forestry:fluid.for.honey, Honey
-forestry:fluid.ice, Crushed Ice
-forestry:fluid.juice, Fruit Juice
-forestry:fluid.milk, Milk
-forestry:fluid.seed.oil, Seed Oil
-forestry:fluid.short.mead, Short Mead
-forestry:can, item.for.can.name
-forestry:capsule, item.for.capsule.name
-forestry:refractory, item.for.refractory.name
 forestry:apiarist_bag, Apiarist's Backpack
 forestry:lepidopterist_bag, Lepidopterist's Backpack
 forestry:miner_bag, Mining Backpack
@@ -915,153 +905,6 @@ forestry:adventurer_bag, Adventuring Backpack
 forestry:adventurer_bag_t2, Woven Adventuring Backpack
 forestry:builder_bag, Building Backpack
 forestry:builder_bag_t2, Woven Building Backpack
-forestry:database:0, Database
-forestry:habitat_locator, Habitat Locator
-forestry:imprinter, Imprinter
-forestry:cart.beehouse:0, Minecart with Bee House
-forestry:cart.beehouse:1, Minecart with Apiary
-forestry:frame_untreated, Untreated Frame
-forestry:frame_impregnated, Impregnated Frame
-forestry:frame_proven, Proven Frame
-forestry:honey_drop:0, Honey Drop
-forestry:pollen:0, Pollen Cluster
-forestry:pollen:1, Crystalline Pollen Cluster
-forestry:propolis:0, Propolis
-forestry:propolis:1, Sticky Propolis
-forestry:propolis:3, Silky Propolis
-forestry:honeydew, Honeydew
-forestry:royal_jelly, Royal Jelly
-forestry:wax_cast, Wax Cast
-forestry:bee_combs:0, Honey Comb
-forestry:bee_combs:2, Simmering Comb
-forestry:bee_combs:3, Stringy Comb
-forestry:bee_combs:4, Frozen Comb
-forestry:bee_combs:5, Dripping Comb
-forestry:bee_combs:6, Silky Comb
-forestry:bee_combs:7, Parched Comb
-forestry:bee_combs:15, Mossy Comb
-forestry:bee_combs:16, Mellow Comb
-forestry:apiarist_helmet, Apiarist's Hat
-forestry:apiarist_chest, Apiarist's Shirt
-forestry:apiarist_legs, Apiarist's Pants
-forestry:apiarist_boots, Apiarist's Shoes
-forestry:scoop, Scoop
-forestry:smoker, Bee Smoker
-forestry:apiary:0, Apiary
-forestry:bee_house:0, Bee House
-forestry:bee_chest:0, Apiarist's Chest
-forestry:beehives:0, Forest Hive
-forestry:beehives:1, Meadows Hive
-forestry:beehives:2, Modest Hive
-forestry:beehives:3, Tropical Hive
-forestry:beehives:4, Ender Hive
-forestry:beehives:5, Wintry Hive
-forestry:beehives:6, Marshy Hive
-forestry:candle:0, Unlit Candle
-forestry:stump:0, Candle Stump
-forestry:bee_combs_0:0, Honey Comb Block
-forestry:bee_combs_0:2, Simmering Comb Block
-forestry:bee_combs_0:3, Stringy Comb Block
-forestry:bee_combs_0:4, Frozen Comb Block
-forestry:bee_combs_0:5, Dripping Comb Block
-forestry:bee_combs_0:6, Silky Comb Block
-forestry:bee_combs_0:7, Parched Comb Block
-forestry:bee_combs_0:15, Mossy Comb Block
-forestry:bee_combs_1:0, Mellow Comb Block
-forestry:alveary.plain:0, Alveary
-forestry:alveary.swarmer:0, Alveary Swarmer
-forestry:alveary.fan:0, Alveary Fan
-forestry:alveary.heater:0, Alveary Heater
-forestry:alveary.hygro:0, Alveary Hygroregulator
-forestry:alveary.stabiliser:0, Alveary Stabiliser
-forestry:alveary.sieve:0, Alveary Sieve
-forestry:mushroom:0, tile.for.mushroom.name
-forestry:mushroom:1, tile.for.mushroom.name
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:0, Farm Block
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:2, Farm Gearbox
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:3, Farm Hatch
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:4, Farm Valve
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:ffarm:5, Farm Control
-forestry:book_forester, Forester's Manual
-forestry:arboretum:0, Arboretum (Managed)
-forestry:arboretum:1, Arboretum (Manual)
-forestry:farm_crops:0, Farm (Managed)
-forestry:farm_crops:1, Farm (Manual)
-forestry:farm_mushroom:0, Mushroom Farm (Managed)
-forestry:farm_mushroom:1, Mushroom Farm (Manual)
-forestry:farm_gourd:0, Gourd Farm (Managed)
-forestry:farm_gourd:1, Gourd Farm (Manual)
-forestry:farm_nether:0, Infernal Farm (Managed)
-forestry:farm_nether:1, Infernal Farm (Manual)
-forestry:farm_ender:0, Ender Farm (Managed)
-forestry:farm_ender:1, Ender Farm (Manual)
-forestry:peat_bog:0, Peat Bog (Managed)
-forestry:peat_bog:1, Peat Bog (Manual)
-forestry:engine_peat:0, Peat-fired Engine
-forestry:engine_biogas:0, Biogas Engine
-forestry:engine_clockwork:0, Clockwork Engine
-forestry:stamps:0, Stamp (1n)
-forestry:stamps:1, Stamp (2n)
-forestry:stamps:2, Stamp (5n)
-forestry:stamps:3, Stamp (10n)
-forestry:stamps:4, Stamp (20n)
-forestry:stamps:5, Stamp (50n)
-forestry:stamps:6, Stamp (100n)
-forestry:letters, Letter
-forestry:catalogue, Catalogue
-forestry:mailbox:0, Mailbox
-forestry:trade_station:0, Trade Station
-forestry:stamp_collector:0, Stamp Collector
 forestry:grafter, Grafter
 forestry:grafter_proven, Proven Grafter
 forestry:logs.0:0, Larch Wood
@@ -1514,9 +1357,6 @@ forestry:leaves.decorative.2:0, Papaya Leaves
 forestry:leaves.decorative.2:1, Date Palm Leaves
 forestry:leaves.decorative.2:2, White Poplar Leaves
 forestry:tree_chest:0, Arborist's Chest
-forestry:butterfly_chest:0, Lepidopterist's Chest
-forestry:cocoon:0, tile.for.cocoon.name
-forestry:cocoon.solid:0, tile.for.cocoon.solid.name
 forestry:bottler:0, Bottler
 forestry:carpenter:0, Carpenter
 forestry:centrifuge:0, Centrifuge
@@ -1527,8 +1367,168 @@ forestry:still:0, Still
 forestry:rainmaker:0, Rainmaker
 forestry:fabricator:0, Thermionic Fabricator
 forestry:raintank:0, Rain Tank
-forestry:habitat_former:0, Habitat Former
-forestry:habitat_screen, Habitat Screen
+forestry:butterfly_chest:0, Lepidopterist's Chest
+forestry:cocoon:0, tile.for.cocoon.name
+forestry:cocoon.solid:0, tile.for.cocoon.solid.name
+forestry:habitat_locator, Habitat Locator
+forestry:imprinter, Imprinter
+forestry:cart.beehouse:0, Minecart with Bee House
+forestry:cart.beehouse:1, Minecart with Apiary
+forestry:frame_untreated, Untreated Frame
+forestry:frame_impregnated, Impregnated Frame
+forestry:frame_proven, Proven Frame
+forestry:honey_drop:0, Honey Drop
+forestry:pollen:0, Pollen Cluster
+forestry:pollen:1, Crystalline Pollen Cluster
+forestry:propolis:0, Propolis
+forestry:propolis:1, Sticky Propolis
+forestry:propolis:3, Silky Propolis
+forestry:honeydew, Honeydew
+forestry:royal_jelly, Royal Jelly
+forestry:wax_cast, Wax Cast
+forestry:bee_combs:0, Honey Comb
+forestry:bee_combs:2, Simmering Comb
+forestry:bee_combs:3, Stringy Comb
+forestry:bee_combs:4, Frozen Comb
+forestry:bee_combs:5, Dripping Comb
+forestry:bee_combs:6, Silky Comb
+forestry:bee_combs:7, Parched Comb
+forestry:bee_combs:15, Mossy Comb
+forestry:bee_combs:16, Mellow Comb
+forestry:apiarist_helmet, Apiarist's Hat
+forestry:apiarist_chest, Apiarist's Shirt
+forestry:apiarist_legs, Apiarist's Pants
+forestry:apiarist_boots, Apiarist's Shoes
+forestry:scoop, Primitive Scoop
+forestry:smoker, Bee Smoker
+forestry:apiary:0, Apiary
+forestry:bee_house:0, Bee House
+forestry:bee_chest:0, Apiarist's Chest
+forestry:beehives:0, Forest Hive
+forestry:beehives:1, Meadows Hive
+forestry:beehives:2, Modest Hive
+forestry:beehives:3, Tropical Hive
+forestry:beehives:4, Ender Hive
+forestry:beehives:5, Wintry Hive
+forestry:beehives:6, Marshy Hive
+forestry:candle:0, Unlit Candle
+forestry:stump:0, Candle Stump
+forestry:bee_combs_0:0, Honey Comb Block
+forestry:bee_combs_0:2, Simmering Comb Block
+forestry:bee_combs_0:3, Stringy Comb Block
+forestry:bee_combs_0:4, Frozen Comb Block
+forestry:bee_combs_0:5, Dripping Comb Block
+forestry:bee_combs_0:6, Silky Comb Block
+forestry:bee_combs_0:7, Parched Comb Block
+forestry:bee_combs_0:15, Mossy Comb Block
+forestry:bee_combs_1:0, Mellow Comb Block
+forestry:alveary.plain:0, Alveary
+forestry:alveary.swarmer:0, Alveary Swarmer
+forestry:alveary.fan:0, Alveary Fan
+forestry:alveary.heater:0, Alveary Heater
+forestry:alveary.hygro:0, Alveary Hygroregulator
+forestry:alveary.stabiliser:0, Alveary Stabiliser
+forestry:alveary.sieve:0, Alveary Sieve
+forestry:fluid.bio.ethanol, Ethanol
+forestry:fluid.biomass, Biomass
+forestry:fluid.glass, Liquid Glass
+forestry:fluid.for.honey, Honey
+forestry:fluid.ice, Crushed Ice
+forestry:fluid.juice, Fruit Juice
+forestry:fluid.milk, Milk
+forestry:fluid.seed.oil, Seed Oil
+forestry:fluid.short.mead, Short Mead
+forestry:can, item.for.can.name
+forestry:capsule, item.for.capsule.name
+forestry:refractory, item.for.refractory.name
+forestry:database:0, Database
+forestry:worktable:0, Worktable
+forestry:mushroom:0, tile.for.mushroom.name
+forestry:mushroom:1, tile.for.mushroom.name
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:0, Farm Block
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:2, Farm Gearbox
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:3, Farm Hatch
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:4, Farm Valve
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:ffarm:5, Farm Control
+forestry:arboretum:0, Arboretum (Managed)
+forestry:arboretum:1, Arboretum (Manual)
+forestry:farm_crops:0, Farm (Managed)
+forestry:farm_crops:1, Farm (Manual)
+forestry:farm_mushroom:0, Mushroom Farm (Managed)
+forestry:farm_mushroom:1, Mushroom Farm (Manual)
+forestry:farm_gourd:0, Gourd Farm (Managed)
+forestry:farm_gourd:1, Gourd Farm (Manual)
+forestry:farm_nether:0, Infernal Farm (Managed)
+forestry:farm_nether:1, Infernal Farm (Manual)
+forestry:farm_ender:0, Ender Farm (Managed)
+forestry:farm_ender:1, Ender Farm (Manual)
+forestry:peat_bog:0, Peat Bog (Managed)
+forestry:peat_bog:1, Peat Bog (Manual)
+forestry:stamps:0, Stamp (1n)
+forestry:stamps:1, Stamp (2n)
+forestry:stamps:2, Stamp (5n)
+forestry:stamps:3, Stamp (10n)
+forestry:stamps:4, Stamp (20n)
+forestry:stamps:5, Stamp (50n)
+forestry:stamps:6, Stamp (100n)
+forestry:letters, Letter
+forestry:catalogue, Catalogue
+forestry:mailbox:0, Mailbox
+forestry:trade_station:0, Trade Station
+forestry:stamp_collector:0, Stamp Collector
+forestry:engine_peat:0, Peat-fired Engine
+forestry:engine_biogas:0, Biogas Engine
+forestry:engine_clockwork:0, Clockwork Engine
 microblockcbe:saw_stone, Stone Saw
 microblockcbe:saw_iron, Iron Saw
 microblockcbe:saw_diamond, Diamond Saw
@@ -1589,6 +1589,91 @@ projectred-core:resource_item:600, Null-Logic Routing Chip
 projectred-core:drawplate, Draw Plate
 projectred-core:screwdriver, Screwdriver
 projectred-core:multimeter, Multimeter
+gendustry:mutagen, Mutagen
+gendustry:liquiddna, Liquid DNA
+gendustry:protein, Protein
+gendustry:labware, Genetics Labware
+gendustry:waste, Genetic Waste
+gendustry:gene_sample_blank, Blank Gene Sample
+gendustry:gene_sample, %s Sample - %s
+gendustry:gene_template, Genetic Template
+gendustry:apiary.upgrade:17, Plains Emulation Upgrade
+gendustry:apiary.upgrade:11, Light Upgrade
+gendustry:apiary.upgrade:2, Flowering Upgrade
+gendustry:apiary.upgrade:20, Winter Emulation Upgrade
+gendustry:apiary.upgrade:5, Dryer Upgrade
+gendustry:apiary.upgrade:14, Automation Upgrade
+gendustry:apiary.upgrade:4, Humidifier Upgrade
+gendustry:apiary.upgrade:13, Hell Emulation Upgrade
+gendustry:apiary.upgrade:22, Pollen Scrubber Upgrade
+gendustry:apiary.upgrade:16, Desert Emulation Upgrade
+gendustry:apiary.upgrade:7, Cooler Upgrade
+gendustry:apiary.upgrade:1, Lifespan Upgrade
+gendustry:apiary.upgrade:10, Seal Upgrade
+gendustry:apiary.upgrade:19, Genetic Stabilizer Upgrade
+gendustry:apiary.upgrade:18, Jungle Emulation Upgrade
+gendustry:apiary.upgrade:3, Territory Upgrade
+gendustry:apiary.upgrade:21, Ocean Emulation Upgrade
+gendustry:apiary.upgrade:12, Open Sky Upgrade
+gendustry:apiary.upgrade:6, Heater Upgrade
+gendustry:apiary.upgrade:15, Sieve Upgrade
+gendustry:apiary.upgrade:0, Production Upgrade
+gendustry:industrial_grafter, Industrial Grafter
+gendustry:industrial_scoop, Scooporator MX200 Turbo
+gendustry:honey_comb:10, Black Colored Comb
+gendustry:honey_comb:24, Orange Colored Comb
+gendustry:honey_comb:25, White Colored Comb
+gendustry:honey_comb:14, Blue Colored Comb
+gendustry:honey_comb:20, Lime Colored Comb
+gendustry:honey_comb:21, Yellow Colored Comb
+gendustry:honey_comb:13, Brown Colored Comb
+gendustry:honey_comb:17, Light Gray Colored Comb
+gendustry:honey_comb:22, Light Blue Colored Comb
+gendustry:honey_comb:12, Green Colored Comb
+gendustry:honey_comb:18, Gray Colored Comb
+gendustry:honey_comb:16, Cyan Colored Comb
+gendustry:honey_comb:11, Red Colored Comb
+gendustry:honey_comb:23, Magenta Colored Comb
+gendustry:honey_comb:19, Pink Colored Comb
+gendustry:honey_comb:15, Purple Colored Comb
+gendustry:honey_drop:10, Black Colored Honey Drop
+gendustry:honey_drop:24, Orange Colored Honey Drop
+gendustry:honey_drop:25, White Colored Honey Drop
+gendustry:honey_drop:14, Blue Colored Honey Drop
+gendustry:honey_drop:20, Lime Colored Honey Drop
+gendustry:honey_drop:21, Yellow Colored Honey Drop
+gendustry:honey_drop:13, Brown Colored Honey Drop
+gendustry:honey_drop:17, Light Gray Colored Honey Drop
+gendustry:honey_drop:22, Light Blue Colored Honey Drop
+gendustry:honey_drop:12, Green Colored Honey Drop
+gendustry:honey_drop:18, Gray Colored Honey Drop
+gendustry:honey_drop:16, Cyan Colored Honey Drop
+gendustry:honey_drop:11, Red Colored Honey Drop
+gendustry:honey_drop:23, Magenta Colored Honey Drop
+gendustry:honey_drop:19, Pink Colored Honey Drop
+gendustry:honey_drop:15, Purple Colored Honey Drop
+gendustry:mutagen_tank, Mutagen Tank
+gendustry:bee_receptacle, Bee Receptacle
+gendustry:power_module, Power Module
+gendustry:genetics_processor, Genetics Processor
+gendustry:env_processor, Environmental Processor
+gendustry:upgrade_frame, Upgrade Frame
+gendustry:climate_module, Climate Control Module
+gendustry:pollen_kit, Pollen Collection Kit
+gendustry:hive_spawn_debugger, Hive Spawning Debugger
+gendustry:eject_cover, Item Eject Cover
+gendustry:import_cover, Item Import Cover
+gendustry:error_sensor_cover, Error Sensor Cover
+gendustry:mutagen_producer, Mutagen Producer
+gendustry:mutatron, Mutatron
+gendustry:industrial_apiary, Industrial Apiary
+gendustry:imprinter, Genetic Imprinter
+gendustry:sampler, Genetic Sampler
+gendustry:mutatron_advanced, Advanced mutatron
+gendustry:liquifier, Protein Liquifier
+gendustry:extractor, DNA Extractor
+gendustry:transposer, Genetic Transposer
+gendustry:replicator, Genetic Replicator
 projectred-integration:gate:0, OR Gate
 projectred-integration:gate:1, NOR Gate
 projectred-integration:gate:2, NOT Gate
@@ -1624,7 +1709,7 @@ projectred-integration:gate:31, Data Cell
 projectred-integration:gate:32, Segment Display Gate
 projectred-integration:gate:33, Dec Randomizer
 projectred-integration:gate:34, IC Gate
-projectred-transmission:wire:0, Red Alloy Wire
+projectred-transmission:wire:0, Red Alloy Redstone Wire
 projectred-transmission:wire:1, White Insulated Wire
 projectred-transmission:wire:2, Orange Insulated Wire
 projectred-transmission:wire:3, Magenta Insulated Wire
@@ -1659,7 +1744,7 @@ projectred-transmission:wire:31, Green Bundled Cable
 projectred-transmission:wire:32, Red Bundled Cable
 projectred-transmission:wire:33, Black Bundled Cable
 projectred-transmission:wire:34, Low Load Power Line
-projectred-transmission:framed_wire:0, Framed Red Alloy Wire
+projectred-transmission:framed_wire:0, Red Alloy Framed Redstone Wire
 projectred-transmission:framed_wire:1, Framed White Insulated Wire
 projectred-transmission:framed_wire:2, Framed Orange Insulated Wire
 projectred-transmission:framed_wire:3, Framed Magenta Insulated Wire
@@ -2190,7 +2275,7 @@ appliedenergistics2:facade:0, Cable Facade - Red Concrete Powder
 appliedenergistics2:facade:0, Cable Facade - Black Concrete Powder
 appliedenergistics2:facade:0, Cable Facade - Compressed Crafting Table
 appliedenergistics2:facade:0, Cable Facade - Double Compressed Crafting Table
-appliedenergistics2:facade:0, Cable Facade - Neutronium Block
+appliedenergistics2:facade:0, Cable Facade - Block of Neutronite
 appliedenergistics2:facade:0, Cable Facade - Infinity Block
 appliedenergistics2:facade:0, Cable Facade - Crystal Matrix
 appliedenergistics2:facade:0, Cable Facade - Magical Planks
@@ -2237,7 +2322,7 @@ appliedenergistics2:facade:0, Cable Facade - Glowing Glass
 appliedenergistics2:facade:0, Cable Facade - Redstone Glass
 appliedenergistics2:facade:0, Cable Facade - Block of Enchanted Metal
 appliedenergistics2:facade:0, Cable Facade - Block of Demon Metal
-appliedenergistics2:facade:0, Cable Facade - Block of Evil Infused Iron
+appliedenergistics2:facade:0, Cable Facade - Block of Evil Infused Metal
 appliedenergistics2:facade:0, Cable Facade - Ferrous-Juniper Log
 appliedenergistics2:facade:0, Cable Facade - Ferrous-Juniper Log
 appliedenergistics2:facade:0, Cable Facade - Ferrous-Juniper Planks
@@ -2252,15 +2337,6 @@ appliedenergistics2:facade:0, Cable Facade - Block of Copper
 appliedenergistics2:facade:0, Cable Facade - Block of Tin
 appliedenergistics2:facade:0, Cable Facade - Block of Bronze
 appliedenergistics2:facade:0, Cable Facade - Ash Bricks
-appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
-appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
-appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
-appliedenergistics2:facade:0, Cable Facade - Frozen Comb Block
-appliedenergistics2:facade:0, Cable Facade - Dripping Comb Block
-appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
-appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
-appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
-appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
 appliedenergistics2:facade:0, Cable Facade - Larch Wood
 appliedenergistics2:facade:0, Cable Facade - Teak Wood
 appliedenergistics2:facade:0, Cable Facade - Desert Acacia Wood
@@ -2424,6 +2500,15 @@ appliedenergistics2:facade:0, Cable Facade - Sipiri Leaves
 appliedenergistics2:facade:0, Cable Facade - Papaya Leaves
 appliedenergistics2:facade:0, Cable Facade - Date Palm Leaves
 appliedenergistics2:facade:0, Cable Facade - White Poplar Leaves
+appliedenergistics2:facade:0, Cable Facade - Honey Comb Block
+appliedenergistics2:facade:0, Cable Facade - Simmering Comb Block
+appliedenergistics2:facade:0, Cable Facade - Stringy Comb Block
+appliedenergistics2:facade:0, Cable Facade - Frozen Comb Block
+appliedenergistics2:facade:0, Cable Facade - Dripping Comb Block
+appliedenergistics2:facade:0, Cable Facade - Silky Comb Block
+appliedenergistics2:facade:0, Cable Facade - Parched Comb Block
+appliedenergistics2:facade:0, Cable Facade - Mossy Comb Block
+appliedenergistics2:facade:0, Cable Facade - Mellow Comb Block
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Block
 appliedenergistics2:facade:0, Cable Facade - Certus Quartz Pillar
 appliedenergistics2:facade:0, Cable Facade - Chiseled Certus Quartz Block
@@ -3409,6 +3494,7 @@ appliedenergistics2:facade:0, Cable Facade - Borderless Black Lamp
 appliedenergistics2:facade:0, Cable Facade - Block of Aluminium
 appliedenergistics2:facade:0, Cable Facade - Block of Americium
 appliedenergistics2:facade:0, Cable Facade - Block of Antimony
+appliedenergistics2:facade:0, Cable Facade - Block of Arsenic
 appliedenergistics2:facade:0, Cable Facade - Block of Beryllium
 appliedenergistics2:facade:0, Cable Facade - Block of Bismuth
 appliedenergistics2:facade:0, Cable Facade - Block of Chrome
@@ -3419,6 +3505,8 @@ appliedenergistics2:facade:0, Cable Facade - Block of Gallium
 appliedenergistics2:facade:0, Cable Facade - Block of Indium
 appliedenergistics2:facade:0, Cable Facade - Block of Iridium
 appliedenergistics2:facade:0, Cable Facade - Block of Lead
+appliedenergistics2:facade:0, Cable Facade - Block of Lithium
+appliedenergistics2:facade:0, Cable Facade - Block of Lutetium
 appliedenergistics2:facade:0, Cable Facade - Block of Manganese
 appliedenergistics2:facade:0, Cable Facade - Block of Molybdenum
 appliedenergistics2:facade:0, Cable Facade - Block of Neodymium
@@ -3539,6 +3627,7 @@ appliedenergistics2:facade:0, Cable Facade - Block of Black Steel
 appliedenergistics2:facade:0, Cable Facade - Block of Damascus Steel
 appliedenergistics2:facade:0, Cable Facade - Block of Tungstensteel
 appliedenergistics2:facade:0, Cable Facade - Block of Cobalt Brass
+appliedenergistics2:facade:0, Cable Facade - Block of Tricalcium Phosphate
 appliedenergistics2:facade:0, Cable Facade - Block of Red Garnet
 appliedenergistics2:facade:0, Cable Facade - Block of Yellow Garnet
 appliedenergistics2:facade:0, Cable Facade - Block of Monazite
@@ -7894,34 +7983,34 @@ tconstruct:slime_vine_purple_end:0, Purple Slimy Vine
 tconstruct:slime_vine_purple_mid:0, Purple Slimy Vine
 tconstruct:slime_vine_purple:0, Purple Slimy Vine
 tconstruct:pattern:0, Blank Pattern
-tconstruct:pattern:0, Tool Rod Pattern
-tconstruct:pattern:0, Binding Pattern
-tconstruct:pattern:0, Pickaxe Head Pattern
-tconstruct:pattern:0, Kama Head Pattern
-tconstruct:pattern:0, Hand Guard Pattern
-tconstruct:pattern:0, Shovel Head Pattern
-tconstruct:pattern:0, Tough Tool Rod Pattern
-tconstruct:pattern:0, Fletching Pattern
-tconstruct:pattern:0, Bowstring Pattern
-tconstruct:pattern:0, Axe Head Pattern
-tconstruct:pattern:0, Sword Blade Pattern
-tconstruct:pattern:0, Cross Guard Pattern
-tconstruct:pattern:0, Excavator Head Pattern
-tconstruct:pattern:0, Bowlimb Pattern
-tconstruct:pattern:0, Sign Plate Pattern
-tconstruct:pattern:0, Wide Guard Pattern
-tconstruct:pattern:0, Hammer Head Pattern
-tconstruct:pattern:0, Scythe Head Pattern
-tconstruct:pattern:0, Sharpening Kit Pattern
-tconstruct:pattern:0, Broad Axe Head Pattern
 tconstruct:pattern:0, Pan Pattern
-tconstruct:pattern:0, Arrow Head Pattern
-tconstruct:pattern:0, Knife Blade Pattern
+tconstruct:pattern:0, Bowlimb Pattern
+tconstruct:pattern:0, Kama Head Pattern
 tconstruct:pattern:0, Shard Pattern
-tconstruct:pattern:0, Large Plate Pattern
-tconstruct:pattern:0, Large Sword Blade Pattern
+tconstruct:pattern:0, Scythe Head Pattern
+tconstruct:pattern:0, Knife Blade Pattern
+tconstruct:pattern:0, Axe Head Pattern
+tconstruct:pattern:0, Excavator Head Pattern
+tconstruct:pattern:0, Wide Guard Pattern
+tconstruct:pattern:0, Sword Blade Pattern
+tconstruct:pattern:0, Tool Rod Pattern
+tconstruct:pattern:0, Bowstring Pattern
+tconstruct:pattern:0, Fletching Pattern
+tconstruct:pattern:0, Binding Pattern
+tconstruct:pattern:0, Hammer Head Pattern
+tconstruct:pattern:0, Pickaxe Head Pattern
+tconstruct:pattern:0, Tough Tool Rod Pattern
 tconstruct:pattern:0, Tough Binding Pattern
+tconstruct:pattern:0, Sign Plate Pattern
+tconstruct:pattern:0, Hand Guard Pattern
+tconstruct:pattern:0, Arrow Head Pattern
+tconstruct:pattern:0, Broad Axe Head Pattern
+tconstruct:pattern:0, Large Sword Blade Pattern
+tconstruct:pattern:0, Cross Guard Pattern
+tconstruct:pattern:0, Large Plate Pattern
+tconstruct:pattern:0, Shovel Head Pattern
 tconstruct:pattern:0, Arrow Shaft Pattern
+tconstruct:pattern:0, Sharpening Kit Pattern
 tconstruct:shard:0, Wooden Shard
 tconstruct:sharpening_kit:0, Wooden Sharpening Kit
 tconstruct:pick_head:0, Wooden Pickaxe Head
@@ -8028,62 +8117,62 @@ tconstruct:seared_stairs_road:0, Seared Road Stairs
 tconstruct:seared_stairs_tile:0, Seared Tile Stairs
 tconstruct:seared_stairs_creeper:0, Seared Creeperface Stairs
 tconstruct:cast:0, Blank Cast
+tconstruct:cast:0, Pan Cast
+tconstruct:cast:0, Bowlimb Cast
+tconstruct:cast:0, Kama Head Cast
+tconstruct:cast:0, Shard Cast
+tconstruct:cast:0, Scythe Head Cast
+tconstruct:cast:0, Knife Blade Cast
+tconstruct:cast:0, Axe Head Cast
+tconstruct:cast:0, Excavator Head Cast
+tconstruct:cast:0, Wide Guard Cast
+tconstruct:cast:0, Sword Blade Cast
 tconstruct:cast:0, Tool Rod Cast
 tconstruct:cast:0, Binding Cast
-tconstruct:cast:0, Pickaxe Head Cast
-tconstruct:cast:0, Kama Head Cast
-tconstruct:cast:0, Hand Guard Cast
-tconstruct:cast:0, Shovel Head Cast
-tconstruct:cast:0, Tough Tool Rod Cast
-tconstruct:cast:0, Axe Head Cast
-tconstruct:cast:0, Sword Blade Cast
-tconstruct:cast:0, Cross Guard Cast
-tconstruct:cast:0, Excavator Head Cast
-tconstruct:cast:0, Bowlimb Cast
-tconstruct:cast:0, Sign Plate Cast
-tconstruct:cast:0, Wide Guard Cast
 tconstruct:cast:0, Hammer Head Cast
-tconstruct:cast:0, Scythe Head Cast
-tconstruct:cast:0, Sharpening Kit Cast
-tconstruct:cast:0, Broad Axe Head Cast
-tconstruct:cast:0, Pan Cast
-tconstruct:cast:0, Arrow Head Cast
-tconstruct:cast:0, Knife Blade Cast
-tconstruct:cast:0, Shard Cast
-tconstruct:cast:0, Large Plate Cast
-tconstruct:cast:0, Large Sword Blade Cast
+tconstruct:cast:0, Pickaxe Head Cast
+tconstruct:cast:0, Tough Tool Rod Cast
 tconstruct:cast:0, Tough Binding Cast
+tconstruct:cast:0, Sign Plate Cast
+tconstruct:cast:0, Hand Guard Cast
+tconstruct:cast:0, Arrow Head Cast
+tconstruct:cast:0, Broad Axe Head Cast
+tconstruct:cast:0, Large Sword Blade Cast
+tconstruct:cast:0, Cross Guard Cast
+tconstruct:cast:0, Large Plate Cast
+tconstruct:cast:0, Shovel Head Cast
+tconstruct:cast:0, Sharpening Kit Cast
 tconstruct:cast_custom:0, Ingot Cast
 tconstruct:cast_custom:1, Nugget Cast
 tconstruct:cast_custom:2, Gem Cast
 tconstruct:cast_custom:3, Plate Cast
 tconstruct:cast_custom:4, Gear Cast
 tconstruct:clay_cast:0, item.tconstruct.clay_cast.blank
+tconstruct:clay_cast:0, Pan Clay Cast
+tconstruct:clay_cast:0, Bowlimb Clay Cast
+tconstruct:clay_cast:0, Kama Head Clay Cast
+tconstruct:clay_cast:0, Shard Clay Cast
+tconstruct:clay_cast:0, Scythe Head Clay Cast
+tconstruct:clay_cast:0, Knife Blade Clay Cast
+tconstruct:clay_cast:0, Axe Head Clay Cast
+tconstruct:clay_cast:0, Excavator Head Clay Cast
+tconstruct:clay_cast:0, Wide Guard Clay Cast
+tconstruct:clay_cast:0, Sword Blade Clay Cast
 tconstruct:clay_cast:0, Tool Rod Clay Cast
 tconstruct:clay_cast:0, Binding Clay Cast
-tconstruct:clay_cast:0, Pickaxe Head Clay Cast
-tconstruct:clay_cast:0, Kama Head Clay Cast
-tconstruct:clay_cast:0, Hand Guard Clay Cast
-tconstruct:clay_cast:0, Shovel Head Clay Cast
-tconstruct:clay_cast:0, Tough Tool Rod Clay Cast
-tconstruct:clay_cast:0, Axe Head Clay Cast
-tconstruct:clay_cast:0, Sword Blade Clay Cast
-tconstruct:clay_cast:0, Cross Guard Clay Cast
-tconstruct:clay_cast:0, Excavator Head Clay Cast
-tconstruct:clay_cast:0, Bowlimb Clay Cast
-tconstruct:clay_cast:0, Sign Plate Clay Cast
-tconstruct:clay_cast:0, Wide Guard Clay Cast
 tconstruct:clay_cast:0, Hammer Head Clay Cast
-tconstruct:clay_cast:0, Scythe Head Clay Cast
-tconstruct:clay_cast:0, Sharpening Kit Clay Cast
-tconstruct:clay_cast:0, Broad Axe Head Clay Cast
-tconstruct:clay_cast:0, Pan Clay Cast
-tconstruct:clay_cast:0, Arrow Head Clay Cast
-tconstruct:clay_cast:0, Knife Blade Clay Cast
-tconstruct:clay_cast:0, Shard Clay Cast
-tconstruct:clay_cast:0, Large Plate Clay Cast
-tconstruct:clay_cast:0, Large Sword Blade Clay Cast
+tconstruct:clay_cast:0, Pickaxe Head Clay Cast
+tconstruct:clay_cast:0, Tough Tool Rod Clay Cast
 tconstruct:clay_cast:0, Tough Binding Clay Cast
+tconstruct:clay_cast:0, Sign Plate Clay Cast
+tconstruct:clay_cast:0, Hand Guard Clay Cast
+tconstruct:clay_cast:0, Arrow Head Clay Cast
+tconstruct:clay_cast:0, Broad Axe Head Clay Cast
+tconstruct:clay_cast:0, Large Sword Blade Clay Cast
+tconstruct:clay_cast:0, Cross Guard Clay Cast
+tconstruct:clay_cast:0, Large Plate Clay Cast
+tconstruct:clay_cast:0, Shovel Head Clay Cast
+tconstruct:clay_cast:0, Sharpening Kit Clay Cast
 tconstruct:stone_torch:0, Stone Torch
 tconstruct:stone_ladder:0, Stone Ladder
 tconstruct:punji:0, Punji Sticks
@@ -8230,7 +8319,7 @@ betterwithmods:bellows:1, Spring Action Bellows
 betterwithmods:hemp, Hemp Seeds
 betterwithmods:detector, Detector Block
 betterwithmods:lens, Lens Focus
-betterwithmods:saw, Saw
+betterwithmods:saw, Mechanical Saw
 betterwithmods:aesthetic:0, Chopping Block
 betterwithmods:aesthetic:1, Bloodied Chopping Block
 betterwithmods:aesthetic:2, Hardened Nether Sludge
@@ -8260,7 +8349,7 @@ betterwithmods:wood_table:4, Acacia Wood Table
 betterwithmods:wood_table:5, Dark Oak Wood Table
 betterwithmods:companion_cube, Companion Cube
 betterwithmods:block_dispenser, Block Dispenser
-betterwithmods:bamboo_chime:0, Oak Bamboo Chime
+betterwithmods:bamboo_chime:0, Redstone Wind Chime
 betterwithmods:bamboo_chime:1, Spruce Bamboo Chime
 betterwithmods:bamboo_chime:2, Birch Bamboo Chime
 betterwithmods:bamboo_chime:3, Jungle Bamboo Chime
@@ -8338,7 +8427,7 @@ betterwithmods:material:8, Leather Strap
 betterwithmods:material:9, Leather Belt
 betterwithmods:material:10, Wood Blade
 betterwithmods:material:11, Wind Sail
-betterwithmods:material:12, Glue
+betterwithmods:material:12, Poor Quality Glue
 betterwithmods:material:13, Tallow
 betterwithmods:material:14, Soulforged Steel Ingot
 betterwithmods:material:15, Ground Netherrack
@@ -8484,15 +8573,15 @@ betterwithmods:wool_boots, Wool Socks
 betterwithmods:wool_chest, Wool Shirt
 betterwithmods:wool_helmet, Wool Cap
 betterwithmods:wool_pants, Wool Pants
-betterwithmods:siding_iron, %s Siding
 betterwithmods:siding_rock, %s Siding
 betterwithmods:siding_wood, %s Siding
-betterwithmods:moulding_iron, %s Moulding
+betterwithmods:siding_iron, %s Siding
 betterwithmods:moulding_rock, %s Moulding
 betterwithmods:moulding_wood, %s Moulding
-betterwithmods:corner_iron, %s Corner
+betterwithmods:moulding_iron, %s Moulding
 betterwithmods:corner_rock, %s Corner
 betterwithmods:corner_wood, %s Corner
+betterwithmods:corner_iron, %s Corner
 astikorcarts:wheel, Wheel
 astikorcarts:cargocart, Cart
 astikorcarts:plowcart, Plow
@@ -9094,6 +9183,8 @@ ceramics:clay_bucket:0, Liquid Titania Atmosphere Clay Bucket
 ceramics:clay_bucket:0, Triton Atmosphere Gas Clay Bucket
 ceramics:clay_bucket:0, Liquid Triton Atmosphere Clay Bucket
 ceramics:clay_bucket:0, Enhanced Glue Clay Bucket
+ceramics:clay_bucket:0, Liquid DNA Clay Bucket
+ceramics:clay_bucket:0, Protein Clay Bucket
 ceramics:clay_bucket:0, Menril Resin Clay Bucket
 ceramics:clay_bucket:0, Liquid Chorus Clay Bucket
 ceramics:clay_bucket:0, Molten Corruption Clay Bucket
@@ -9394,7 +9485,7 @@ galacticraftcore:cheese_curd, Cheese Curd
 galacticraftcore:meteoric_iron_raw, Raw Meteoric Iron
 galacticraftcore:item_basic_moon:0, Meteoric Iron Ingot
 galacticraftcore:item_basic_moon:1, Compressed Meteoric Iron
-galacticraftcore:item_basic_moon:2, Lunar Sapphire
+galacticraftcore:item_basic_moon:2, Lunarite
 galacticraftcore:flag, Flag
 galacticraftcore:parachute:0, Parachute
 galacticraftcore:parachute:1, Black Parachute
@@ -10976,7 +11067,7 @@ gregtech:machine:1643, LuV Rotor Holder
 gregtech:machine:1644, ZPM Rotor Holder
 gregtech:machine:1645, UV Rotor Holder
 gregtech:machine:1646, Locked Safe
-gregtech:machine:1647, Crafting Station
+gregtech:machine:1647, Work Table
 gregtech:machine:1648, Primitive Water Pump
 gregtech:machine:1649, Pump Output Hatch
 gregtech:machine:1650, Infinite GT Energy Unit Emitter
@@ -11643,142 +11734,142 @@ gregtech:fluid_pipe_nonuple:115, Nonuple Tungsten Fluid Pipe
 gregtech:fluid_pipe_nonuple:396, Nonuple Tungstencarbide Fluid Pipe
 gregtech:fluid_pipe_nonuple:2013, Nonuple Tungstensteel Fluid Pipe
 gregtech:fluid_pipe_nonuple:2036, Nonuple Vanadiumsteel Fluid Pipe
-gregtech:item_pipe_small:69, Small Nickel Item Pipe
-gregtech:item_pipe_small:302, Small Black Bronze Item Pipe
-gregtech:item_pipe_small:274, Small Cupronickel Item Pipe
-gregtech:item_pipe_small:1007, Small Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_small:80, Small Platinum Item Pipe
-gregtech:item_pipe_small:23, Small Cobalt Item Pipe
-gregtech:item_pipe_small:331, Small Ultimet Item Pipe
-gregtech:item_pipe_small:290, Small Magnalium Item Pipe
-gregtech:item_pipe_small:2014, Small Cobalt Brass Item Pipe
-gregtech:item_pipe_small:75, Small Osmium Item Pipe
 gregtech:item_pipe_small:277, Small Electrum Item Pipe
-gregtech:item_pipe_small:259, Small Brass Item Pipe
-gregtech:item_pipe_small:3, Small Americium Item Pipe
-gregtech:item_pipe_small:300, Small Sterling Silver Item Pipe
-gregtech:item_pipe_small:301, Small Rose Gold Item Pipe
+gregtech:item_pipe_small:80, Small Platinum Item Pipe
 gregtech:item_pipe_small:344, Small Osmiridium Item Pipe
 gregtech:item_pipe_small:112, Small Tin Item Pipe
-gregtech:item_pipe_normal:69, Nickel Item Pipe
-gregtech:item_pipe_normal:302, Black Bronze Item Pipe
-gregtech:item_pipe_normal:274, Cupronickel Item Pipe
-gregtech:item_pipe_normal:1007, Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_normal:80, Platinum Item Pipe
-gregtech:item_pipe_normal:23, Cobalt Item Pipe
-gregtech:item_pipe_normal:331, Ultimet Item Pipe
-gregtech:item_pipe_normal:290, Magnalium Item Pipe
-gregtech:item_pipe_normal:2014, Cobalt Brass Item Pipe
-gregtech:item_pipe_normal:75, Osmium Item Pipe
+gregtech:item_pipe_small:75, Small Osmium Item Pipe
+gregtech:item_pipe_small:274, Small Cupronickel Item Pipe
+gregtech:item_pipe_small:302, Small Black Bronze Item Pipe
+gregtech:item_pipe_small:331, Small Ultimet Item Pipe
+gregtech:item_pipe_small:259, Small Brass Item Pipe
+gregtech:item_pipe_small:1007, Small Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_small:290, Small Magnalium Item Pipe
+gregtech:item_pipe_small:2014, Small Cobalt Brass Item Pipe
+gregtech:item_pipe_small:3, Small Americium Item Pipe
+gregtech:item_pipe_small:69, Small Nickel Item Pipe
+gregtech:item_pipe_small:23, Small Cobalt Item Pipe
+gregtech:item_pipe_small:300, Small Sterling Silver Item Pipe
+gregtech:item_pipe_small:301, Small Rose Gold Item Pipe
 gregtech:item_pipe_normal:277, Electrum Item Pipe
-gregtech:item_pipe_normal:259, Brass Item Pipe
-gregtech:item_pipe_normal:3, Americium Item Pipe
-gregtech:item_pipe_normal:300, Sterling Silver Item Pipe
-gregtech:item_pipe_normal:301, Rose Gold Item Pipe
+gregtech:item_pipe_normal:80, Platinum Item Pipe
 gregtech:item_pipe_normal:344, Osmiridium Item Pipe
 gregtech:item_pipe_normal:112, Tin Item Pipe
-gregtech:item_pipe_large:69, Large Nickel Item Pipe
-gregtech:item_pipe_large:302, Large Black Bronze Item Pipe
-gregtech:item_pipe_large:274, Large Cupronickel Item Pipe
-gregtech:item_pipe_large:1007, Large Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_large:80, Large Platinum Item Pipe
-gregtech:item_pipe_large:23, Large Cobalt Item Pipe
-gregtech:item_pipe_large:331, Large Ultimet Item Pipe
-gregtech:item_pipe_large:290, Large Magnalium Item Pipe
-gregtech:item_pipe_large:2014, Large Cobalt Brass Item Pipe
-gregtech:item_pipe_large:75, Large Osmium Item Pipe
+gregtech:item_pipe_normal:75, Osmium Item Pipe
+gregtech:item_pipe_normal:274, Cupronickel Item Pipe
+gregtech:item_pipe_normal:302, Black Bronze Item Pipe
+gregtech:item_pipe_normal:331, Ultimet Item Pipe
+gregtech:item_pipe_normal:259, Brass Item Pipe
+gregtech:item_pipe_normal:1007, Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_normal:290, Magnalium Item Pipe
+gregtech:item_pipe_normal:2014, Cobalt Brass Item Pipe
+gregtech:item_pipe_normal:3, Americium Item Pipe
+gregtech:item_pipe_normal:69, Nickel Item Pipe
+gregtech:item_pipe_normal:23, Cobalt Item Pipe
+gregtech:item_pipe_normal:300, Sterling Silver Item Pipe
+gregtech:item_pipe_normal:301, Rose Gold Item Pipe
 gregtech:item_pipe_large:277, Large Electrum Item Pipe
-gregtech:item_pipe_large:259, Large Brass Item Pipe
-gregtech:item_pipe_large:3, Large Americium Item Pipe
-gregtech:item_pipe_large:300, Large Sterling Silver Item Pipe
-gregtech:item_pipe_large:301, Large Rose Gold Item Pipe
+gregtech:item_pipe_large:80, Large Platinum Item Pipe
 gregtech:item_pipe_large:344, Large Osmiridium Item Pipe
 gregtech:item_pipe_large:112, Large Tin Item Pipe
-gregtech:item_pipe_huge:69, Huge Nickel Item Pipe
-gregtech:item_pipe_huge:302, Huge Black Bronze Item Pipe
-gregtech:item_pipe_huge:274, Huge Cupronickel Item Pipe
-gregtech:item_pipe_huge:1007, Huge Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_huge:80, Huge Platinum Item Pipe
-gregtech:item_pipe_huge:23, Huge Cobalt Item Pipe
-gregtech:item_pipe_huge:331, Huge Ultimet Item Pipe
-gregtech:item_pipe_huge:290, Huge Magnalium Item Pipe
-gregtech:item_pipe_huge:2014, Huge Cobalt Brass Item Pipe
-gregtech:item_pipe_huge:75, Huge Osmium Item Pipe
+gregtech:item_pipe_large:75, Large Osmium Item Pipe
+gregtech:item_pipe_large:274, Large Cupronickel Item Pipe
+gregtech:item_pipe_large:302, Large Black Bronze Item Pipe
+gregtech:item_pipe_large:331, Large Ultimet Item Pipe
+gregtech:item_pipe_large:259, Large Brass Item Pipe
+gregtech:item_pipe_large:1007, Large Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_large:290, Large Magnalium Item Pipe
+gregtech:item_pipe_large:2014, Large Cobalt Brass Item Pipe
+gregtech:item_pipe_large:3, Large Americium Item Pipe
+gregtech:item_pipe_large:69, Large Nickel Item Pipe
+gregtech:item_pipe_large:23, Large Cobalt Item Pipe
+gregtech:item_pipe_large:300, Large Sterling Silver Item Pipe
+gregtech:item_pipe_large:301, Large Rose Gold Item Pipe
 gregtech:item_pipe_huge:277, Huge Electrum Item Pipe
-gregtech:item_pipe_huge:259, Huge Brass Item Pipe
-gregtech:item_pipe_huge:3, Huge Americium Item Pipe
-gregtech:item_pipe_huge:300, Huge Sterling Silver Item Pipe
-gregtech:item_pipe_huge:301, Huge Rose Gold Item Pipe
+gregtech:item_pipe_huge:80, Huge Platinum Item Pipe
 gregtech:item_pipe_huge:344, Huge Osmiridium Item Pipe
 gregtech:item_pipe_huge:112, Huge Tin Item Pipe
-gregtech:item_pipe_small_restrictive:69, Small Restrictive Nickel Item Pipe
-gregtech:item_pipe_small_restrictive:302, Small Restrictive Black Bronze Item Pipe
-gregtech:item_pipe_small_restrictive:274, Small Restrictive Cupronickel Item Pipe
-gregtech:item_pipe_small_restrictive:1007, Small Restrictive Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_small_restrictive:80, Small Restrictive Platinum Item Pipe
-gregtech:item_pipe_small_restrictive:23, Small Restrictive Cobalt Item Pipe
-gregtech:item_pipe_small_restrictive:331, Small Restrictive Ultimet Item Pipe
-gregtech:item_pipe_small_restrictive:290, Small Restrictive Magnalium Item Pipe
-gregtech:item_pipe_small_restrictive:2014, Small Restrictive Cobalt Brass Item Pipe
-gregtech:item_pipe_small_restrictive:75, Small Restrictive Osmium Item Pipe
+gregtech:item_pipe_huge:75, Huge Osmium Item Pipe
+gregtech:item_pipe_huge:274, Huge Cupronickel Item Pipe
+gregtech:item_pipe_huge:302, Huge Black Bronze Item Pipe
+gregtech:item_pipe_huge:331, Huge Ultimet Item Pipe
+gregtech:item_pipe_huge:259, Huge Brass Item Pipe
+gregtech:item_pipe_huge:1007, Huge Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_huge:290, Huge Magnalium Item Pipe
+gregtech:item_pipe_huge:2014, Huge Cobalt Brass Item Pipe
+gregtech:item_pipe_huge:3, Huge Americium Item Pipe
+gregtech:item_pipe_huge:69, Huge Nickel Item Pipe
+gregtech:item_pipe_huge:23, Huge Cobalt Item Pipe
+gregtech:item_pipe_huge:300, Huge Sterling Silver Item Pipe
+gregtech:item_pipe_huge:301, Huge Rose Gold Item Pipe
 gregtech:item_pipe_small_restrictive:277, Small Restrictive Electrum Item Pipe
-gregtech:item_pipe_small_restrictive:259, Small Restrictive Brass Item Pipe
-gregtech:item_pipe_small_restrictive:3, Small Restrictive Americium Item Pipe
-gregtech:item_pipe_small_restrictive:300, Small Restrictive Sterling Silver Item Pipe
-gregtech:item_pipe_small_restrictive:301, Small Restrictive Rose Gold Item Pipe
+gregtech:item_pipe_small_restrictive:80, Small Restrictive Platinum Item Pipe
 gregtech:item_pipe_small_restrictive:344, Small Restrictive Osmiridium Item Pipe
 gregtech:item_pipe_small_restrictive:112, Small Restrictive Tin Item Pipe
-gregtech:item_pipe_normal_restrictive:69, Restrictive Nickel Item Pipe
-gregtech:item_pipe_normal_restrictive:302, Restrictive Black Bronze Item Pipe
-gregtech:item_pipe_normal_restrictive:274, Restrictive Cupronickel Item Pipe
-gregtech:item_pipe_normal_restrictive:1007, Restrictive Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_normal_restrictive:80, Restrictive Platinum Item Pipe
-gregtech:item_pipe_normal_restrictive:23, Restrictive Cobalt Item Pipe
-gregtech:item_pipe_normal_restrictive:331, Restrictive Ultimet Item Pipe
-gregtech:item_pipe_normal_restrictive:290, Restrictive Magnalium Item Pipe
-gregtech:item_pipe_normal_restrictive:2014, Restrictive Cobalt Brass Item Pipe
-gregtech:item_pipe_normal_restrictive:75, Restrictive Osmium Item Pipe
+gregtech:item_pipe_small_restrictive:75, Small Restrictive Osmium Item Pipe
+gregtech:item_pipe_small_restrictive:274, Small Restrictive Cupronickel Item Pipe
+gregtech:item_pipe_small_restrictive:302, Small Restrictive Black Bronze Item Pipe
+gregtech:item_pipe_small_restrictive:331, Small Restrictive Ultimet Item Pipe
+gregtech:item_pipe_small_restrictive:259, Small Restrictive Brass Item Pipe
+gregtech:item_pipe_small_restrictive:1007, Small Restrictive Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_small_restrictive:290, Small Restrictive Magnalium Item Pipe
+gregtech:item_pipe_small_restrictive:2014, Small Restrictive Cobalt Brass Item Pipe
+gregtech:item_pipe_small_restrictive:3, Small Restrictive Americium Item Pipe
+gregtech:item_pipe_small_restrictive:69, Small Restrictive Nickel Item Pipe
+gregtech:item_pipe_small_restrictive:23, Small Restrictive Cobalt Item Pipe
+gregtech:item_pipe_small_restrictive:300, Small Restrictive Sterling Silver Item Pipe
+gregtech:item_pipe_small_restrictive:301, Small Restrictive Rose Gold Item Pipe
 gregtech:item_pipe_normal_restrictive:277, Restrictive Electrum Item Pipe
-gregtech:item_pipe_normal_restrictive:259, Restrictive Brass Item Pipe
-gregtech:item_pipe_normal_restrictive:3, Restrictive Americium Item Pipe
-gregtech:item_pipe_normal_restrictive:300, Restrictive Sterling Silver Item Pipe
-gregtech:item_pipe_normal_restrictive:301, Restrictive Rose Gold Item Pipe
+gregtech:item_pipe_normal_restrictive:80, Restrictive Platinum Item Pipe
 gregtech:item_pipe_normal_restrictive:344, Restrictive Osmiridium Item Pipe
 gregtech:item_pipe_normal_restrictive:112, Restrictive Tin Item Pipe
-gregtech:item_pipe_large_restrictive:69, Large Restrictive Nickel Item Pipe
-gregtech:item_pipe_large_restrictive:302, Large Restrictive Black Bronze Item Pipe
-gregtech:item_pipe_large_restrictive:274, Large Restrictive Cupronickel Item Pipe
-gregtech:item_pipe_large_restrictive:1007, Large Restrictive Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_large_restrictive:80, Large Restrictive Platinum Item Pipe
-gregtech:item_pipe_large_restrictive:23, Large Restrictive Cobalt Item Pipe
-gregtech:item_pipe_large_restrictive:331, Large Restrictive Ultimet Item Pipe
-gregtech:item_pipe_large_restrictive:290, Large Restrictive Magnalium Item Pipe
-gregtech:item_pipe_large_restrictive:2014, Large Restrictive Cobalt Brass Item Pipe
-gregtech:item_pipe_large_restrictive:75, Large Restrictive Osmium Item Pipe
+gregtech:item_pipe_normal_restrictive:75, Restrictive Osmium Item Pipe
+gregtech:item_pipe_normal_restrictive:274, Restrictive Cupronickel Item Pipe
+gregtech:item_pipe_normal_restrictive:302, Restrictive Black Bronze Item Pipe
+gregtech:item_pipe_normal_restrictive:331, Restrictive Ultimet Item Pipe
+gregtech:item_pipe_normal_restrictive:259, Restrictive Brass Item Pipe
+gregtech:item_pipe_normal_restrictive:1007, Restrictive Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_normal_restrictive:290, Restrictive Magnalium Item Pipe
+gregtech:item_pipe_normal_restrictive:2014, Restrictive Cobalt Brass Item Pipe
+gregtech:item_pipe_normal_restrictive:3, Restrictive Americium Item Pipe
+gregtech:item_pipe_normal_restrictive:69, Restrictive Nickel Item Pipe
+gregtech:item_pipe_normal_restrictive:23, Restrictive Cobalt Item Pipe
+gregtech:item_pipe_normal_restrictive:300, Restrictive Sterling Silver Item Pipe
+gregtech:item_pipe_normal_restrictive:301, Restrictive Rose Gold Item Pipe
 gregtech:item_pipe_large_restrictive:277, Large Restrictive Electrum Item Pipe
-gregtech:item_pipe_large_restrictive:259, Large Restrictive Brass Item Pipe
-gregtech:item_pipe_large_restrictive:3, Large Restrictive Americium Item Pipe
-gregtech:item_pipe_large_restrictive:300, Large Restrictive Sterling Silver Item Pipe
-gregtech:item_pipe_large_restrictive:301, Large Restrictive Rose Gold Item Pipe
+gregtech:item_pipe_large_restrictive:80, Large Restrictive Platinum Item Pipe
 gregtech:item_pipe_large_restrictive:344, Large Restrictive Osmiridium Item Pipe
 gregtech:item_pipe_large_restrictive:112, Large Restrictive Tin Item Pipe
-gregtech:item_pipe_huge_restrictive:69, Huge Restrictive Nickel Item Pipe
-gregtech:item_pipe_huge_restrictive:302, Huge Restrictive Black Bronze Item Pipe
-gregtech:item_pipe_huge_restrictive:274, Huge Restrictive Cupronickel Item Pipe
-gregtech:item_pipe_huge_restrictive:1007, Huge Restrictive Polyvinyl Chloride (PVC) Item Pipe
-gregtech:item_pipe_huge_restrictive:80, Huge Restrictive Platinum Item Pipe
-gregtech:item_pipe_huge_restrictive:23, Huge Restrictive Cobalt Item Pipe
-gregtech:item_pipe_huge_restrictive:331, Huge Restrictive Ultimet Item Pipe
-gregtech:item_pipe_huge_restrictive:290, Huge Restrictive Magnalium Item Pipe
-gregtech:item_pipe_huge_restrictive:2014, Huge Restrictive Cobalt Brass Item Pipe
-gregtech:item_pipe_huge_restrictive:75, Huge Restrictive Osmium Item Pipe
+gregtech:item_pipe_large_restrictive:75, Large Restrictive Osmium Item Pipe
+gregtech:item_pipe_large_restrictive:274, Large Restrictive Cupronickel Item Pipe
+gregtech:item_pipe_large_restrictive:302, Large Restrictive Black Bronze Item Pipe
+gregtech:item_pipe_large_restrictive:331, Large Restrictive Ultimet Item Pipe
+gregtech:item_pipe_large_restrictive:259, Large Restrictive Brass Item Pipe
+gregtech:item_pipe_large_restrictive:1007, Large Restrictive Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_large_restrictive:290, Large Restrictive Magnalium Item Pipe
+gregtech:item_pipe_large_restrictive:2014, Large Restrictive Cobalt Brass Item Pipe
+gregtech:item_pipe_large_restrictive:3, Large Restrictive Americium Item Pipe
+gregtech:item_pipe_large_restrictive:69, Large Restrictive Nickel Item Pipe
+gregtech:item_pipe_large_restrictive:23, Large Restrictive Cobalt Item Pipe
+gregtech:item_pipe_large_restrictive:300, Large Restrictive Sterling Silver Item Pipe
+gregtech:item_pipe_large_restrictive:301, Large Restrictive Rose Gold Item Pipe
 gregtech:item_pipe_huge_restrictive:277, Huge Restrictive Electrum Item Pipe
-gregtech:item_pipe_huge_restrictive:259, Huge Restrictive Brass Item Pipe
-gregtech:item_pipe_huge_restrictive:3, Huge Restrictive Americium Item Pipe
-gregtech:item_pipe_huge_restrictive:300, Huge Restrictive Sterling Silver Item Pipe
-gregtech:item_pipe_huge_restrictive:301, Huge Restrictive Rose Gold Item Pipe
+gregtech:item_pipe_huge_restrictive:80, Huge Restrictive Platinum Item Pipe
 gregtech:item_pipe_huge_restrictive:344, Huge Restrictive Osmiridium Item Pipe
 gregtech:item_pipe_huge_restrictive:112, Huge Restrictive Tin Item Pipe
+gregtech:item_pipe_huge_restrictive:75, Huge Restrictive Osmium Item Pipe
+gregtech:item_pipe_huge_restrictive:274, Huge Restrictive Cupronickel Item Pipe
+gregtech:item_pipe_huge_restrictive:302, Huge Restrictive Black Bronze Item Pipe
+gregtech:item_pipe_huge_restrictive:331, Huge Restrictive Ultimet Item Pipe
+gregtech:item_pipe_huge_restrictive:259, Huge Restrictive Brass Item Pipe
+gregtech:item_pipe_huge_restrictive:1007, Huge Restrictive Polyvinyl Chloride (PVC) Item Pipe
+gregtech:item_pipe_huge_restrictive:290, Huge Restrictive Magnalium Item Pipe
+gregtech:item_pipe_huge_restrictive:2014, Huge Restrictive Cobalt Brass Item Pipe
+gregtech:item_pipe_huge_restrictive:3, Huge Restrictive Americium Item Pipe
+gregtech:item_pipe_huge_restrictive:69, Huge Restrictive Nickel Item Pipe
+gregtech:item_pipe_huge_restrictive:23, Huge Restrictive Cobalt Item Pipe
+gregtech:item_pipe_huge_restrictive:300, Huge Restrictive Sterling Silver Item Pipe
+gregtech:item_pipe_huge_restrictive:301, Huge Restrictive Rose Gold Item Pipe
 gregtech:optical_pipe_normal:0, Optical Fiber Cable
 gregtech:laser_pipe_normal:0, Laser Transmitting Cable
 gregtech:ld_item_pipe, Long Distance Item Pipe
@@ -12309,6 +12400,7 @@ gregtech:itnt, Industrial TNT
 gregtech:meta_block_compressed_0:2, Block of Aluminium
 gregtech:meta_block_compressed_0:3, Block of Americium
 gregtech:meta_block_compressed_0:4, Block of Antimony
+gregtech:meta_block_compressed_0:6, Block of Arsenic
 gregtech:meta_block_compressed_0:10, Block of Beryllium
 gregtech:meta_block_compressed_0:11, Block of Bismuth
 gregtech:meta_block_compressed_1:6, Block of Chrome
@@ -12319,6 +12411,8 @@ gregtech:meta_block_compressed_2:7, Block of Gallium
 gregtech:meta_block_compressed_3:0, Block of Indium
 gregtech:meta_block_compressed_3:2, Block of Iridium
 gregtech:meta_block_compressed_3:7, Block of Lead
+gregtech:meta_block_compressed_3:8, Block of Lithium
+gregtech:meta_block_compressed_3:10, Block of Lutetium
 gregtech:meta_block_compressed_3:13, Block of Manganese
 gregtech:meta_block_compressed_4:0, Block of Molybdenum
 gregtech:meta_block_compressed_4:2, Block of Neodymium
@@ -12439,6 +12533,7 @@ gregtech:meta_block_compressed_125:11, Block of Black Steel
 gregtech:meta_block_compressed_125:12, Block of Damascus Steel
 gregtech:meta_block_compressed_125:13, Block of Tungstensteel
 gregtech:meta_block_compressed_125:14, Block of Cobalt Brass
+gregtech:meta_block_compressed_125:15, Block of Tricalcium Phosphate
 gregtech:meta_block_compressed_126:0, Block of Red Garnet
 gregtech:meta_block_compressed_126:1, Block of Yellow Garnet
 gregtech:meta_block_compressed_126:13, Block of Monazite
@@ -16003,6 +16098,82 @@ gregtech:gt.frame_decaying, Decaying Frame
 gregtech:gt.frame_slowing, Slowing Frame
 gregtech:gt.frame_stabilizing, Stabilizing Frame
 gregtech:gt.frame_arborist, Arborist's Frame
+gregtech:gt.honey_drop:0, Oil Drop
+gregtech:gt.honey_drop:1, Biomass Drop
+gregtech:gt.honey_drop:2, Ethanol Drop
+gregtech:gt.honey_drop:3, Mutagen Drop
+gregtech:gt.comb:0, Coal Comb
+gregtech:gt.comb:1, Coke Comb
+gregtech:gt.comb:2, Sticky Resin Comb
+gregtech:gt.comb:3, Oil Comb
+gregtech:gt.comb:4, Apatite Comb
+gregtech:gt.comb:5, Ash Comb
+gregtech:gt.comb:6, Biomass Comb
+gregtech:gt.comb:7, Phosphorus Comb
+gregtech:gt.comb:8, Energy Comb
+gregtech:gt.comb:9, Lapotron Comb
+gregtech:gt.comb:10, Red Alloy Comb
+gregtech:gt.comb:11, Stainless Steel Comb
+gregtech:gt.comb:12, Stone Comb
+gregtech:gt.comb:13, Certus Comb
+gregtech:gt.comb:14, Fluix Comb
+gregtech:gt.comb:15, Redstone Comb
+gregtech:gt.comb:16, Rare Earth Comb
+gregtech:gt.comb:17, Lapis Comb
+gregtech:gt.comb:18, Ruby Comb
+gregtech:gt.comb:19, Sapphire Comb
+gregtech:gt.comb:20, Diamond Comb
+gregtech:gt.comb:21, Olivine Comb
+gregtech:gt.comb:22, Emerald Comb
+gregtech:gt.comb:23, Pyrope Comb
+gregtech:gt.comb:24, Grossular Comb
+gregtech:gt.comb:26, Slag Comb
+gregtech:gt.comb:27, Copper Comb
+gregtech:gt.comb:28, Tin Comb
+gregtech:gt.comb:29, Lead Comb
+gregtech:gt.comb:30, Iron Comb
+gregtech:gt.comb:31, Steel Comb
+gregtech:gt.comb:32, Nickel Comb
+gregtech:gt.comb:33, Zinc Comb
+gregtech:gt.comb:34, Silver Comb
+gregtech:gt.comb:35, Gold Comb
+gregtech:gt.comb:36, Sulfur Comb
+gregtech:gt.comb:37, Gallium Comb
+gregtech:gt.comb:38, Arsenic Comb
+gregtech:gt.comb:39, Bauxite Comb
+gregtech:gt.comb:40, Aluminium Comb
+gregtech:gt.comb:41, Manganese Comb
+gregtech:gt.comb:42, Magnesium Comb
+gregtech:gt.comb:43, Titanium Comb
+gregtech:gt.comb:44, Chrome Comb
+gregtech:gt.comb:45, Tungsten Comb
+gregtech:gt.comb:46, Platinum Comb
+gregtech:gt.comb:47, Iridium Comb
+gregtech:gt.comb:48, Molybdenum Comb
+gregtech:gt.comb:49, Osmium Comb
+gregtech:gt.comb:50, Lithium Comb
+gregtech:gt.comb:51, Salt Comb
+gregtech:gt.comb:52, Electrotine Comb
+gregtech:gt.comb:53, Almandine Comb
+gregtech:gt.comb:54, Indium Comb
+gregtech:gt.comb:55, Uranium Comb
+gregtech:gt.comb:56, Plutonium Comb
+gregtech:gt.comb:57, Naquadah Comb
+gregtech:gt.comb:58, Naquadria Comb
+gregtech:gt.comb:59, Trinium Comb
+gregtech:gt.comb:60, Thorium Comb
+gregtech:gt.comb:61, Lutetium Comb
+gregtech:gt.comb:62, Americium Comb
+gregtech:gt.comb:63, Neutronium Comb
+gregtech:gt.comb:64, Helium Comb
+gregtech:gt.comb:65, Argon Comb
+gregtech:gt.comb:66, Xenon Comb
+gregtech:gt.comb:67, Neon Comb
+gregtech:gt.comb:68, Krypton Comb
+gregtech:gt.comb:69, Nitrogen Comb
+gregtech:gt.comb:70, Oxygen Comb
+gregtech:gt.comb:71, Hydrogen Comb
+gregtech:gt.comb:72, Fluorine Comb
 gregtechfoodoption:gtfo_casing:0, Adobe Bricks
 gregtechfoodoption:gtfo_casing:1, Reinforced Adobe Bricks
 gregtechfoodoption:gtfo_casing:2, Porcelain Tile
@@ -16564,6 +16735,60 @@ jabcm:jbrick_wall_brown, Brown Concrete Brick Wall
 jabcm:jbrick_wall_green, Green Concrete Brick Wall
 jabcm:jbrick_wall_red, Red Concrete Brick Wall
 jabcm:jbrick_wall_black, Black Concrete Brick Wall
+netherex:gloomy_netherbrick, Gloomy Nether Brick
+netherex:lively_netherbrick, Lively Nether Brick
+netherex:fiery_netherbrick, Fiery Nether Brick
+netherex:icy_netherbrick, Icy Nether Brick
+netherex:wither_bone, Wither Bone
+netherex:wither_dust, Wither Dust
+netherex:frost_rod, Frost Rod
+netherex:frost_powder, Frost Powder
+netherex:blazed_wither_bone, Blazed Wither Bone
+netherex:frosted_wither_bone, Frosted Wither Bone
+netherex:orange_salamander_hide, Orange Salamander Hide
+netherex:black_salamander_hide, Black Salamander Hide
+netherex:amethyst_crystal, Nether Amethyst Crystal
+netherex:rime_crystal, Nether Rime Crystal
+netherex:rime_and_steel, Rime and Steel
+netherex:spore, Spore
+netherex:coolmar_spider_fang, Frost Fang
+netherex:ghast_queen_tear, Ghast Queen Tears
+netherex:obsidian_boat, Obsidian Boat
+netherex:ghast_meat_raw, Raw Ghast Meat
+netherex:ghast_meat_cooked, Cooked Ghast Meat
+netherex:congealed_magma_cream, Congealed Magma Cream
+netherex:enoki_mushroom, Enoki Mushroom
+netherex:dull_mirror, Dull Mirror
+netherex:withered_amedian_sword, Withered Amedian Sword
+netherex:withered_amedian_pickaxe, Withered Amedian Pickaxe
+netherex:withered_amedian_shovel, Withered Amedian Shovel
+netherex:withered_amedian_axe, Withered Amedian Axe
+netherex:withered_amedian_hoe, Withered Amedian Hoe
+netherex:withered_amedian_hammer, Withered Amedian Hammer
+netherex:blazed_amedian_sword, Blazed Amedian Sword
+netherex:blazed_amedian_pickaxe, Blazed Amedian Pickaxe
+netherex:blazed_amedian_shovel, Blazed Amedian Shovel
+netherex:blazed_amedian_axe, Blazed Amedian Axe
+netherex:blazed_amedian_hoe, Blazed Amedian Hoe
+netherex:blazed_amedian_hammer, Blazed Amedian Hammer
+netherex:frosted_amedian_sword, Frosted Amedian Sword
+netherex:frosted_amedian_pickaxe, Frosted Amedian Pickaxe
+netherex:frosted_amedian_shovel, Frosted Amedian Shovel
+netherex:frosted_amedian_axe, Frosted Amedian Axe
+netherex:frosted_amedian_hoe, Frosted Amedian Hoe
+netherex:frosted_amedian_hammer, Frosted Amedian Hammer
+netherex:wither_bone_helmet, Wither Bone Helmet
+netherex:wither_bone_chestplate, Wither Bone Chestplate
+netherex:wither_bone_leggings, Wither Bone Leggings
+netherex:wither_bone_boots, Wither Bone Boots
+netherex:orange_salamander_hide_helmet, Orange Salamander Hide Helmet
+netherex:orange_salamander_hide_chestplate, Orange Salamander Hide Chestplate
+netherex:orange_salamander_hide_leggings, Orange Salamander Hide Leggings
+netherex:orange_salamander_hide_boots, Orange Salamander Hide Boots
+netherex:black_salamander_hide_helmet, Black Salamander Hide Helmet
+netherex:black_salamander_hide_chestplate, Black Salamander Hide Chestplate
+netherex:black_salamander_hide_leggings, Black Salamander Hide Leggings
+netherex:black_salamander_hide_boots, Black Salamander Hide Boots
 netherex:gloomy_netherrack, Gloomy Netherrack
 netherex:lively_netherrack, Lively Netherrack
 netherex:fiery_netherrack, Fiery Netherrack
@@ -16653,66 +16878,12 @@ netherex:gloomy_nether_brick_fence_gate, Gloomy Nether Brick Fence Gate
 netherex:lively_nether_brick_fence_gate, Lively Nether Brick Fence Gate
 netherex:fiery_nether_brick_fence_gate, Fiery Nether Brick Fence Gate
 netherex:icy_nether_brick_fence_gate, Icy Nether Brick Fence Gate
-netherex:gloomy_netherbrick, Gloomy Nether Brick
-netherex:lively_netherbrick, Lively Nether Brick
-netherex:fiery_netherbrick, Fiery Nether Brick
-netherex:icy_netherbrick, Icy Nether Brick
-netherex:wither_bone, Wither Bone
-netherex:wither_dust, Wither Dust
-netherex:frost_rod, Frost Rod
-netherex:frost_powder, Frost Powder
-netherex:blazed_wither_bone, Blazed Wither Bone
-netherex:frosted_wither_bone, Frosted Wither Bone
-netherex:orange_salamander_hide, Orange Salamander Hide
-netherex:black_salamander_hide, Black Salamander Hide
-netherex:amethyst_crystal, Nether Amethyst Crystal
-netherex:rime_crystal, Nether Rime Crystal
-netherex:rime_and_steel, Rime and Steel
-netherex:spore, Spore
-netherex:coolmar_spider_fang, Frost Fang
-netherex:ghast_queen_tear, Ghast Queen Tears
-netherex:obsidian_boat, Obsidian Boat
-netherex:ghast_meat_raw, Raw Ghast Meat
-netherex:ghast_meat_cooked, Cooked Ghast Meat
-netherex:congealed_magma_cream, Congealed Magma Cream
-netherex:enoki_mushroom, Enoki Mushroom
-netherex:dull_mirror, Dull Mirror
-netherex:withered_amedian_sword, Withered Amedian Sword
-netherex:withered_amedian_pickaxe, Withered Amedian Pickaxe
-netherex:withered_amedian_shovel, Withered Amedian Shovel
-netherex:withered_amedian_axe, Withered Amedian Axe
-netherex:withered_amedian_hoe, Withered Amedian Hoe
-netherex:withered_amedian_hammer, Withered Amedian Hammer
-netherex:blazed_amedian_sword, Blazed Amedian Sword
-netherex:blazed_amedian_pickaxe, Blazed Amedian Pickaxe
-netherex:blazed_amedian_shovel, Blazed Amedian Shovel
-netherex:blazed_amedian_axe, Blazed Amedian Axe
-netherex:blazed_amedian_hoe, Blazed Amedian Hoe
-netherex:blazed_amedian_hammer, Blazed Amedian Hammer
-netherex:frosted_amedian_sword, Frosted Amedian Sword
-netherex:frosted_amedian_pickaxe, Frosted Amedian Pickaxe
-netherex:frosted_amedian_shovel, Frosted Amedian Shovel
-netherex:frosted_amedian_axe, Frosted Amedian Axe
-netherex:frosted_amedian_hoe, Frosted Amedian Hoe
-netherex:frosted_amedian_hammer, Frosted Amedian Hammer
-netherex:wither_bone_helmet, Wither Bone Helmet
-netherex:wither_bone_chestplate, Wither Bone Chestplate
-netherex:wither_bone_leggings, Wither Bone Leggings
-netherex:wither_bone_boots, Wither Bone Boots
-netherex:orange_salamander_hide_helmet, Orange Salamander Hide Helmet
-netherex:orange_salamander_hide_chestplate, Orange Salamander Hide Chestplate
-netherex:orange_salamander_hide_leggings, Orange Salamander Hide Leggings
-netherex:orange_salamander_hide_boots, Orange Salamander Hide Boots
-netherex:black_salamander_hide_helmet, Black Salamander Hide Helmet
-netherex:black_salamander_hide_chestplate, Black Salamander Hide Chestplate
-netherex:black_salamander_hide_leggings, Black Salamander Hide Leggings
-netherex:black_salamander_hide_boots, Black Salamander Hide Boots
 openglider:hang_glider_part:0, Glider Wing (Left)
 openglider:hang_glider_part:1, Glider Wing (Right)
 openglider:hang_glider_part:2, Scaffolding
 openglider:hang_glider_basic, Hang Glider
 openglider:hang_glider_advanced, Advanced Hang Glider
-primalboat:primal_boat, Primal Boat
+primalboat:primal_boat, Raft
 primal:firepit, Fire Pit
 primal:brickform, Brick Form
 primal:quern:0, Sarsen Quern
@@ -16987,7 +17158,7 @@ primal:storage_crate:6, Ironwood Storage Crate
 primal:storage_crate:7, Yew Storage Crate
 primal:storage_crate:8, Lacquer Storage Crate
 primal:storage_crate:9, Corphyry Storage Crate
-primal:barrel:0, Oak Barrel
+primal:barrel:0, Barrel
 primal:barrel:1, Spruce Barrel
 primal:barrel:2, Birch Barrel
 primal:barrel:3, Jungle Barrel
@@ -17133,7 +17304,7 @@ primal:dry_grass, Sesleria Furvum
 primal:void_grass, Equisetum Inaris
 primal:cineris_grass, Equisetum Cineris Cilium
 primal:cineris_bloom, Cineris Bloom
-primal:salt_netjry_block, Netjry Salt Flat
+primal:salt_netjry_block, Salt Flat
 primal:ore_salt:0, Halite Salt Ore
 primal:ore_salt:1, Fire Salt Ore
 primal:ore_salt:2, Void Salt Ore
@@ -17326,7 +17497,7 @@ primal:corypha_stick, Corphyry Stick
 primal:lacquer_stick, Lacquer Stick
 primal:corypha_pin, Corphyry Pin
 primal:wood_pin, Wood Pin
-primal:bark_oak, Oak Bark
+primal:bark_oak, Bark
 primal:bark_spruce, Spruce Bark
 primal:bark_birch, Birch Bark
 primal:bark_jungle, Jungle Wood Bark
@@ -17471,7 +17642,7 @@ primal:cheese_white, White Cheese
 primal:cheese_red, Red Cheese
 primal:corn_cob_cooked, Cooked Corn Cob
 primal:corn_bread, Corn Bread
-primal:corn_ground, Ground Corn
+primal:corn_ground, Corn Dough
 primal:wheat_ground, Ground Wheat
 primal:rush_seeds_cooked, Roasted Rush Seeds
 primal:daucus_murn_root_cooked, Cooked Daucus Murn Root
@@ -17637,8 +17808,8 @@ primal:sharp_bone, Sharp Bone
 primal:bone_pickaxe, Bone Pickaxe
 primal:bone_shovel, Bone Shovel
 primal:bone_hoe, Bone Hoe
-primal:flint_pickaxe, Flint Pickaxe
-primal:flint_shovel, Flint Shovel
+primal:flint_pickaxe, Primal Flint Pickaxe
+primal:flint_shovel, Primal Flint Shovel
 primal:flint_hoe, Flint Hoe
 primal:quartz_pickaxe, Quartz Pickaxe
 primal:quartz_shovel, Quartz Shovel
@@ -17665,7 +17836,7 @@ primal:obsidian_hatchet, Obsidian Hatchet
 primal:opal_hatchet, Opal Hatchet
 primal:emerald_hatchet, Emerald Hatchet
 primal:diamond_hatchet, Diamond Hatchet
-primal:flint_axe, Flint Axe
+primal:flint_axe, Primal Flint Axe
 primal:quartz_axe, Quartz Axe
 primal:obsidian_axe, Obsidian Axe
 primal:opal_axe, Opal Axe
@@ -17903,7 +18074,7 @@ totemic:totem_pole:0, Totem Pole
 totemic:totem_pole:0, Totem Pole
 totemic:totem_pole:0, Totem Pole
 totemic:totem_pole:0, Totem Pole
-totemic:totem_torch, Totem Torch
+totemic:totem_torch, Primal Torch
 totemic:drum, Totemist Drum
 totemic:wind_chime, Wind Chime
 totemic:tipi, Tipi
@@ -17942,9 +18113,9 @@ totemic:eagle_bone_whistle, Eagle-Bone Whistle
 totemic:totem_whittling_knife, Totem Whittling Knife
 totemic:bark_stripper, Bark Stripper
 totemic:totemic_staff, Totemic Staff
-totemic:sub_items:1, Iron Bells
+totemic:sub_items:1, Bells
 totemic:totempedia, Totempedia
-totemic:buffalo_items:0, Buffalo Hide
+totemic:buffalo_items:0, Buffalo Pelt
 totemic:buffalo_items:1, Buffalo Tooth
 totemic:buffalo_meat, Raw Buffalo Meat
 totemic:cooked_buffalo_meat, Cooked Buffalo Meat
@@ -17964,7 +18135,7 @@ waterstrainer:efficiency_meter, Efficiency Meter
 waterstrainer:strainer_survivalist, Survivalist's Strainer
 waterstrainer:strainer_survivalist_solid, Solid Survivalist's Strainer
 waterstrainer:strainer_survivalist_reinforced, Reinforced Survivalist's Strainer
-waterstrainer:strainer_survivalist_dense, Survivalist's Strainer (Dense)
+waterstrainer:strainer_survivalist_dense, Dense Survivalist's Strainer
 waterstrainer:strainer_survivalist_dense_solid, Solid Survivalist's Strainer (Dense)
 waterstrainer:strainer_survivalist_dense_reinforced, Reinforced Survivalist's Strainer (Dense)
 waterstrainer:strainer_fisherman, Fisherman's Strainer
@@ -18515,20 +18686,6 @@ xtones:zyth:12, Zyth 13
 xtones:zyth:13, Zyth 14
 xtones:zyth:14, Zyth 15
 xtones:zyth:15, Zyth 16
-primal_tech:flint_block, Flint Block
-primal_tech:charcoal_block, Low Grade Charcoal
-primal_tech:clay_kiln, Clay Kiln
-primal_tech:stick_bundle, Stick Bundle
-primal_tech:fibre_torch, Un-Lit Fibre Torch
-primal_tech:wooden_hopper, Wopper Mk2 :P
-primal_tech:charcoal_hopper, Flame Grilled Wopper
-primal_tech:fibre_torch_lit, Lit Fibre Torch
-primal_tech:work_stump, Work Stump
-primal_tech:stone_grill, Stone Grill
-primal_tech:work_stump_upgraded, Work Stump Mk2
-primal_tech:water_saw, Water Powered Saw
-primal_tech:stone_anvil, Stone Anvil
-primal_tech:wooden_basin, Wooden Basin
 primal_tech:fire_sticks, Whittled Fire Sticks
 primal_tech:bone_pickaxe, Bone Pickaxe
 primal_tech:bone_axe, Bone Axe
@@ -18546,7 +18703,21 @@ primal_tech:flint_edged_disc, Water Powered Saw Blade
 primal_tech:bone_sword, Bone Sword
 primal_tech:bone_knife, Bone Knife
 primal_tech:stone_mallet, Stone Mallet
-primal_tech:leaf_bed, Bed of Straw and Leaves
+primal_tech:leaf_bed, Bed of Thatch
+primal_tech:flint_block, Flint Block
+primal_tech:charcoal_block, Low Grade Charcoal
+primal_tech:clay_kiln, Clay Kiln
+primal_tech:stick_bundle, Stick Bundle
+primal_tech:fibre_torch, Un-Lit Fibre Torch
+primal_tech:wooden_hopper, Wooden Hopper
+primal_tech:charcoal_hopper, Heating Wooden Hopper
+primal_tech:fibre_torch_lit, Lit Fibre Torch
+primal_tech:work_stump, Crafting Stump
+primal_tech:stone_grill, Stone Grill
+primal_tech:work_stump_upgraded, Advanced Crafting Stump
+primal_tech:water_saw, Water Powered Saw
+primal_tech:stone_anvil, Stone Anvil
+primal_tech:wooden_basin, Wooden Basin
 actuallyadditions:block_canola_oil, Canola Oil
 actuallyadditions:block_refined_canola_oil, Refined Canola Oil
 actuallyadditions:block_crystal_oil, Crystallized Oil
@@ -18845,7 +19016,7 @@ actuallyadditions:item_food:11, Submarine Sandwich
 actuallyadditions:item_food:12, Big Cookie
 actuallyadditions:item_food:13, Hamburger
 actuallyadditions:item_food:14, Pizza
-actuallyadditions:item_food:15, Baguette
+actuallyadditions:item_food:15, Thin Baguette
 actuallyadditions:item_food:16, Rice
 actuallyadditions:item_food:17, Rice Bread
 actuallyadditions:item_food:18, Doughnut
@@ -19241,7 +19412,7 @@ primalchests:primal_chest_advanced, Primal Chest Advanced
 prospectors:prospector_lowest, Weak Dowsing Rod
 prospectors:prospector_low, Tough Dowsing Rod
 prospectors:prospector_med, Ore Prospector
-prospectors:prospector_high, Advanced Prospector
+prospectors:prospector_high, Advanced Ore Prospector
 prospectors:prospector_best, Ultimate Prospector
 testdummy:dummy, Test Dummy
 usefulbackpacks:backpack:0, Small Backpack
@@ -19299,13 +19470,13 @@ witherskelefix:fragment, Wither Skull Fragment
 witherskelefix:blade, Immolation Blade
 witherskelefix:blade2, Blazing Immolation Blade
 primal:urushi, Urushi
-primal:waste, Waste Water
-primal:ovis_atre_milk, Ovis Atre Milk
-primal:smoke, Smoke
 primal:paraffin, Paraffin
+primal:ovis_atre_milk, Ovis Atre Milk
+primal:magma_basaltic, Basaltic Magma
+primal:smoke, Smoke
+primal:waste, Waste Water
 primal:bitumen_boiling, Boiling Bitumen
 primal:tannin, Tannin
-primal:magma_basaltic, Basaltic Magma
 primal:brine_netjry, Brine
 primal:bitumen, Bitumen
 chunkloaders:single_chunk_loader, chunkloaders.block.single_chunk_loader.name

@@ -8,5 +8,5 @@ setShowToast(true)
 visibleIf("Age2:root")
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
-criteria.addItem(<minecraft:coal>)
+criteria.addItem(<minecraft:coal:0>)
 setPos(63,363)

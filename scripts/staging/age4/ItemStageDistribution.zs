@@ -82,7 +82,6 @@ static setStageFour as IIngredient[] = [
     <ironchest:iron_shulker_box_red:*>,
     <ironchest:iron_shulker_box_black:*>,
     <actuallyadditions:block_giant_chest>,
-    <actuallyadditions:block_atomic_reconstructor>,
     <gagtweaks:heavy_duty_composite>,
     <gagtweaks:compressed_heavy_duty_composite>,
     <gagtweaks:plan_rover_venus>,

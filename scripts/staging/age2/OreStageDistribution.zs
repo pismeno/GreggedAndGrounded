@@ -7,6 +7,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.orestages.OreStages;
 
+import scripts.Stages.STAGE_TWO;
+
 static BlockOreMap as IIngredient[][IItemStack] = {
     <minecraft:stone> : [
         <gregtech:ore_beryllium_0>,
@@ -1142,7 +1144,7 @@ static BlockOreMap as IIngredient[][IItemStack] = {
 function init() as void {
     for block, ores in BlockOreMap {
         for ore in ores {
-            OreStages.addReplacement("two", ore, block);
+            OreStages.addReplacement(STAGE_TWO.stage, ore, block);
         }
     }
 }

@@ -7,6 +7,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.orestages.OreStages;
 
+import scripts.Stages.STAGE_ONE;
+
 static BlockOreMap as IIngredient[][IItemStack] = {
     <minecraft:stone> : [
         <gregtech:ore_malachite_0>,
@@ -122,10 +124,10 @@ static BlockOreMap as IIngredient[][IItemStack] = {
 function init() as void {
     for block, ores in BlockOreMap {
         for ore in ores {
-            OreStages.addReplacement("two", ore, block);
+            OreStages.addReplacement(STAGE_ONE.stage, ore, block);
         }
     }
 
-    OreStages.addReplacement("one", <minecraft:redstone_torch>, <minecraft:torch>);
-    OreStages.addReplacement("one", <minecraft:tnt>, <minecraft:cobblestone>);
+    OreStages.addReplacement(STAGE_ONE.stage, <minecraft:redstone_torch>, <minecraft:torch>);
+    OreStages.addReplacement(STAGE_ONE.stage, <minecraft:tnt>, <minecraft:cobblestone>);
 }
