@@ -1,0 +1,12 @@
+setIcon(<totemic:cedar_log>)
+setTranslatedTitle("Red Cedar Wood")
+setTranslatedDescription("Grow some Red Cedar trees and cut them down.")
+
+addParent("Age0:CedarCeremony")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<totemic:cedar_log>)
+setPos(451,128)

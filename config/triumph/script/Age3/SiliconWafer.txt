@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:371>)
+setTranslatedTitle("Silicon Waffles")
+setTranslatedDescription("To get Silicon Wafer you need make Monocrystalline Silicon Boule in Blast Furnace and run it through Advanced Cutting Machine.")
+
+addParent("Age3:VanadiumSteel")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:371>)
+
+setPos(333,-33)

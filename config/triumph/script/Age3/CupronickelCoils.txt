@@ -1,0 +1,16 @@
+setIcon(<gregtech:wire_coil>)
+setTranslatedTitle("Cupronickel Coils")
+setTranslatedDescription("Assemble Cupronickel Coils.")
+
+addParent("Age3:Assembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:wire_coil>)
+setPos(102,-33)

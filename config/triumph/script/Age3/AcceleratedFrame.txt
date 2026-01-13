@@ -1,0 +1,14 @@
+setIcon(<gregtech:gt.frame_accelerated>)
+setTranslatedTitle("Accelerated Frame")
+setTranslatedDescription("Assemble Accelerated Frame.")
+
+addParent("Age3:Assembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:gt.frame_accelerated>)
+setPos(135,-99)

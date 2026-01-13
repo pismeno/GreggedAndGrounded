@@ -1,0 +1,17 @@
+setIcon(<gregtech:wire_coil:5>)
+setTranslatedTitle("Naquadah Coils")
+setTranslatedDescription("Assemble Naquadah Coils.")
+
+addParent("Age5:LuVAssembler")
+addParent("Age5:Naquadah")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:wire_coil:5>)
+setPos(398,33)

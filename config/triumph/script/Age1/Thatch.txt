@@ -1,0 +1,16 @@
+setIcon(<primal:thatching_wet>)
+setTranslatedTitle("Thatch")
+setTranslatedDescription("First find and cut down some rush stems. Put them into Millstone to get Wet Thatching. After that craft them into Wet Thatch and let them dry on sun. Finally collect them and craft them into Thatch.")
+
+addParent("Age1:Millstone")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<primal:thatch>)
+setPos(95,-2)

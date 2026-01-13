@@ -1,0 +1,16 @@
+setIcon(<projectred-transportation:pipe:2>)
+setTranslatedTitle("Other types of pipes")
+setTranslatedDescription("There are more types of pipes. Use Junction Pipe for connecting more than one pipe together. Use Routed Interface Pipe to connect chests, autocrafters etc.. Use Request Pipe to access your network. Use Firewall and Latency pipes for more control options. NOTE: To finish this quest get: Routed Junction Pipe, Routed Interface Pipe and Routed Request Pipe.")
+
+addParent("Age4:Assembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transportation:pipe:1>)
+criteria.addItem(<projectred-transportation:pipe:2>)
+criteria.addItem(<projectred-transportation:pipe:3>)
+setPos(134,231)

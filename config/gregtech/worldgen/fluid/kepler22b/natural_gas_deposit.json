@@ -1,0 +1,17 @@
+{
+  "name": "gregtech.veins.fluid.natural_gas_overworld",
+  "weight": 15,
+    "dimension_filter": [
+    "dimension_id:-22"
+  ],
+  "yield": {
+    "min": 100,
+    "max": 175
+  },
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 20
+  },
+  "fluid": "natural_gas"
+}

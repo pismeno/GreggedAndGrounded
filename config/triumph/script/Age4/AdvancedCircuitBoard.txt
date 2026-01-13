@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:404>)
+setTranslatedTitle("So close, yet so far!")
+setTranslatedDescription("Make Advanced Circuit Board.")
+
+addParent("Age4:Epoxy")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:404>)
+setPos(398,165)

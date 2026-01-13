@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:gravel_strainer>)
+setTranslatedTitle("Gravel Strainer and Flint")
+setTranslatedDescription("To obtain flint you will need gravel strainer. Use JEI for recipes, break grass for plant fibers and leaves for sticks.")
+
+addParent("Age0:root")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("GravelStrainer", "minecraft:inventory_changed")
+criteria.addItem("gagtweaks:gravel_strainer")
+setPos(22,62)

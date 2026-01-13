@@ -1,0 +1,12 @@
+setIcon(<galacticraftcore:distributor>)
+setTranslatedTitle("Sealed")
+setTranslatedDescription("Craft Oxygen Sealer. You can use it to fill closed spaces with Oxygen on other planets. It consumes quite a lot of Oxygen, you can power it by normal oxygen sources, but i suggest using Oxygen Collector. NOTE: The room has to be completely closed!")
+
+addParent("Age4:OxygenCollector")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:distributor>)
+setPos(200,-198)

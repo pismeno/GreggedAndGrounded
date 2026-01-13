@@ -1,0 +1,12 @@
+setIcon(<prospectors:prospector_med>)
+setTranslatedTitle("Ore Prospecting")
+setTranslatedDescription("Craft Ore Prospector. It is extremely usefull, but for now it can only detect copper type and tin type ores. So go in ore chunk (it is shown on top left corner of your screen) and right click the ground with it, try different places. It'll either show nothing or send ore names in chat. When it does you can mine under yourself and mine plenty of it! NOTE: As you may know gregtech uses different ore generation. It may be confusing at first, but there are more types of ores and later in the game they'll have different byproducts. For now theyre just ores for you! Use JEI for the use of the ore.")
+
+addParent("Age1:Charcoal")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<prospectors:prospector_med>)
+setPos(326,97)

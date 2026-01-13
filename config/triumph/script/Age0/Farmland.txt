@@ -1,0 +1,12 @@
+setIcon(<forestry:humus>)
+setTranslatedTitle("Farming")
+setTranslatedDescription("You will need to farm hemp to get further in the pack. You can make humus or go find a village and either buy humus or use their farmland. You can use humus as farmland, it doesn't need any water, but will degrade into sand over time.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Farmland", "minecraft:inventory_changed")
+criteria.addItem(<forestry:humus>)
+setPos(154,128)

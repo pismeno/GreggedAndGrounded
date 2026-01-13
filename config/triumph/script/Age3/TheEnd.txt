@@ -1,0 +1,16 @@
+setIcon(<minecraft:dragon_egg>)
+setTranslatedTitle("The end, of Ender Dragon")
+setTranslatedDescription("Find End Portal, enter it and kill the Dragon!")
+
+addParent("Age3:EnderEye")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("killed_dragon", "minecraft:player_killed_entity")
+criteria.setEntityType("ender_dragon")
+setPos(267,-33)

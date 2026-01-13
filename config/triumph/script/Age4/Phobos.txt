@@ -1,0 +1,12 @@
+setIcon(<extraplanets:phobos>)
+setTranslatedTitle("Double Moon: Phobos")
+setTranslatedDescription("Fly to Phobos! It gives you access to new materials!")
+
+addParent("Age4:RocketT2")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("entered_phobos", "minecraft:location")
+criteria.setDimID(-1502)
+setPos(365,66)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:113>)
+setTranslatedTitle("Extremely Advanced Assembler")
+setTranslatedDescription("Craft Advanced Assembler III.")
+
+addParent("Age4:Mars")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:113>)
+setPos(398,-33)

@@ -1,0 +1,34 @@
+{
+  "name": "gregtech.veins.ore.sapphire",
+  "weight": 60,
+  "density": 0.25,
+  "max_height": 40,
+  "min_height": 10,
+  "dimension_filter": [
+    "dimension_id:-1505"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      16
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:almandine"
+      },
+      {
+        "secondary": "ore:amethyst"
+      },
+      {
+        "between": "ore:sapphire"
+      },
+      {
+        "sporadic": "ore:green_sapphire"
+      }
+    ]
+  }
+}

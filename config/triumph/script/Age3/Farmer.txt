@@ -1,0 +1,15 @@
+setIcon(<gregtech:machine:8561>)
+setTranslatedTitle("Farmer")
+setTranslatedDescription("Craft Basic or Advanced Farmer. You can use it to automatically maintain your farmlands!")
+
+addParent("Age3:root")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:8561>)
+criteria.addItem(<gregtech:machine:8562>)
+setPos(135,264)

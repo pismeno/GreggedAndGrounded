@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:142>)
+setTranslatedTitle("LV Electric Pump")
+setTranslatedDescription("Craft LV Electric Pump and use it to craft.")
+
+addParent("Age3:LVMotor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:142>)
+setPos(69,-165)

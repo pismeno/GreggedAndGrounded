@@ -1,0 +1,14 @@
+setIcon(<usefulbackpacks:backpack:1>)
+setTranslatedTitle("Heavy load")
+setTranslatedDescription("Craft Medium Backpack.")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+addRewardFunction("gregification:Minimap")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<usefulbackpacks:backpack:1>)
+setPos(360,-99)

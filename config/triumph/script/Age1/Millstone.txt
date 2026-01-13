@@ -1,0 +1,16 @@
+setIcon(<betterwithmods:single_machine>)
+setTranslatedTitle("Millstone")
+setTranslatedDescription("Upgrade your grindstone. This machine also provides new recipes. TIP: use handcrank to power it by placing it next to your millstone and R-clicking it.")
+
+addParent("Age1:Handcrank")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:single_machine>)
+setPos(62,-2)

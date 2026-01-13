@@ -1,0 +1,12 @@
+setIcon(<gregtech:knife, nbt: {"GT.Tool": {Material: "gregtech:flint"}}>)
+setTranslatedTitle("Poor man's knife")
+setTranslatedDescription("Your best friend from now on! NOTE: JEI may show only iron version, but once you see the recipe of it, it shows flint!")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Workblade", "minecraft:inventory_changed")
+criteria.addItem("gregtech:knife")
+setPos(154,-4)

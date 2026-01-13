@@ -1,0 +1,29 @@
+{
+    "name": "gag.veins.ore.taenite",
+    "weight": 40,
+    "density": 0.3,
+    "dimension_filter": [
+    "dimension_id:-1509"
+    ],
+      "generator": {
+        "type": "layered",
+        "radius": [
+          20,
+          25
+        ]
+    },
+      "values": [
+        {
+          "primary": "ore:taenite"
+        },
+        {
+          "secondary": "ore:kemacite"
+        },
+        {
+          "between": "ore:iron"
+        },
+        {
+          "sporadic": "ore:nickel"
+        }
+    ]
+}

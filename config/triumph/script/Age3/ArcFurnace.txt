@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:95>)
+setTranslatedTitle("Basic Arc Furnace")
+setTranslatedDescription("Craft Basic Arc Furnace. It is used to process all ores and for processing some ores it is the only way. You can make glass, annealed copper cheaper with it.")
+
+addParent("Age3:Electrolyzer")
+addParent("Age3:LVMotor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:95>)
+setPos(69,66)

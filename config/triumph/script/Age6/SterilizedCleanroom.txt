@@ -1,0 +1,16 @@
+setIcon(<gregtech:cleanroom_casing:2>)
+setTranslatedTitle("Sterilized Cleanroom")
+setTranslatedDescription("You can now make Sterilized Cleanroom.")
+
+addParent("Age6:Tritanium")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:cleanroom_casing:2>)
+setPos(99,0)

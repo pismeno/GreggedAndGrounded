@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:639>)
+setTranslatedTitle("Quantum Processor Mainframe")
+setTranslatedDescription("Assemble Quantumprocessor Mainframe! Your first Zpm Circuit!")
+
+addParent("Age5:CircuitQuantumSupercomputer")
+addParent("Age5:Diamatine")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:639>)
+setPos(266,-66)

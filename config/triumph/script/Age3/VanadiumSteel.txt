@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_ingot:2036>)
+setTranslatedTitle("Vanadium Steel")
+setTranslatedDescription("To get Vanadium Steel you need Chromium Dust, which you can get from Ruby Dust for example, Steel Dust and Vanadium Dust, for which you have to mine Vanadium Magnetite in The End dimension.")
+
+addParent("Age3:TheEnd")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:2036>)
+
+setPos(300,-33)

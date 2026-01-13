@@ -1,0 +1,12 @@
+setIcon("primal_tech:charcoal_block")
+setTranslatedTitle("Infinite Power!")
+setTranslatedDescription("Put log into the Clay Kiln and turn it into Low Grade Charcoal, that burns infinitly so use it to power your Grill and the Kiln.")
+
+addParent("Age0:ClayKiln")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("LowCharcoal", "minecraft:inventory_changed")
+criteria.addItem("primal_tech:charcoal_block")
+setPos(253,-37)

@@ -1,0 +1,12 @@
+setIcon(<totemic:eagle_bone_whistle>)
+setTranslatedTitle("Eagle-Bone Whistle")
+setTranslatedDescription("Perform Eagle Dance ceremony to transform parrots into eagles. Use Totempedia to learn how. After that craft Eagle-Bone Whistle.")
+
+addParent("Age0:Rattle")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<totemic:eagle_bone_whistle>)
+setPos(418,161)

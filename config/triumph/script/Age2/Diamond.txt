@@ -1,0 +1,12 @@
+setIcon(<minecraft:diamond>)
+setTranslatedTitle("Diamonds!")
+setTranslatedDescription("Mine and smelt Diamonds.")
+
+addParent("Age2:AdvancedProspector")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:diamond>)
+setPos(63,330)

@@ -1,0 +1,16 @@
+setIcon(<galacticraftplanets:venus>)
+setTranslatedTitle("Venus")
+setTranslatedDescription("Fly to Venus! You will have to get Tungsten from ores in there.")
+
+addParent("Age4:RocketT3")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_phobos", "minecraft:location")
+criteria.setDimID(-31)
+setPos(464,33)

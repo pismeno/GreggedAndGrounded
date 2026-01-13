@@ -1,0 +1,14 @@
+setIcon(<extraplanets:ganymede:2>)
+setTranslatedTitle("Ganymede")
+setTranslatedDescription("Fly to Ganymede. Jupiter's moon.")
+
+addParent("Age5:RocketT4")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+hideLines()
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-1506)
+setPos(200,66)

@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:1039>)
+setTranslatedTitle("HPCA")
+setTranslatedDescription("Construct High Performance Computing Array. You need this to generate computation units. You can set this up in a lot of ways. There are some examples in JEI.")
+
+addParent("Age5:DataBank")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1039>)
+setPos(563,132)

@@ -1,0 +1,12 @@
+setIcon(<forestry:frame_proven>)
+setTranslatedTitle("Proven Frame")
+setTranslatedDescription("Assemble Proven Frame.")
+
+addParent("Age3:Assembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:frame_proven>)
+setPos(102,-99)

@@ -1,0 +1,34 @@
+{
+  "name": "gregtech.veins.ore.tungstate",
+  "weight": 20,
+  "density": 0.3,
+  "min_height": 0,
+  "max_height": 250,
+  "dimension_filter": [
+    "dimension_id:-31"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      17,
+      19
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:tungstate"
+      },
+      {
+        "secondary": "ore:magnetite"
+      },
+      {
+        "between": "ore:tungstate"
+      },
+      {
+        "sporadic": "ore:vanadium_magnetite"
+      }
+    ]
+  }
+}

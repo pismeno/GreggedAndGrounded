@@ -1,0 +1,4 @@
+gamerule commandBlockOutput false
+weather clear
+clear @s
+gamestage silentadd @s zero

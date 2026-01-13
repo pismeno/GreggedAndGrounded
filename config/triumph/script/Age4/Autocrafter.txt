@@ -1,0 +1,12 @@
+setIcon(<projectred-expansion:machine2:11>)
+setTranslatedTitle("Autocrafting!")
+setTranslatedDescription("Make Auto Crafting Bench, insert the recipe plan and attach Routed Interface Pipe to it, with Item Crafting Chip, where you set the recipe again, including the output. Normally it can only take one recipe plan, unless you power it with Electrotine.")
+
+addParent("Age4:ProjectBench")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-expansion:machine2:11>)
+setPos(134,264)

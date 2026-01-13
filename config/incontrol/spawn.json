@@ -1,0 +1,104 @@
+[
+    {
+      "mob": "primitivemobs:grovesprite",
+      "biometype": "forest",
+      "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+      "result": "allow"
+    },
+    {
+        "mob": "primitivemobs:grovesprite",
+        "mincount": {
+            "amount": 5,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:festive_creeper",
+        "minlight": 7,
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:festive_creeper",
+        "mincount": {
+            "amount": 3,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:rocket_creeper",
+        "minlight": 7,
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:rocket_creeper",
+        "mincount": {
+            "amount": 3,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:goblin",
+        "minlight": 7,
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:goblin",
+        "mincount": {
+            "amount": 3,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "minecraft:creeper",
+        "minlight": 7,
+        "result": "deny"
+    },
+    {
+        "mob": "minecraft:creeper",
+        "mincount": {
+            "amount": 3,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:skeleton_warrior",
+        "minlight": 7,
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:skeleton_warrior",
+        "mincount": {
+            "amount": 3,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:dodo",
+        "mincount": {
+            "amount": 1,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "primitivemobs:grovesprite",
+        "mincount": {
+            "amount": 6,
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "mob": "gregtechfoodoption:italian_buffalo",
+        "result": "deny"
+    }
+]

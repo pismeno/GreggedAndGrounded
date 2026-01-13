@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:459>)
+setTranslatedTitle("Elite Scanner!")
+setTranslatedDescription("Craft Elite Scanner. It will be used for research. NOTE: You won't necessarily need the IV one now.")
+
+addParent("Age5:root")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:459>)
+setPos(35,165)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:631>)
+setTranslatedTitle("First Insane Circuits!")
+setTranslatedDescription("Assemble Mainframe.")
+
+addParent("Age4:HVCircuitAssembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:631>)
+setPos(266,99)

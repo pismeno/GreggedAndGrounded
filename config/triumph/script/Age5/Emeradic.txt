@@ -1,0 +1,18 @@
+setIcon(<actuallyadditions:item_crystal_empowered:4>)
+setTranslatedTitle("Empower Emeradic!")
+setTranslatedDescription("Make Empowered Emeradic Crystal.")
+
+addParent("Age5:root")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:item_crystal_empowered:4>)
+setPos(596,-33)

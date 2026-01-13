@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine:201>)
+setTranslatedTitle("Shower time")
+setTranslatedDescription("Rather bathing time. Craft Advanced Chemical bath. In Chemical Bath you can also make cheaper paper.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:201>)
+
+setPos(201,33)

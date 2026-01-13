@@ -1,0 +1,39 @@
+{
+  "catalyst": {
+    "item": "minecraft:diamond",
+    "data": 0
+  },
+  "shape": [
+    "AAAAA",
+    "AESEA",
+    "ASNSA",
+    "AESEA",
+    "AAAAA"
+  ],
+  "origin": {
+    "x": 1,
+    "y": 1
+  },
+  "definition": {
+    "A": {
+      "states": [
+        "gregtech:meta_block_compressed_15[variant=almandine]"
+      ]
+    },
+    "E": {
+      "states": [
+        "actuallyadditions:block_crystal_empowered"
+      ]
+    },
+    "S": {
+      "states": [
+        "minecraft:soul_sand"
+      ]
+    },
+    "N": {
+      "states": [
+        "gregtech:meta_block_compressed_7[variant=naquadah]"
+      ]
+    }
+  }
+}

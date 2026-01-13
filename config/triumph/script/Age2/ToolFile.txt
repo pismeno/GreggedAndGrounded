@@ -1,0 +1,14 @@
+setIcon(<gregtech:file>)
+setTranslatedTitle("File")
+setTranslatedDescription("Crafting tool: File")
+
+addParent("Age2:root")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:file>)
+setPos(228,165)

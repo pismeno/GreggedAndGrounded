@@ -1,0 +1,12 @@
+setIcon(<gregtech:wire_coil:6>)
+setTranslatedTitle("Trinium Coils")
+setTranslatedDescription("Assemble Trinium Coils. You will also need enriched Naquadah for that.")
+
+addParent("Age5:Trinium")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:wire_coil:6>)
+setPos(497,33)

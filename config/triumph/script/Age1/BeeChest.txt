@@ -1,0 +1,14 @@
+setIcon(<forestry:bee_chest>)
+setTranslatedTitle("Store your bees.")
+setTranslatedDescription("You will probably have chests full of bees soon. So better craft Apiarist's Chest.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:bee_chest>)
+setPos(128,97)

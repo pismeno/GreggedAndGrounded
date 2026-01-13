@@ -1,0 +1,13 @@
+setIcon(<primalboat:primal_boat>)
+setTranslatedTitle("Raft")
+setTranslatedDescription("Instead of boat use raft.")
+
+addParent("Age0:FlintAxe")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("Raft", "minecraft:inventory_changed")
+criteria.addItem(<primalboat:primal_boat>)
+setPos(154,161)

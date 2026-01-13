@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:193>)
+setTranslatedTitle("ZPM Chicanery")
+setTranslatedDescription("Craft ZPM Robot Arm and use it to craft.")
+
+addParent("Age6:root")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+hideLines()
+
+criteria1 = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria1.addItem(<gregtech:meta_item_1:193>)
+criteria2 = addCriteria("age2", "triumph:completed_advancement")
+criteria2.setString("Age5:CircuitCrystalProcessorMainframe")
+setPos(33,-33)

@@ -1,0 +1,13 @@
+setIcon(<primal:hide_salted>)
+setTranslatedTitle("Saltin' Hides")
+setTranslatedDescription("Leather Pt. 2: Salt Raw Hides. You can find salt generating on the surface in big salt flats.")
+
+addParent("Age0:Leather1")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("hidesalted", "minecraft:inventory_changed")
+criteria.addItem(<primal:hide_salted>)
+setPos(319,128)

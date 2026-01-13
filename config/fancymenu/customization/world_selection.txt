@@ -1,0 +1,98 @@
+type = menu
+
+customization-meta {
+  identifier = com.pg85.otg.forge.gui.mainmenu.OTGGuiWorldSelection
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=442946%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=322946%
+  orientation = bottom-centered
+  x = -202
+  action = movebutton
+  y = -54
+}
+
+customization {
+  identifier = %id=322946%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=562946%
+  orientation = bottom-centered
+  x = 2
+  action = movebutton
+  y = -54
+}
+
+customization {
+  identifier = %id=562946%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=562946%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_selected.png
+  backgroundnormal = resources/greggedandgrounded/button.png
+}
+
+customization {
+  identifier = %id=502970%
+  orientation = bottom-centered
+  x = 2
+  action = movebutton
+  y = -30
+}
+
+customization {
+  identifier = %id=502970%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502970%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_selected.png
+  backgroundnormal = resources/greggedandgrounded/button.png
+}
+
+customization {
+  identifier = %id=322970%
+  orientation = bottom-centered
+  x = -202
+  action = movebutton
+  y = -30
+}
+
+customization {
+  identifier = %id=322970%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+

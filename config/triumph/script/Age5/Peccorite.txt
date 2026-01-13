@@ -1,0 +1,18 @@
+setIcon(<gagtweaks:peccorite_crystal_empowered>)
+setTranslatedTitle("Empower Peccorite!")
+setTranslatedDescription("Make Empowered Peccorite Crystal.")
+
+addParent("Age5:Iridium")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:peccorite_crystal_empowered>)
+setPos(35,-99)

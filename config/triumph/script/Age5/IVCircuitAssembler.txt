@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:639>)
+setTranslatedTitle("Elite Circuiter!")
+setTranslatedDescription("Craft Elite Circuit Assembler.")
+
+addParent("Age5:Iridium")
+addParent("Age5:CircuitNanoprocessorMainframe")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:639>)
+setPos(134,-99)

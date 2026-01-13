@@ -1,0 +1,12 @@
+setIcon(<usefulbackpacks:backpack:2>)
+setTranslatedTitle("Baggie")
+setTranslatedDescription("Craft Large Backpack.")
+
+addParent("Age4:Moon")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<usefulbackpacks:backpack:2>)
+setPos(299,-99)

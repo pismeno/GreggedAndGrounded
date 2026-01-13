@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:640>)
+setTranslatedTitle("I LuV Circuit making!")
+setTranslatedDescription("Craft Elite Circuit Assembler II.")
+
+addParent("Age5:AssemblyLine")
+addParent("Age5:LuVHull")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:640>)
+setPos(365,0)

@@ -1,0 +1,15 @@
+setIcon(<gregtech:cable_single:112>)
+setTranslatedTitle("Cables")
+setTranslatedDescription("To transfer energy you can use cables. But you can now only make high-loss cables so it is better to keep the generators closest to your machines as you can.")
+
+addParent("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:cable_single:112>)
+setPos(36,-66)

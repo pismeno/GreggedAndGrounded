@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:11011>)
+setTranslatedTitle("Laser games!")
+setTranslatedDescription("Construct Laser Fabricator, you will need it to be inside a Cleanroom.")
+
+addParent("Age4:Hull")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:11011>)
+setPos(134,165)

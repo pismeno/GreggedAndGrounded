@@ -1,0 +1,263 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = lake
+  action = setbackgroundpanorama
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 196
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_selected.png
+  backgroundnormal = resources/greggedandgrounded/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-centered
+  x = -77
+  action = movebutton
+  y = 219
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 75
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_small_selected.png
+  backgroundnormal = resources/greggedandgrounded/button_small.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-centered
+  x = 2
+  action = movebutton
+  y = 219
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 75
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_small_selected.png
+  backgroundnormal = resources/greggedandgrounded/button_small.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 219
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_languages_selected.png
+  backgroundnormal = resources/greggedandgrounded/button_languages.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-centered
+  x = -100
+  action = movebutton
+  y = 173
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_selected.png
+  backgroundnormal = resources/greggedandgrounded/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-centered
+  x = 80
+  action = movebutton
+  y = 219
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 20
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/greggedandgrounded/button_mods_selected.png
+  backgroundnormal = resources/greggedandgrounded/button_mods.png
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 186
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 8559023e-7df4-42ae-bd08-ce04a9b6ce931746388578587
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = c377b1f7-4d15-4b4e-aa27-ea9c3abc614e1746388578618
+  y = 318
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 411
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 8aff0819-8072-4a17-9068-76d4ec22eceb1746388578620
+  y = 340
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 423
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = c0df31d4-e5a7-4267-8d74-557a1e460f461746388578621
+  y = 190
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 183
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 9dca9f78-bd22-4bbb-87b7-0df94b25751f1746388578622
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = top-centered
+  splash_color = #ababab
+  hidden = true
+  x = 72
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a744aa5c-f4af-48c2-84d1-04b14c6251991746388578623
+  y = 105
+  height = 30
+}
+
+customization {
+  orientation = top-centered
+  delayappearanceseconds = 10.0
+  path = resources/greggedandgrounded/logo.png
+  fadein = true
+  fadeinspeed = 2.0
+  x = -87
+  width = 50
+  actionid = f2dbbf0e-11a1-4ac5-aae0-787aca328ae11747309936096
+  action = addtexture
+  y = 33
+  delayappearance = true
+  delayappearanceeverytime = true
+  height = 52
+}
+
+customization {
+  path = resources/greggedandgrounded/title.png
+  orientation = top-centered
+  x = -99
+  width = 200
+  actionid = e87aba08-fdda-4907-a127-20bf97b129bc1746388652485
+  action = addtexture
+  y = 63
+  height = 72
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = {"placeholder":"totalmods"} mods loaded!
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 0
+  width = 200
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = c209b70a-d153-4af8-b1cd-b1e5da8e003c1746389084491
+  y = -13
+  alignment = left
+  height = 13
+}
+

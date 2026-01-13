@@ -1,0 +1,12 @@
+setIcon(<tconstruct:ingots>)
+setTranslatedTitle("Cobalt Tools")
+setTranslatedDescription("When you mine cobalt you can use it to craft tools and weapons!")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:ingots:0>)
+setPos(360,-33)

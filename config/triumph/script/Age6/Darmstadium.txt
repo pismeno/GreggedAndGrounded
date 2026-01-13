@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_ingot:27>)
+setTranslatedTitle("Darmstadium")
+setTranslatedDescription("Fuse Darmstadium. NOTE: To finish this, get Darmstadium Ingot.")
+
+addParent("Age6:FusionReactor2")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:27>)
+setPos(66,-66)

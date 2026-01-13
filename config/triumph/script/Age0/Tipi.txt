@@ -1,0 +1,12 @@
+setIcon(<totemic:tipi>)
+setTranslatedTitle("Zzzzzzzz")
+setTranslatedDescription("You can finally rest in Tipi.")
+
+addParent("Age0:Leather5")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Tipi", "minecraft:inventory_changed")
+criteria.addItem(<totemic:tipi>)
+setPos(352,95)

@@ -1,0 +1,12 @@
+setIcon(<primal:corn_bread>)
+setTranslatedTitle("Corn Bread.")
+setTranslatedDescription("Corn Bread.")
+
+addParent("Age0:WoodenBasin")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("CBread", "minecraft:inventory_changed")
+criteria.addItem(<primal:corn_bread>)
+setPos(286,161)

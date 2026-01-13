@@ -1,0 +1,14 @@
+setIcon(<forestry:book_forester>)
+setTranslatedTitle("Forester's Manual")
+setTranslatedDescription("Obtain Forester's Manual. It will guide you through apiculture and arboriculture.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:book_forester>)
+setPos(95,97)

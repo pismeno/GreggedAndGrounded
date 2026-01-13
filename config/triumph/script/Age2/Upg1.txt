@@ -1,0 +1,14 @@
+setIcon(<ironchest:wood_iron_chest_upgrade>)
+setTranslatedTitle("Storage upgrades: Wood to Iron")
+setTranslatedDescription("Craft Wood to Iron chest upgrade.")
+
+addParent("Age2:root")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<ironchest:wood_iron_chest_upgrade>)
+setPos(195,297)

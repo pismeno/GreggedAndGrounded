@@ -1,0 +1,13 @@
+setIcon(<waterstrainer:worm>)
+setTranslatedTitle("Worms")
+setTranslatedDescription("Craft Garden Trowel. If you dig dirt with it, it will drop worms. NOTE: to finish this quest you need Worm and the Garden Trowel.")
+
+addParent("Age0:StrainerBase")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("Trowel", "minecraft:inventory_changed")
+criteria.addItem(<waterstrainer:worm>)
+setPos(352,-70)

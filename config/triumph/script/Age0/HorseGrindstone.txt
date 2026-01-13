@@ -1,0 +1,12 @@
+setIcon(<horsepower:grindstone>)
+setTranslatedTitle("Horse Powered Grindstone")
+setTranslatedDescription("Craft Horse Grindstone. Place item on it and leash donkey, horse or buffalo. NOTE: the Grindstone must be placed one block higher than the ground is.")
+
+addParent("Age0:HandGrindstone")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Grindstone2", "minecraft:inventory_changed")
+criteria.addItem(<horsepower:grindstone>)
+setPos(286,62)

@@ -1,0 +1,12 @@
+setIcon(<primal:bone_shears>)
+setTranslatedTitle("Shears")
+setTranslatedDescription("Craft Bone Shears. You will be able to acquire wool, leaves etc.")
+
+addParent("Age0:Leather5")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("ShearsBone", "minecraft:inventory_changed")
+criteria.addItem(<primal:bone_shears>)
+setPos(352,128)

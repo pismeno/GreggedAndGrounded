@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:11000>)
+setTranslatedTitle("Steam Saw")
+setTranslatedDescription("Steam Saw. It is used to make planks from logs, sticks from planks, and also you can get some Wood Pulps from it!")
+
+addParent("Age2:BronzeHull")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:11000>)
+setPos(63,-33)

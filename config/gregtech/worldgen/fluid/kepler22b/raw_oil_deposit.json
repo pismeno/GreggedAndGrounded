@@ -1,0 +1,17 @@
+{
+  "name": "gregtech.veins.fluid.raw_oil",
+  "weight": 20,
+    "dimension_filter": [
+    "dimension_id:-22"
+  ],
+  "yield": {
+    "min": 200,
+    "max": 300
+  },
+  "depletion": {
+    "amount": 1,
+    "chance": 100,
+    "depleted_yield": 25
+  },
+  "fluid": "oil_medium"
+}

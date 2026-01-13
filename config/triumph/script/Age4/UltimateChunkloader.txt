@@ -1,0 +1,14 @@
+setIcon(<chunkloaders:ultimate_chunk_loader>)
+setTranslatedTitle("Ultimate Chunk Loader")
+setTranslatedDescription("Assemble Ultimate Chunk Loader. It can load up to 7x7.")
+
+addParent("Age4:Assembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<chunkloaders:ultimate_chunk_loader>)
+setPos(167,-66)

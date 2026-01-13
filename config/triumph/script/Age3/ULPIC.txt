@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:602>)
+setTranslatedTitle("EBF Tier Upgrade")
+setTranslatedDescription("To upgrade your Electric Blast furnace you can to change two things. If you need to put more power in it upgrade energy hatches. If you need ro handle higher temperatures upgrade coils.55 Let's focus on changing Energy Hatches. So go ahead, change the LV ones for the MV ones. To run HV recipes you can just have 2 MV hatches.")
+
+addParent("Age3:SiliconWafer")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:602>)
+
+setPos(366,-33)

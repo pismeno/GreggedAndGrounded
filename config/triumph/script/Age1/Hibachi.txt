@@ -1,0 +1,18 @@
+setIcon(<betterwithmods:hibachi>)
+setTranslatedTitle("Hibachis")
+setTranslatedDescription("Craft hibachi. You have to use it in order to maintain stoked fire under Cauldron! NOTE: You need redstone power to activate it. Use redstone lever.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:hibachi>)
+setPos(161,31)

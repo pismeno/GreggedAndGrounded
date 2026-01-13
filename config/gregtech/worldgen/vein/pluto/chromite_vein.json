@@ -1,0 +1,34 @@
+{
+  "name": "gag.veins.ore.chromite",
+  "weight": 30,
+  "density": 0.15,
+  "min_height": 20,
+  "max_height": 80,
+  "dimension_filter": [
+    "dimension_id:-19"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      10,
+      13
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:ilmenite"
+      },
+      {
+        "secondary": "ore:chromite"
+      },
+      {
+        "between": "ore:chromite"
+      },
+      {
+        "sporadic": "ore:gold"
+      }
+    ]
+  }
+}

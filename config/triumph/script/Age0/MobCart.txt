@@ -1,0 +1,13 @@
+setIcon(<astikorcarts:mobcart>)
+setTranslatedTitle("Going for Trip")
+setTranslatedDescription("Craft Cart. TIP: To attach horse to it press R.")
+
+addParent("Age0:Saddle")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<astikorcarts:mobcart>)
+setPos(385,227)

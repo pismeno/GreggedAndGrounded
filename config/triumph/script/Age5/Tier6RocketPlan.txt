@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:plan_tier6>)
+setTranslatedTitle("Tier 6 Rocket Plan!")
+setTranslatedDescription("Find Jupiter Dungeon, defeat the boss and steal his Tier 6 Rocket plan! NOTE: You still have to make schematic to construct rocket from it.")
+
+addParent("Age5:Saturn")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:plan_tier6>)
+setPos(332,-33)

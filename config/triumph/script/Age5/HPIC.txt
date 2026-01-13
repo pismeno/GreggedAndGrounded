@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:605>)
+setTranslatedTitle("HPIC")
+setTranslatedDescription("Cut some HPIC.")
+
+addParent("Age5:IVCutter")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:605>)
+setPos(68,-33)

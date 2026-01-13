@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:630>)
+setTranslatedTitle("EV Chicanery Beggins.")
+setTranslatedDescription("Assemble Workstation. Your very first EV circuit!")
+
+addParent("Age4:CircuitProcessorAssembly")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:630>)
+setPos(200,132)

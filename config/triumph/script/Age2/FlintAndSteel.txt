@@ -1,0 +1,18 @@
+setIcon(<minecraft:flint_and_steel>)
+setTranslatedTitle("Flint and Steel!")
+setTranslatedDescription("To enter the Nether you need Flint and Steel.")
+
+addParent("Age2:Steel")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:NetherAcces")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:flint_and_steel>)
+setPos(294,33)

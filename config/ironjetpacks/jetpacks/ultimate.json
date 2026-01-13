@@ -1,0 +1,20 @@
+{
+  "name": "ultimate",
+  "disable": false,
+  "tier": 4,
+  "color": "ffffff",
+  "armorPoints": 4,
+  "enchantability": 15,
+  "craftingMaterial": "null",
+  "forceRecipes": false,
+  "rarity": 0,
+  "capacity": 4000000000,
+  "usage": 131072,
+  "speedVertical": 1.00,
+  "accelVertical": 0.17,
+  "speedSideways": 0.35,
+  "speedHoverDescend": 0.53,
+  "speedHover": 0.0,
+  "sprintSpeedMulti": 3.0,
+  "sprintFuelMulti": 3.0
+}

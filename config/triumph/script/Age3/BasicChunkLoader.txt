@@ -1,0 +1,12 @@
+setIcon(<chunkloaders:basic_chunk_loader>)
+setTranslatedTitle("More chunks for me!")
+setTranslatedDescription("Upgrade your chunk loader to Basic Chunk Loader.")
+
+addParent("Age3:Assembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<chunkloaders:basic_chunk_loader>)
+setPos(102,-165)

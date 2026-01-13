@@ -1,0 +1,12 @@
+setIcon(<galacticraftcore:distributor>)
+setTranslatedTitle("Breath out")
+setTranslatedDescription("Craft Oxygen Bubble Distributor, you can use it to make a breathable bubble on other planets! It consumes quite a lot of Oxygen, you can power it by normal oxygen sources, but i suggest using Oxygen Collector")
+
+addParent("Age4:OxygenCollector")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:distributor>)
+setPos(201,-165)

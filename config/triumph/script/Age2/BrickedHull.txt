@@ -1,0 +1,16 @@
+setIcon(<gregtech:steam_casing:1>)
+setTranslatedTitle("Bricked Bronze Hull")
+setTranslatedDescription("To finnish this quest craft Bricked Bronze Hull.")
+
+addParent("Age2:root")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:steam_casing:1>)
+setPos(30,33)

@@ -1,0 +1,12 @@
+setIcon(<totemic:jingle_dress>)
+setTranslatedTitle("Better Melody")
+setTranslatedDescription("Craft Jingle Dress to perform ceremonies easier. (It gives you passive melody while walking.)")
+
+addParent("Age0:Totempedia")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("JingleD", "minecraft:inventory_changed")
+criteria.addItem(<totemic:jingle_dress>)
+setPos(352,161)

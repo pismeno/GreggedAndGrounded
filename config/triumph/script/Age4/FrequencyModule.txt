@@ -1,0 +1,14 @@
+setIcon(<galacticraftcore:basic_item:19>)
+setTranslatedTitle("Good interpretation")
+setTranslatedDescription("Craft Frequency module, so you can orientate better on Moon! NOTE: This is optional.")
+
+addParent("Age4:Carbon")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:basic_item:19>)
+setPos(233,-66)

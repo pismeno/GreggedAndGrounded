@@ -1,0 +1,12 @@
+setIcon(<betterwithmods:saw>)
+setTranslatedTitle("Easier chopping, harder recipe")
+setTranslatedDescription("Craft yourself one piece of Mechanical Saw and craft planks, bark and sticks more effectively!")
+
+addParent("Age1:PoorGlue")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:saw>)
+setPos(227,64)

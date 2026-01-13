@@ -1,0 +1,18 @@
+setIcon(<betterwithmods:material:12>)
+setTranslatedTitle("Poor Quality Glue")
+setTranslatedDescription("When you have stoked cauldron you can craft poor quality glue! It is made of sticky resin and some bark. To get sticky resin yoou have to search for rubber trees and cut them down.")
+
+addParent("Age1:Hibachi")
+addParent("Age1:Bellows")
+addParent("Age1:StringyComb")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:material:12>)
+setPos(194,31)

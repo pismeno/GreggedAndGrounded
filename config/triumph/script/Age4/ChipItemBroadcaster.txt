@@ -1,0 +1,13 @@
+setIcon(<projectred-transportation:routing_chip:5>)
+setTranslatedTitle("Item Broadcaster Chip")
+setTranslatedDescription("This chip makes you able to see items in the chest it is attached to when you open request pipe.")
+
+addParent("Age4:Cleanroom")
+addParent("Age4:LaserFabricator")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transportation:routing_chip:5>)
+setPos(167,198)

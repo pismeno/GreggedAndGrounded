@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:523>)
+setTranslatedTitle("SMD Components")
+setTranslatedDescription("You can now make SMD Components, they are cheaper! NOTE: To finish this quest, get SMD Resistor, Transistor, Inductor, Capacitor and Diode")
+
+addParent("Age4:Assembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:523>)
+criteria.addItem(<gregtech:meta_item_1:524>)
+criteria.addItem(<gregtech:meta_item_1:525>)
+criteria.addItem(<gregtech:meta_item_1:526>)
+criteria.addItem(<gregtech:meta_item_1:527>)
+
+setPos(134,-66)

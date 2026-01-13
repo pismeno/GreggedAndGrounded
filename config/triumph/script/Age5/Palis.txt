@@ -1,0 +1,16 @@
+setIcon(<actuallyadditions:item_crystal_empowered:1>)
+setTranslatedTitle("Empower Palis!")
+setTranslatedDescription("Make Empowered Palis Crystal. This brings energy challenges once again. TIP: Look for Extreme Combustion quest first.")
+
+addParent("Age5:Osmium")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:item_crystal_empowered:1>)
+setPos(68,-132)

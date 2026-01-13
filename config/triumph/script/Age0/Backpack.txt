@@ -1,0 +1,12 @@
+setIcon(<usefulbackpacks:backpack>)
+setTranslatedTitle("Backpack")
+setTranslatedDescription("Craft your own backpack.")
+
+addParent("Age0:Leather5")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Backpack", "minecraft:inventory_changed")
+criteria.addItem(<usefulbackpacks:backpack>)
+setPos(352,194)

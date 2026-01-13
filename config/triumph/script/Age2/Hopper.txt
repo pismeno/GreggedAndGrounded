@@ -1,0 +1,12 @@
+setIcon(<minecraft:hopper>)
+setTranslatedTitle("Hoppity Hopper")
+setTranslatedDescription("TIP: you can semi-automize machines by putting hopper in and out from them.")
+
+addParent("Age2:Iron")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:hopper>)
+setPos(96,198)

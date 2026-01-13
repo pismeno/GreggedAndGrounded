@@ -1,0 +1,21 @@
+setIcon(<galacticraftcore:oxygen_gear>)
+setTranslatedTitle("Proper Preparations")
+setTranslatedDescription("Craft Oxygen Mask, Oxygen Gear, Light Oxygen Tank and a Parachute so you don't die on moon.")
+
+addParent("Age4:root")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:oxygen_gear>)
+criteria.addItem(<galacticraftcore:oxygen_mask>)
+criteria.addItem(<galacticraftcore:parachute>)
+criteria.addItem(<galacticraftcore:oxygen_tank_light_full>)
+setPos(233,-132)

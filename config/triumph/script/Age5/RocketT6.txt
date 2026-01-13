@@ -1,0 +1,16 @@
+setIcon(<extraplanets:item_tier6_rocket>)
+setTranslatedTitle("Ludicrous Jumps")
+setTranslatedDescription("Construct tier 6 Rocket!")
+
+addParent("Age5:LuVAssembler")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:item_tier6_rocket>)
+setPos(398,99)

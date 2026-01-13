@@ -1,0 +1,14 @@
+setIcon(<projectred-expansion:machine2:10>)
+setTranslatedTitle("Autocrafting: planing")
+setTranslatedDescription("To automize crafting recipes, you first need to get a recipe plan of them, so put Recipe Plan inside Project Bench and save it!")
+
+addParent("Age4:root")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-expansion:machine2:10>)
+setPos(101,264)

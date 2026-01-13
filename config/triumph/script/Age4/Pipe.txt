@@ -1,0 +1,14 @@
+setIcon(<projectred-transportation:pipe:0>)
+setTranslatedTitle("Storage system upgrades!")
+setTranslatedDescription("You can now use these pipes to connect your chests, request items from them, automatically sort items, or even autocraft! NOTE: To finish this quest get Item Transport Pipe.")
+
+addParent("Age4:Assembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transportation:pipe:0>)
+setPos(101,231)

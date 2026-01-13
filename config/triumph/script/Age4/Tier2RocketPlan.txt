@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:plan_tier2>)
+setTranslatedTitle("Tier 2 Rocket Plan")
+setTranslatedDescription("Find Moon Dungeon, defeat the boss and steal his Tier 2 Rocket plan! NOTE: You still have to make schematic to construct rocket from it.")
+
+addParent("Age4:Moon")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:plan_tier2>)
+setPos(299,0)

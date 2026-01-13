@@ -1,0 +1,19 @@
+setIcon(<gregtech:meta_item_1:643>)
+setTranslatedTitle("Crystal Mainframe: Transcendent Age")
+setTranslatedDescription("Assemble Crystal Processor Mainframe.")
+
+addParent("Age5:CircuitCrystalSupercomputer")
+addParent("Age5:Nitanite")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeTranscendent")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:643>)
+setPos(667,0)

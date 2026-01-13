@@ -1,0 +1,14 @@
+setIcon(<appliedenergistics2:crafting_unit>)
+setTranslatedTitle("ME Autocrafting")
+setTranslatedDescription("Craft Crafting Unit for ME. In order to have working autocrafting, you will have to make Crafting Storage from it and probably some Crafting Co-Processing Units. Also you will need Molecular Assembler")
+
+addParent("Age4:EVLaserEngraver")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<appliedenergistics2:crafting_unit>)
+setPos(464,-165)

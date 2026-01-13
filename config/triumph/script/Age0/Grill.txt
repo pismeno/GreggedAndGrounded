@@ -1,0 +1,16 @@
+setIcon("primal_tech:stone_grill")
+setTranslatedTitle("''Furnace''")
+setTranslatedDescription("Get your hands on Stone Grill, to smelt something you will need to have fire under it, so place some down wood and burn it.")
+
+addParent("Age0:FlintPickaxe")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("Grill", "minecraft:inventory_changed")
+criteria.addItem("primal_tech:stone_grill")
+setPos(220,29)

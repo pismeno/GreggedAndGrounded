@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:1647>)
+setTranslatedTitle("Easier greggy crafting")
+setTranslatedDescription("Gregtech introduces this Work Table that can hold all Gregtech tools (for now Knife and Soft Mallet), and crafting materials of your choice in itself! If you haven't ever worked with this kind of crafting table before it may be confusing at first, so let me explain: the crafting grid consists of ghost items creating the recipe, but the actual ingredients are in the slots bellow! Craft it.")
+
+addParent("Age1:CraftingTable")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1647>)
+setPos(62,-35)

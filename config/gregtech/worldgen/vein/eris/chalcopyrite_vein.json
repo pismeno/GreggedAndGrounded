@@ -1,0 +1,34 @@
+{
+  "name": "gag.veins.ore.chalcopyrite",
+  "weight": 80,
+  "density": 0.2,
+  "max_height": 60,
+  "min_height": 5,
+  "dimension_filter": [
+    "dimension_id:-21"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      17,
+      24
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:chalcopyrite"
+      },
+      {
+        "secondary": "ore:bornite"
+      },
+      {
+        "between": "ore:copper"
+      },
+      {
+        "sporadic": "ore:chalcopyrite"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+setIcon(<gregtech:meta_item_1:189>)
+setTranslatedTitle("HV Chicanery")
+setTranslatedDescription("Craft HV Robot Arm and use it to craft.")
+
+addParent("Age4:root")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:189>)
+setPos(134,0)

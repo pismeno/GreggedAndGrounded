@@ -1,0 +1,12 @@
+setIcon(<minecraft:paper>)
+setTranslatedTitle("Finally, i can wipe m...")
+setTranslatedDescription("Craft Paper.")
+
+addParent("Age2:Saw")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:paper>)
+setPos(96,-33)

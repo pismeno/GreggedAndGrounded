@@ -1,0 +1,13 @@
+setIcon(<primal:hide_raw>)
+setTranslatedTitle("Leather Production")
+setTranslatedDescription("Leather Pt. 1: Use Work Blade to make raw hide from pelts.")
+
+addParent("Age0:WorkBlade")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("hideraw", "minecraft:inventory_changed")
+criteria.addItem(<primal:hide_raw>)
+setPos(319,161)

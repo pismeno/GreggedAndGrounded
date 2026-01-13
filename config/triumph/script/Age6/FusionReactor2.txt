@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:1021>)
+setTranslatedTitle("Fusion Reactor Mark 2")
+setTranslatedDescription("Construct Fusion Reactor Computer Mark 2.")
+
+addParent("Age6:root")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1021>)
+setPos(33,0)

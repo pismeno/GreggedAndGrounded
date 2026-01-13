@@ -1,0 +1,17 @@
+setIcon(<extraplanets:item_tier5_rocket>)
+setTranslatedTitle("Insane Jumps")
+setTranslatedDescription("Construct tier 5 Rocket!")
+
+addParent("Age5:Tier5RocketPlan")
+addParent("Age5:HeavyDutyAlloy5")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:item_tier5_rocket>)
+setPos(266,33)

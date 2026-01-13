@@ -1,0 +1,12 @@
+setIcon(<ironjetpacks:basic_jetpack>)
+setTranslatedTitle("Human Airlines")
+setTranslatedDescription("Craft Basic Jetpack!")
+
+addParent("Age3:Elytra")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<ironjetpacks:basic_jetpack>)
+setPos(333,-99)

@@ -1,0 +1,12 @@
+setIcon(<integrateddynamics:portable_logic_programmer>)
+setTranslatedTitle("Logic Programmer")
+setTranslatedDescription("Make Logic Programmer, so you can start working with logic while automating.")
+
+addParent("Age4:MenrilChunk")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<integrateddynamics:logic_programmer>)
+setPos(167,66)

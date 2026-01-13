@@ -1,0 +1,14 @@
+setIcon(<gregtech:screwdriver>)
+setTranslatedTitle("Screwdriver")
+setTranslatedDescription("Crafting tool: Screwdriver")
+
+addParent("Age2:root")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:screwdriver>)
+setPos(228,198)

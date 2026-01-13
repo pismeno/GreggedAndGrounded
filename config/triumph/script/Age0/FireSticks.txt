@@ -1,0 +1,16 @@
+setIcon("primal_tech:fire_sticks")
+setTranslatedTitle("Fire!")
+setTranslatedDescription("Craft yourself a pair of Whittled Fire Sticks. Put one in your main hand one in your off hand and right click. BOOM, you have fire!")
+
+addParent("Age0:WorkBlade")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("FireSticks", "minecraft:inventory_changed")
+criteria.addItem("primal_tech:fire_sticks")
+setPos(187,29)

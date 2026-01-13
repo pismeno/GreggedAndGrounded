@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:635>)
+setTranslatedTitle("Best Scrimper")
+setTranslatedDescription("Craft Basic Circuit Assembler. It makes circuits much cheaper! Also, you will need it.")
+
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:635>)
+setPos(201,99)

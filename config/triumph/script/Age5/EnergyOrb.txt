@@ -1,0 +1,14 @@
+setIcon(<gregtech:meta_item_1:748>)
+setTranslatedTitle("That's huge")
+setTranslatedDescription("You can make Lapotronic Energy Orb! You can store 250 000 000 EU in it!")
+
+addParent("Age5:ExtremeCircuitBoard")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria1 = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria1.addItem(<gregtech:meta_item_1:748>)
+criteria2 = addCriteria("age4", "triumph:completed_advancement")
+criteria2.setString("Age4:TungstenSteel")
+setPos(167,-132)

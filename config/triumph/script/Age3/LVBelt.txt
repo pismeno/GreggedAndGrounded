@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:157>)
+setTranslatedTitle("LV Conveyor Module")
+setTranslatedDescription("Craft LV Conveyor Module and use it to craft.")
+
+addParent("Age3:LVMotor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:157>)
+setPos(69,-231)

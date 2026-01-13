@@ -1,0 +1,12 @@
+setIcon(<totemic:drum>)
+setTranslatedTitle("Drum")
+setTranslatedDescription("Craft drum to perform ceremonies.")
+
+addParent("Age0:Totempedia")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Drum", "minecraft:inventory_changed")
+criteria.addItem(<totemic:drum>)
+setPos(385,95)

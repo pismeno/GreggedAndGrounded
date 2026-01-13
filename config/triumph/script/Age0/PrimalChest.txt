@@ -1,0 +1,12 @@
+setIcon("primalchests:primal_chest")
+setTranslatedTitle("Storage")
+setTranslatedDescription("Craft your first storage unit - Primal Chest.")
+
+addParent("Age0:Grill")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("PrimalChest", "minecraft:inventory_changed")
+criteria.addItem("primalchests:primal_chest")
+setPos(253,-4)

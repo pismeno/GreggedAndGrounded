@@ -1,0 +1,14 @@
+setIcon(<betterwithmods:cooking_pot:1>)
+setTranslatedTitle("Cauldron, but better")
+setTranslatedDescription("Craft cauldron. For now you can put Low Grade Charcoal under it to heat it up, but later you will need stoked fire for some recipes so you will have to use hibachis to maintain the fire. TIP: for faster cooking the fire can be up to 3x3")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:cooking_pot:1>)
+setPos(128,31)

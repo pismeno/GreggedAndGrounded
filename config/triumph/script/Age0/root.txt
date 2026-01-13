@@ -1,0 +1,18 @@
+setIcon(<primal:rock_stone>)
+setTitle("Age 0: Stone")
+setDescription("I will guide you thru the modpack here. There are some things that will be helping you, like JEI or waila and minimap later in the game (You have to unlock it first). Main quests have the ''special boundary''.")
+setBackground("backgrounds:cobblestone.png")
+
+setShowToast(false)
+alwaysVisible()
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeStone")
+
+setPos(-14,62)
+
+addCriteria("location", "minecraft:location")

@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:466>)
+setTranslatedTitle("Electric Prospector's Scanner")
+setTranslatedDescription("Are you tired of using that stick to find ores you need? I bet. Craft Electric Prospector's Scanner, and trust me, it's worth it.")
+
+addParent("Age3:Battery")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:466>)
+setPos(135,99)

@@ -1,0 +1,11 @@
+type = customizablemenus
+
+pismeno.gftweaks.client.GFTGuiWorldSelection {
+}
+
+net.minecraft.client.gui.GuiMainMenu {
+}
+
+com.pg85.otg.forge.gui.mainmenu.OTGGuiWorldSelection {
+}
+

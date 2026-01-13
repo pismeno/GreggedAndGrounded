@@ -1,0 +1,16 @@
+setIcon(<extraplanets:pluto:1>)
+setTranslatedTitle("Pluto")
+setTranslatedDescription("Fly to Pluto. There's a tier 9 rocket schematic! Also you can mine Black Quartz here.")
+
+addParent("Age6:RocketT8")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-19)
+setPos(132,-66)

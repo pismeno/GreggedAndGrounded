@@ -1,0 +1,16 @@
+setIcon(<extraplanets:kepler22b_purple_grass>)
+setTranslatedTitle("Kepler22b")
+setTranslatedDescription("Fly to Kepler22b!")
+
+addParent("Age6:RocketT10")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-22)
+setPos(330,-33)

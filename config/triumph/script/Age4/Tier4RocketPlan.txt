@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:plan_tier4>)
+setTranslatedTitle("Tier 4 Rocket Plan!")
+setTranslatedDescription("Find Mars Dungeon, defeat the boss and steal his Tier 4 Rocket plan.")
+
+addParent("Age4:Mercury")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:plan_tier4>)
+setPos(498,-33)

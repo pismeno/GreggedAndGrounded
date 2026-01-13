@@ -1,0 +1,12 @@
+setIcon(<forestry:alveary.plain>)
+setTranslatedTitle("Alveary")
+setTranslatedDescription("Construct Alveary it is like Apiary but chunkier! It is 3x3 structure from this block with 4th layer from wooden slabs.")
+
+addParent("Age3:Assembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:alveary.plain>)
+setPos(102,-66)

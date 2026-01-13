@@ -1,0 +1,36 @@
+[
+    {
+      "dimension": 0,
+      "mobs": [
+        {
+          "mob": "primitivemobs:grovesprite",
+          "weight": 1,
+          "groupcountmin": 2,
+          "groupcountmax": 5
+        },
+        {
+            "mob": "primitivemobs:festive_creeper",
+            "weight": 1
+            
+        },
+        {
+            "mob": "primitivemobs:rocket_creeper",
+            "weight": 1
+        },
+        {
+            "mob": "primitivemobs:skeleton_warrior",
+            "weight": 2,
+            "groupcountmin": 1,
+            "groupcountmax": 2
+        },
+        {
+            "mob": "primitivemobs:goblin",
+            "weight": 1
+        },
+        {
+            "mob": "primitivemobs:dodo",
+            "weight": 3
+        }
+      ]
+    }
+]

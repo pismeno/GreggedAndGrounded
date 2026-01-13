@@ -1,0 +1,19 @@
+setIcon(<primal:armor_wolf_head>)
+setTranslatedTitle("Cover me with Wolf")
+setTranslatedDescription("Upgrade your leather armor with some wolf hides.")
+
+addParent("Age0:LeatherArmor")
+
+setShowToast(true)
+visibleIf("Age0:root")
+
+criteria = addCriteria("ItemInv1", "minecraft:inventory_changed")
+criteria.addItem(<primal:armor_wolf_head>)
+criteria = addCriteria("ItemInv2", "minecraft:inventory_changed")
+criteria.addItem(<primal:armor_wolf_body>)
+criteria = addCriteria("ItemInv3", "minecraft:inventory_changed")
+criteria.addItem(<primal:armor_wolf_legs>)
+criteria = addCriteria("ItemInv4", "minecraft:inventory_changed")
+criteria.addItem(<primal:armor_wolf_feet>)
+
+setPos(385,260)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_dust:103>)
+setTranslatedTitle("Red Alloy")
+setTranslatedDescription("Break Sulfur Ore with Hammer, then put them in crafting table together. To clean the impure dust drop it into a Cauldron with water.")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_dust:103>)
+setPos(360,33)

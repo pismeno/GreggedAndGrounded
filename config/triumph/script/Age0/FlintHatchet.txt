@@ -1,0 +1,16 @@
+setIcon("primal:flint_hatchet")
+setTranslatedTitle("Your First Tool!")
+setTranslatedDescription("Craft Flint Hatchet. To obtain Flaked Flint left click some hard block like stone with flint in hand. For sticks, break leaves.")
+
+addParent("Age0:GravelStrainer")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("Hatchet", "minecraft:inventory_changed")
+criteria.addItem("primal:flint_hatchet")
+setPos(55,62)

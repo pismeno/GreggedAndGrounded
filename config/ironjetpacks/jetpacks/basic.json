@@ -1,0 +1,20 @@
+{
+  "name": "basic",
+  "disable": false,
+  "tier": 1,
+  "color": "5b5d61",
+  "armorPoints": 3,
+  "enchantability": 9,
+  "craftingMaterial": "null",
+  "forceRecipes": false,
+  "rarity": 0,
+  "capacity": 420000,
+  "usage": 128,
+  "speedVertical": 0.31,
+  "accelVertical": 0.12,
+  "speedSideways": 0.14,
+  "speedHoverDescend": 0.27,
+  "speedHover": 0.075,
+  "sprintSpeedMulti": 1.1,
+  "sprintFuelMulti": 2.1
+}

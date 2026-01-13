@@ -1,0 +1,18 @@
+setIcon(<gregtech:meta_item_1:519>)
+setTranslatedTitle("Resistor")
+setTranslatedDescription("Craft Resistor, needed to craft Electronic Circuit.")
+
+addParent("Age2:root")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:519>)
+setPos(426,99)

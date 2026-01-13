@@ -1,0 +1,17 @@
+setIcon(<actuallyadditions:block_empowerer>)
+setTranslatedTitle("Empowerer or Outpowered")
+setTranslatedDescription("Assemble Empowerer, then place it as shown in JEI, when you click on the guide book. It will consume a lot of EU, so prepare to make enough.")
+
+addParent("Age4:DisplayStand")
+addParent("Age4:Lathe")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:block_empowerer>)
+setPos(167,-99)

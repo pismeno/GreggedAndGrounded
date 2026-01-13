@@ -1,0 +1,14 @@
+setIcon(<actuallyadditions:block_giant_chest>)
+setTranslatedTitle("''Small'' Storage Crate")
+setTranslatedDescription("From wyrmwood and some manyullyn, you are able to make not so small storage crate.")
+
+addParent("Age3:TheEnd")
+addParent("Age3:AdvancedSaw")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:block_giant_chest>)
+
+setPos(333,-66)

@@ -1,0 +1,13 @@
+setIcon(<gregtech:wire_coil:2>)
+setTranslatedTitle("Nichrome Coils")
+setTranslatedDescription("You do not have to upgrade instantly, but I recommend it.")
+
+addParent("Age4:VacuumFreezer")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:wire_coil:2>)
+
+setPos(299,132)

@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:190>)
+setTranslatedTitle("EV Chicanery")
+setTranslatedDescription("Craft EV Robot Arm and use it to craft.")
+
+addParent("Age4:Mars")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:190>)
+setPos(398,-99)

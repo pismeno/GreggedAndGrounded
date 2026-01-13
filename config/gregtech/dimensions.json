@@ -1,0 +1,120 @@
+{
+  "dims": [
+    {
+      "dimID": 1,
+      "dimName": "End"
+    },
+    {
+      "dimID": 0,
+      "dimName": "Overworld"
+    },
+    {
+      "dimID": -1,
+      "dimName": "Nether"
+    },
+    {
+      "dimID": -13,
+      "dimName": "Mercury"
+    },
+    {
+      "dimID": -15,
+      "dimName": "Jupiter"
+    },
+    {
+      "dimID": -16,
+      "dimName": "Saturn"
+    },
+    {
+      "dimID": -17,
+      "dimName": "Uranus"
+    },
+    {
+      "dimID": -18,
+      "dimName": "Neptune"
+    },
+    {
+      "dimID": -19,
+      "dimName": "Pluto"
+    },
+    {
+      "dimID": -20,
+      "dimName": "Ceres"
+    },
+    {
+      "dimID": -21,
+      "dimName": "Eris"
+    },
+    {
+      "dimID": -22,
+      "dimName": "Kepler22b"
+    },
+    {
+      "dimID": -28,
+      "dimName": "Moon"
+    },
+    {
+      "dimID": -29,
+      "dimName": "Mars"
+    },
+    {
+      "dimID": -30,
+      "dimName": "Asteroids"
+    },
+    {
+      "dimID": -31,
+      "dimName": "Venus"
+    },
+    {
+      "dimID": -1500,
+      "dimName": "Io"
+    },
+    {
+      "dimID": -1501,
+      "dimName": "Europa"
+    },
+    {
+      "dimID": -1502,
+      "dimName": "Phobos"
+    },
+    {
+      "dimID": -1502,
+      "dimName": "Phobos"
+    },
+    {
+      "dimID": -1503,
+      "dimName": "Deimos"
+    },
+    {
+      "dimID": -1504,
+      "dimName": "Triton"
+    },
+    {
+      "dimID": -1505,
+      "dimName": "Callisto"
+    },
+    {
+      "dimID": -1506,
+      "dimName": "Ganymede"
+    },
+    {
+      "dimID": -1507,
+      "dimName": "Rhea"
+    },
+    {
+      "dimID": -1508,
+      "dimName": "Titan"
+    },
+    {
+      "dimID": -1509,
+      "dimName": "Oberon"
+    },
+    {
+      "dimID": -1510,
+      "dimName": "Titania"
+    },
+    {
+      "dimID": -1511,
+      "dimName": "Iapetus"
+    }
+  ]
+}

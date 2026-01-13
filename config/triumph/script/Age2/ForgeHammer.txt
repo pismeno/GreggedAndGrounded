@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:13>)
+setTranslatedTitle("Finally, cheaper plates!")
+setTranslatedDescription("Craft Steam Forge Hammer, it makes metal plates cheaper.")
+
+addParent("Age2:Piston")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:13>)
+setPos(195,33)

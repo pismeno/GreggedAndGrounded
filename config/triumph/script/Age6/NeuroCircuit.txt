@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:708>)
+setTranslatedTitle("Is it alive!?")
+setTranslatedDescription("Make Neuro Processing Unit.")
+
+addParent("Age6:StemCell")
+addParent("Age6:MasterCircuitboard")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:708>)
+setPos(165,0)

@@ -1,0 +1,18 @@
+setIcon(<gregtech:meta_plate:1012>)
+setTranslatedTitle("Polyethylene")
+setTranslatedDescription("To make Polyethylene (plastic) you need to oxidize Ethylene. Then just solidify it into sheets.")
+
+addParent("Age3:Ethanol")
+addParent("Age3:Naphtha")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_plate:1012>)
+
+setPos(465,198)

@@ -1,0 +1,12 @@
+setIcon(<primal:flint_axe>)
+setTranslatedTitle("Better Axe")
+setTranslatedDescription("Upgrade to Primal Flint Axe.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("FlintAxe", "minecraft:inventory_changed")
+criteria.addItem(<primal:flint_axe>)
+setPos(154,62)

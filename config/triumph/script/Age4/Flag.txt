@@ -1,0 +1,14 @@
+setIcon(<galacticraftcore:flag>)
+setTranslatedTitle("Space Race")
+setTranslatedDescription("Make flag to proclaim your dominance!")
+
+addParent("Age4:Carbon")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:flag>)
+setPos(200,-132)

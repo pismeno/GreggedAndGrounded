@@ -1,0 +1,12 @@
+setIcon(<totemic:cedar_sapling>)
+setTranslatedTitle("Rite of Spring")
+setTranslatedDescription("Perform rite of spring ceremony to nearby sapplings into red cedar onse. Use Totempedia to learn how. NOTE: to finish this quest pick up the sapling")
+
+addParent("Age0:Flute")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<totemic:cedar_sapling>)
+setPos(418,128)

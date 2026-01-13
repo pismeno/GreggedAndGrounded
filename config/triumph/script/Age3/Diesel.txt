@@ -1,0 +1,13 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "fuel", Amount: 1000}}>)
+setTranslatedTitle("Diesel")
+setTranslatedDescription("Distillate oil into light and heavy fuel and desulfurize the results in chemical reactor. To get Diesel mix them in Mixer. It is perfect for generating power by combustion! TIP: you can recycle hydrogen sulfide in Electrolyzer. Place it next to your chemical reactor and use screwdriver to enable input from output side!")
+
+addParent("Age3:Distillery")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "fuel", Amount: 1000}}>)
+
+setPos(267,264)

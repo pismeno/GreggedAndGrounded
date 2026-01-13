@@ -1,0 +1,14 @@
+setIcon(<minecraft:chest>)
+setTranslatedTitle("Finally, Chest!")
+setTranslatedDescription("Once you unlocked mechanical age you can craft vannila chest.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:chest>)
+setPos(29,-68)

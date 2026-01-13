@@ -1,0 +1,12 @@
+setIcon(<waterstrainer:strainer_survivalist_dense>)
+setTranslatedTitle("Dense Survivalist's Strainer")
+setTranslatedDescription("Craft Dense Survivalist's Strainer. You have to put it into the Strainer Base which you put in water, in order to get the loot.")
+
+addParent("Age0:StrainerBase")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("StrainerDense", "minecraft:inventory_changed")
+criteria.addItem(<waterstrainer:strainer_survivalist_dense>)
+setPos(385,-4)

@@ -1,0 +1,34 @@
+{
+  "name": "gregtech.veins.ore.chalcopyrite",
+  "weight": 80,
+  "density": 0.2,
+  "max_height": 70,
+  "min_height": 5,
+  "dimension_filter": [
+    "dimension_id:-29"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      32,
+      25
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:chalcopyrite"
+      },
+      {
+        "secondary": "ore:pyrite"
+      },
+      {
+        "between": "ore:copper"
+      },
+      {
+        "sporadic": "ore:iron"
+      }
+    ]
+  }
+}

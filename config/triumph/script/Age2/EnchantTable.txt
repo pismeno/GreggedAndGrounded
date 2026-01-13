@@ -1,0 +1,13 @@
+setIcon(<minecraft:enchanting_table>)
+setTranslatedTitle("Enchantment Table")
+setTranslatedDescription("Since you can now mine Lapis Lazuli in the Nether, you can now use it to enchant your tools!")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:enchanting_table>)
+criteria.addItem(<minecraft:dye:4>)
+setPos(360,-165)

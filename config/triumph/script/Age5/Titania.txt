@@ -1,0 +1,12 @@
+setIcon(<extraplanets:titania:2>)
+setTranslatedTitle("Titania")
+setTranslatedDescription("Fly to Titania, a moon of Uranus.")
+
+addParent("Age5:RocketT6")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-1510)
+setPos(431,132)

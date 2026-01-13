@@ -1,0 +1,16 @@
+setIcon(<extraplanets:item_tier4_rocket>)
+setTranslatedTitle("Insane Skips")
+setTranslatedDescription("Construct tier 4 Rocket!")
+
+addParent("Age5:HeavyDutyAlloy4")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:item_tier4_rocket>)
+setPos(167,33)

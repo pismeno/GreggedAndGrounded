@@ -1,0 +1,16 @@
+setIcon(<minecraft:netherrack>)
+setTranslatedTitle("You need to go deeper")
+setTranslatedDescription("Construct a portal, light it using Flint and Steel and enter the Nether!")
+
+addParent("Age2:FlintAndSteel")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_nether", "minecraft:changed_dimension")
+criteria.setDimensionDestination("the_nether")
+setPos(327,33)

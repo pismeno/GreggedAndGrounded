@@ -1,0 +1,13 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "nitrobenzene", Amount: 1000}}>)
+setTranslatedTitle("Nitro(benzene)")
+setTranslatedDescription("In Large Chemical Reactor you can make Nitrobenzene. It is almost 4x more effective than Benzene!")
+
+addParent("Age4:LargeChemicalReactor")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "nitrobenzene", Amount: 1000}}>)
+
+setPos(200,0)

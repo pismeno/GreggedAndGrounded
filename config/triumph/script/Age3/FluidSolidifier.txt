@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:395>)
+setTranslatedTitle("Fluid Solidifier")
+setTranslatedDescription("However the rubber will be in liquid form, and you have to solidify it.")
+
+addParent("Age3:ChemicalReactor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:395>)
+setPos(102,264)

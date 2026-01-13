@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:187>)
+setTranslatedTitle("LV Chicanery")
+setTranslatedDescription("Craft LV Robot Arm and use it to craft.")
+
+addParent("Age3:LVPiston")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:187>)
+setPos(102,-198)

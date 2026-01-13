@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:1019>)
+setTranslatedTitle("Assembly Line!")
+setTranslatedDescription("Construct Assembly line. You will need one ''layer'' for each item input. Longest recipes take 14 inputs, but for now 10 is probably gonna be enough. Also this machine requires you to put in the ingredients in correct order. You will need data research too.")
+
+addParent("Age5:CircuitQuantumProcessorMainframe")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1019>)
+setPos(332,-66)

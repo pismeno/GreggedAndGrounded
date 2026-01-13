@@ -1,0 +1,16 @@
+setIcon(<forestry:bee_combs:3>)
+setTranslatedTitle("Bleh, it's sticky!")
+setTranslatedDescription("Discover the right species to produce Stringy Combs.")
+
+addParent("Age1:Frame")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:bee_combs:3>)
+setPos(161,64)

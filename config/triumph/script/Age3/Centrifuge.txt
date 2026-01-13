@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:185>)
+setTranslatedTitle("Basic Centrifuge")
+setTranslatedDescription("Craft Basic Centrifuge.")
+
+addParent("Age3:ArcFurnace")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:185>)
+setPos(102,66)

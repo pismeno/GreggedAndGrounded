@@ -1,0 +1,13 @@
+setIcon(<waterstrainer:strainer_fisherman>)
+setTranslatedTitle("Fisherman's Strainer")
+setTranslatedDescription("Craft Fisherman's Strainer. You have to put it into the Strainer Base along with worm (bait), which you put in water, in order to get the loot.")
+
+addParent("Age0:StrainerBase")
+addParent("Age0:Trowel")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("StrainerFish", "minecraft:inventory_changed")
+criteria.addItem(<waterstrainer:strainer_fisherman>)
+setPos(385,-37)

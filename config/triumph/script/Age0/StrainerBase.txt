@@ -1,0 +1,12 @@
+setIcon(<waterstrainer:strainer_base>)
+setTranslatedTitle("Water Strainer Base")
+setTranslatedDescription("Craft Strainer Base. It will be usefull for lot of recipes since you need Shark Tooth. Or you can use it to get source of food (fish).")
+
+addParent("Age0:WoodenHopper")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("StrainerBase", "minecraft:inventory_changed")
+criteria.addItem(<waterstrainer:strainer_base>)
+setPos(352,-4)

@@ -1,0 +1,12 @@
+setIcon(<gregtechfoodoption:gtfo_meta_item:71>)
+setTranslatedTitle("Large Bacon Sandwiches!")
+setTranslatedDescription("Assemble Large Bacon Sandwich.")
+
+addParent("Age3:AdvancedCuisineAssembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtechfoodoption:gtfo_meta_item:71>)
+setPos(234,297)

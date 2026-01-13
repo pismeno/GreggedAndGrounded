@@ -1,0 +1,12 @@
+setIcon(<integrateddynamics:crystalized_menril_chunk>)
+setTranslatedTitle("Dynamic Integrations")
+setTranslatedDescription("Process Menril tree into Crystalized Menril Chunk!")
+
+addParent("Age4:Saw")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<integrateddynamics:crystalized_menril_chunk>)
+setPos(134,66)

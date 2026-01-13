@@ -1,0 +1,12 @@
+setIcon(<primal_tech:wooden_basin>)
+setTranslatedTitle("Wooden Basin")
+setTranslatedDescription("Craft Wooden Basin.")
+
+addParent("Age0:Grill")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Basin", "minecraft:inventory_changed")
+criteria.addItem(<primal_tech:wooden_basin>)
+setPos(253,161)

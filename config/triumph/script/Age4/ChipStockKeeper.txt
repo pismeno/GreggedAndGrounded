@@ -1,0 +1,15 @@
+setIcon(<projectred-transportation:routing_chip:6>)
+setTranslatedTitle("Item Stock Keeper Chip")
+setTranslatedDescription("You can use this one if you want to keep some machine running for example. It keeps sending some item to the block until it reaches the limit you set!")
+
+addParent("Age4:Cleanroom")
+addParent("Age4:LaserFabricator")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transportation:routing_chip:6>)
+setPos(200,198)

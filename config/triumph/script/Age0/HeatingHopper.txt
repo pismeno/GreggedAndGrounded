@@ -1,0 +1,13 @@
+setIcon(<primal_tech:charcoal_hopper>)
+setTranslatedTitle("Advanced tech!")
+setTranslatedDescription("This will make your life easier. Its hopper that can power your Grill and Kiln and suck items from them at once.")
+
+addParent("Age0:WoodenHopper")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("FHopper", "minecraft:inventory_changed")
+criteria.addItem(<primal_tech:charcoal_hopper>)
+setPos(319,-37)

@@ -1,0 +1,13 @@
+setIcon(<projectred-transportation:routing_chip:7>)
+setTranslatedTitle("Item Crafting Chip")
+setTranslatedDescription("Use this for connecting to either Auto Crafting Bench or to some machine. You enter the input and output items to the chip, and that's how it knows how many items to send to the block and what to expect in return. Note that when using it with Auto Crafting Bench, you have to put in Recipe Plan with the same recipe on it.")
+
+addParent("Age4:Cleanroom")
+addParent("Age4:LaserFabricator")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transportation:routing_chip:7>)
+setPos(167,264)

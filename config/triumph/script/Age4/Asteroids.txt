@@ -1,0 +1,12 @@
+setIcon(<galacticraftplanets:asteroids_block>)
+setTranslatedTitle("Walking in the space!")
+setTranslatedDescription("Fly to the Asteroids!")
+
+addParent("Age4:RocketT3")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("entered_phobos", "minecraft:location")
+criteria.setDimID(-30)
+setPos(464,0)

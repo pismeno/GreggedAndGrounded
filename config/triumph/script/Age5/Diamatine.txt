@@ -1,0 +1,16 @@
+setIcon(<actuallyadditions:item_crystal_empowered:2>)
+setTranslatedTitle("Empower Diamatine!")
+setTranslatedDescription("Make Empowered Diamatine Crystal.")
+
+addParent("Age5:Iridium")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:item_crystal_empowered:2>)
+setPos(68,-66)

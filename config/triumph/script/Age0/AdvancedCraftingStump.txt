@@ -1,0 +1,12 @@
+setIcon(<primal_tech:work_stump_upgraded>)
+setTranslatedTitle("Usable Crafting Bench")
+setTranslatedDescription("Craft yourself Advanced Crafting Stump. It provides easier crafting since you can place more than one item in a slot.")
+
+addParent("Age0:WoodenHopper")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<primal_tech:work_stump_upgraded>)
+setPos(352,-37)

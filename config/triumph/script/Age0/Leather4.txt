@@ -1,0 +1,13 @@
+setIcon(<primal:hide_tanned>)
+setTranslatedTitle("Tannin' Hides")
+setTranslatedDescription("Leather Pt. 4: Now you have to tan the Dried Hide in the Wooden Basin. Mix it with ground resin and water.")
+
+addParent("Age0:Leather3")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("hidetanned", "minecraft:inventory_changed")
+criteria.addItem(<primal:hide_tanned>)
+setPos(319,62)

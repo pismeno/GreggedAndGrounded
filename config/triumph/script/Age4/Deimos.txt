@@ -1,0 +1,12 @@
+setIcon(<extraplanets:deimos:1>)
+setTranslatedTitle("Double Moon: Deimos")
+setTranslatedDescription("Fly to Deimos! It gives you access to new materials!")
+
+addParent("Age4:RocketT2")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("entered_deimos", "minecraft:location")
+criteria.setDimID(-1503)
+setPos(365,0)

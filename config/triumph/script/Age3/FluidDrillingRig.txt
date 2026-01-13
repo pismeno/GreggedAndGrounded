@@ -1,0 +1,14 @@
+setIcon(<gregtech:machine:1032>)
+setTranslatedTitle("American dream")
+setTranslatedDescription("It is quite an investment to get a Fluid Drilling Rig. What it does is it drills fluids from where you can't find it yourself. It works in 8x8 ''chunks'', but you can't prospect what is the fluid yet. You need better machines.Most of the fluids are oils. There are more oil variants, and each is richer in what can you make from it. The best for this stage of game is probably Raw Oil. It is a multiblock.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1032>)
+
+setPos(201,231)

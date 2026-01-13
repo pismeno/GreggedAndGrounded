@@ -1,0 +1,12 @@
+setIcon(<horsepower:chopper>)
+setTranslatedTitle("Horse Powered Chopping Block")
+setTranslatedDescription("Craft Horse Chopping Block. Place item on it and leash donkey, horse or buffalo. NOTE: the Grindstone must be placed one block higher than the ground is.")
+
+addParent("Age0:Grill")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("chopper", "minecraft:inventory_changed")
+criteria.addItem(<horsepower:chopper>)
+setPos(253,128)

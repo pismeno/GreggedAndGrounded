@@ -1,0 +1,12 @@
+setIcon(<totemic:baykok_bow>)
+setTranslatedTitle("Baykok")
+setTranslatedDescription("Summon Baykok by performing Totemtanz ceremony. When you defeat him he drops his special bow (learn more about that in totempedia). But be ready, it isn't easy fight.")
+
+addParent("Age0:Eagles")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<totemic:baykok_bow>)
+setPos(451,161)

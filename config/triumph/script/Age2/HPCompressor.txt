@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:12>)
+setTranslatedTitle("High Pressure Compressor")
+setTranslatedDescription("Craft High Pressure Compressor, it is faster and consumes more steam.")
+
+addParent("Age2:Steel")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:12>)
+setPos(294,264)

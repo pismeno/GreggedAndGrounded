@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:742>)
+setTranslatedTitle("Lapotron Crystal")
+setTranslatedDescription("Craft this enormous energy ''battery''.")
+
+addParent("Age4:EVAssembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:742>)
+setPos(431,-33)

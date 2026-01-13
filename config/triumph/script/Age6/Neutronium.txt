@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_ingot:127>)
+setTranslatedTitle("Everlasting")
+setTranslatedDescription("Fuse Neutronium and make ingot from it! It is unbreakable if you make tools from it!")
+
+addParent("Age6:FusionReactor3")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:127>)
+setPos(429,0)

@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_ingot:124>)
+setTranslatedTitle("NaquadaaAAaahhh")
+setTranslatedDescription("Fly to one of Saturn's moons and mine some Naquadah. It has another processing chain. Look thru JEI. NOTE: To finish this get Naquadah Dust.")
+
+addParent("Age5:Rhea")
+addParent("Age5:Iapetus")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_dust:124>)
+setPos(332,33)

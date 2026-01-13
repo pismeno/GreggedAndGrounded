@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:1000>)
+setTranslatedTitle("This has been a blast!")
+setTranslatedDescription("It's time to construct Primitive Blast furnace. You will need the controller and 32 Firebricks. For the multiblock structure look into JEI. TIP: Construct more of them, but you can use Extractor for cheaper glue for example now.")
+
+addParent("Age2:Macerator")
+addParent("Age2:Compressor")
+
+setShowToast(true)
+visibleIf("Age2:Piston")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1000>)
+setPos(228,66)

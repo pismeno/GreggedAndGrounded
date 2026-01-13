@@ -1,0 +1,16 @@
+setIcon(<extraplanets:neptune:2>)
+setTranslatedTitle("Blue Project")
+setTranslatedDescription("Fly to Neptune. There's a tier 8 rocket schematic!")
+
+addParent("Age5:RocketT7")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-18)
+setPos(530,165)

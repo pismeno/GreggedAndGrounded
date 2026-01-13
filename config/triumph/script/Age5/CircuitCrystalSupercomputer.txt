@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:642>)
+setTranslatedTitle("Crystal Supercomputers!")
+setTranslatedDescription("Assemble Crystal Supercomputer.")
+
+addParent("Age5:CircuitCrystalProcessorAssembly")
+addParent("Age5:Emeradic")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:642>)
+setPos(629,0)

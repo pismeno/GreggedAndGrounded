@@ -1,0 +1,12 @@
+setIcon(<soulshardsrespawn:soul_cage>)
+setTranslatedTitle("Gotta Catch them all!")
+setTranslatedDescription("Assemble Soul Cage. If you insert filled soul shard inside, it will work as a spawner of that mob, that was bounnd to the soul shard! NOTE: To get Ghast Queen tears, find a flying ghast-like structure, and fill the Urn of Sorrow inside with Potion of Sorrow.")
+
+addParent("Age5:LuVAssembler")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<soulshardsrespawn:soul_cage>)
+setPos(398,66)

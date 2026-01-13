@@ -1,0 +1,13 @@
+setIcon(<tconstruct:ingots:1>)
+setTranslatedTitle("Fine Bath")
+setTranslatedDescription("Prepare fine bath for Ardite Ingots. It is one of the best tool and weapon materials now.")
+
+addParent("Age3:AdvancedChemicalBath")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:ingots:1>)
+
+setPos(234,0)

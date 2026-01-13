@@ -1,0 +1,13 @@
+setIcon(<tconstruct:ingots:2>)
+setTranslatedTitle("Manyullyn")
+setTranslatedDescription("Make Manyullyn Dust from Ardite and Cobalt. It is one of the best weapon materials now.")
+
+addParent("Age3:ArditeIngot")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:ingots:2>)
+
+setPos(267,0)

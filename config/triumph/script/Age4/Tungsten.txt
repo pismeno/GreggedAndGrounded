@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_dust:115>)
+setTranslatedTitle("Tungsten")
+setTranslatedDescription("On Venus, mine either tungstate or scheelite, from them make Tungstic Acid dust, from which you can get Tungsten dust by electrolyzation.")
+
+addParent("Age4:Venus")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_dust:115>)
+setPos(497,33)

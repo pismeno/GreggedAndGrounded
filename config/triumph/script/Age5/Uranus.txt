@@ -1,0 +1,16 @@
+setIcon(<extraplanets:uranus:2>)
+setTranslatedTitle("Uranus")
+setTranslatedDescription("Fly to Uranus. There's a tier 7 rocket schematic!")
+
+addParent("Age5:RocketT6")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-17)
+setPos(431,99)

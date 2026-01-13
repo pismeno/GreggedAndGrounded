@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_ingot:260>)
+setTitle("Age 2: Bronze")
+setDescription("In this age you're going to learn about mechanical machinery and make your first bronze!")
+setBackground("gregtech:textures/blocks/casings/steam/bronze/top.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+setPos(-3,66)
+
+criteria = addCriteria("age1", "triumph:completed_advancement")
+criteria.setString("Age1:Bronze")

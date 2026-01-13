@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:219>)
+setTranslatedTitle("Chemistry Elite!")
+setTranslatedDescription("Craft Elite Chemical Reactor.")
+
+addParent("Age5:root")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:219>)
+setPos(35,132)

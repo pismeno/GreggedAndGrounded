@@ -1,0 +1,12 @@
+setIcon(<betterwithmods:wooden_gearbox>)
+setTranslatedTitle("Gearbox")
+setTranslatedDescription("Craft wooden gearbox. It is used to either change directions of your axle or to reset the 3 axles block range limit. TIP: Shift-R-Click to rotate.")
+
+addParent("Age1:Axle")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:wooden_gearbox>)
+setPos(194,-35)

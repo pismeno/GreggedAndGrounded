@@ -1,0 +1,13 @@
+setIcon(<primal:barrel>)
+setTranslatedTitle("Storing Water")
+setTranslatedDescription("Craft Barrel and use Fluid Bladder to fill it. TIP: you can do shift R-click to carry it.")
+
+addParent("Age0:WorkBlade")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("Barrel", "minecraft:inventory_changed")
+criteria.addItem(<primal:barrel>)
+setPos(286,194)

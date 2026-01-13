@@ -1,0 +1,12 @@
+setIcon(<primal_tech:wooden_hopper>)
+setTranslatedTitle("Automatisation")
+setTranslatedDescription("Once you have leather, craft Wooden Hopper. You can use this everywhere: On your grill on Horse Press, Grindstone etc.")
+
+addParent("Age0:PrimalChest2")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("WHopper", "minecraft:inventory_changed")
+criteria.addItem(<primal_tech:wooden_hopper>)
+setPos(319,-4)

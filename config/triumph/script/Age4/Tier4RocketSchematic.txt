@@ -1,0 +1,12 @@
+setIcon(<extraplanets:schematic_tier4>)
+setTranslatedTitle("Tier 4 Rocket Schematics!")
+setTranslatedDescription("Make NASA Workbench Schematic for Tier 4 Rocket.")
+
+addParent("Age4:Tier3RocketSchematic")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:schematic_tier4>)
+setPos(233,165)

@@ -1,0 +1,12 @@
+setIcon("primal_tech:clay_kiln")
+setTranslatedTitle("Clay Kiln")
+setTranslatedDescription("Craft Clay Kiln. To use it you will need to have fire under it, so place some down wood and burn it.")
+
+addParent("Age0:FireSticks")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("ClayKiln", "minecraft:inventory_changed")
+criteria.addItem("primal_tech:clay_kiln")
+setPos(220,-37)

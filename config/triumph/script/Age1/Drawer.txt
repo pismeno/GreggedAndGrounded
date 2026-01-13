@@ -1,0 +1,12 @@
+setIcon(<storagedrawers:upgrade_template>)
+setTranslatedTitle("Ways to store items.")
+setTranslatedDescription("You will also gain new ways to store items, but for now only one viable is storage drawers. They can hold a lot of one item type! NOTE: You have to craft basic drawer to get this achievement.")
+
+addParent("Age1:Chest")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<ore:drawerBasic>)
+setPos(62,-68)

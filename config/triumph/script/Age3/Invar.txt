@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_dust:287>)
+setTranslatedTitle("Invar")
+setTranslatedDescription("Mix up some Invar.")
+
+addParent("Age3:Mixer")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_dust:287>)
+setPos(102,0)

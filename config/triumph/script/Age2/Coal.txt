@@ -1,0 +1,12 @@
+setIcon(<minecraft:coal>)
+setTranslatedTitle("Coal")
+setTranslatedDescription("Mine and craft Coal.")
+
+addParent("Age2:AdvancedProspector")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:coal>)
+setPos(63,363)

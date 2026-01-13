@@ -1,0 +1,12 @@
+setIcon(<tconstruct:tooltables:1>)
+setTranslatedTitle("Stencil Table")
+setTranslatedDescription("Craft Stencil Table in order to create patterns for your new tool parts.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:tooltables:1>)
+setPos(29,31)

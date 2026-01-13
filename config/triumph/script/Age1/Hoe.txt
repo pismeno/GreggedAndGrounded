@@ -1,0 +1,12 @@
+setIcon(<gregtech:hoe, nbt: {"GT.Tool": {Material: "gregtech:flint"}}>)
+setTranslatedTitle("Hoes")
+setTranslatedDescription("Get some hoes. NOTE: JEI may show only iron version, but once you see the recipe of it, it shows flint!")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:hoe>)
+setPos(29,97)

@@ -1,0 +1,14 @@
+setIcon(<betterwithmods:bamboo_chime>)
+setTranslatedTitle("Automatic switch")
+setTranslatedDescription("This can solve your Gearbox breaking problem. Partly. Redstone Wind Chime emits redstone signal when it's raining etc. in the redstone block its attached to. So attach it to a block next to a gearox and BOOM, it deactivates when raining so it can't break")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:bamboo_chime>)
+setPos(128,-35)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:645>)
+setTranslatedTitle("Wetware Assembly")
+setTranslatedDescription("Make Wetware Assembly, and consider going outside...")
+
+addParent("Age6:CircuitWetwareProcessor")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:645>)
+setPos(264,0)

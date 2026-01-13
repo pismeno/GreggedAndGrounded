@@ -1,0 +1,19 @@
+setIcon(<galacticraftcore:basic_block_moon:5>)
+setTranslatedTitle("You need to go higher")
+setTranslatedDescription("Fly to earth's moon! You have to obtain Magnesium there.")
+
+addParent("Age4:RocketT1")
+addParent("Age4:Flightlist")
+addParent("Age4:OxygenCompressor")
+addParent("Age4:SpaceSuit")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_moon", "minecraft:location")
+criteria.setDimID(-28)
+setPos(266,-99)

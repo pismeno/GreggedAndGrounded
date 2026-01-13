@@ -1,0 +1,20 @@
+setIcon(<gregtech:meta_gear:1617>)
+setTranslatedTitle("Wooden Gear: Mechanical Age")
+setTranslatedDescription("Craft Wooden Gear. With newfound wisdom of basic mechanics, you deciphered the patterns of nature and connected the dots between the elements. Everything in your world now makes perfect sense.")
+
+addParent("Age0:BuffaloTooth")
+addParent("Age0:CedarWood")
+addParent("Age0:Leather5")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeMechanical")
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_gear:1617>)
+setPos(505,29)

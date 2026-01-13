@@ -1,0 +1,12 @@
+setIcon(<tconstruct:tooltables:3>)
+setTranslatedTitle("Tool Station")
+setTranslatedDescription("Craft Tool Station to finish your tools.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:tooltables:3>)
+setPos(95,31)

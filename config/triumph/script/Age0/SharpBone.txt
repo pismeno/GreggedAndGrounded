@@ -1,0 +1,12 @@
+setIcon("primal:sharp_bone")
+setTranslatedTitle("Poor man's sword")
+setTranslatedDescription("Your second best friend from now on! TIP: You can get bones from unaliving animals.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("SharpBone", "minecraft:inventory_changed")
+criteria.addItem("primal:sharp_bone")
+setPos(187,-4)

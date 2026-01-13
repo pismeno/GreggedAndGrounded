@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:621>)
+setTitle("Age 3: Industrial")
+setDescription("In this age you will finally work with electricity, automatization and more!")
+setBackground("gregtech:textures/blocks/stones/marble/marble_bricks.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+setPos(0,0)
+
+criteria = addCriteria("age2", "triumph:completed_advancement")
+criteria.setString("Age2:ElectronicCircuit")

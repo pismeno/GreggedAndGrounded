@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:632>)
+setTranslatedTitle("Nanoprocessors")
+setTranslatedDescription("Assemble Nanoprocessor, the most advanced HV circuit.")
+
+addParent("Age4:EVCircuitAssembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:632>)
+setPos(431,132)

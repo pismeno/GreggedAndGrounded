@@ -1,0 +1,16 @@
+setIcon("primal_tech:work_stump")
+setTranslatedTitle("Crafting! Oh wait...")
+setTranslatedDescription("Craft Crafting Stump and Crafting Rock. Place items on the stump and smash it with the Rock to craft. To get rocks, combine Dirt with Gravel Strainer in crafting grid!")
+
+addParent("Age0:ChoppingBlock")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("PrimalCrafter", "minecraft:inventory_changed")
+criteria.addItem("primal_tech:work_stump")
+setPos(120,62)

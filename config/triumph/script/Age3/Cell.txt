@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_item_1:79>)
+setTranslatedTitle("Fluid Cells")
+setTranslatedDescription("You can use fluid cells to hold fluids! Normal Cells can only hold full bucket of fluid, but universal cells can hold any amount up to 1000mB. NOTE: To finish this quest craft Universal Cell.")
+
+addParent("Age3:BendingMachine")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:79>)
+setPos(102,132)

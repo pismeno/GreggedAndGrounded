@@ -1,0 +1,12 @@
+setIcon(<tconstruct:casting>)
+setTranslatedTitle("Casting Table")
+setTranslatedDescription("Craft casting table, it is used to create items off the liquids in smeltery via Seared Drain. TIP: You can put wooden hopper under to automate it!")
+
+addParent("Age1:SearedBrick")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:casting>)
+setPos(326,-35)

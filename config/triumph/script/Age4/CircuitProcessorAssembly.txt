@@ -1,0 +1,18 @@
+setIcon(<gregtech:meta_item_1:629>)
+setTranslatedTitle("Repeat and repeat and repeat...")
+setTranslatedDescription("Assemble Processor Assembly.")
+
+addParent("Age4:CircuitIntegratedProcessor")
+addParent("Age4:Cleanroom")
+addParent("Age4:LaserFabricator")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:629>)
+setPos(167,132)

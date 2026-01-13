@@ -1,0 +1,12 @@
+setIcon(<totemic:totem_torch>)
+setTranslatedTitle("Light!")
+setTranslatedDescription("You can only use primal torches now, so go craft some")
+
+addParent("Age0:LowGradeCharcoal")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<totemic:totem_torch>)
+setPos(286,-37)

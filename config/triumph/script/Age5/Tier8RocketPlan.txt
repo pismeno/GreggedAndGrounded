@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:plan_tier8>)
+setTranslatedTitle("Tier 8 Rocket Plan!")
+setTranslatedDescription("Find Neptune Dungeon, defeat the boss and steal his Tier 8 Rocket plan! NOTE: You still have to make schematic to construct rocket from it.")
+
+addParent("Age5:Neptune")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:plan_tier8>)
+setPos(563,165)

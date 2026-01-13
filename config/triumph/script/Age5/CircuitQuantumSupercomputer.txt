@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:638>)
+setTranslatedTitle("More LuV circuits")
+setTranslatedDescription("Assemble Quantum Super Computer")
+
+addParent("Age5:CircuitQuantumProcessorAssembly")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:638>)
+setPos(233,-99)

@@ -1,0 +1,12 @@
+setIcon(<tconstruct:smeltery_controller>)
+setTranslatedTitle("Seared Drain")
+setTranslateDDescription("Craft Seared Drain, it is used to pour liquids from the smeltery to casting tables. You will also need to place faucet on the outside on top of the casting table to do that.")
+
+addParent("Age1:SearedBrick")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:smeltery_io>)
+setPos(317,-33)

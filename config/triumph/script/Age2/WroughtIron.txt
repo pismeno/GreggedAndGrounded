@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_ingot:335>)
+setTranslatedTitle("Wrought Iron")
+setTranslatedDescription("Create wrought iron by smelting iron nuggets and then putting them back together. TIP: Wrought iron tools have better durability.")
+
+addParent("Age2:Iron")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:335>)
+setPos(96,165)

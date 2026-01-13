@@ -1,0 +1,20 @@
+setIcon(<minecraft:ender_eye>)
+setTranslatedTitle("Eye of The End")
+setTranslatedDescription("Make Ender Eye.")
+
+addParent("Age3:AdvancedChemicalReactor")
+addParent("Age3:ImplossionReactor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:EndAcces")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:ender_eye>)
+
+setPos(234,-33)

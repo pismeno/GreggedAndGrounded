@@ -1,0 +1,18 @@
+setIcon(<extraplanets:item_tier7_rocket>)
+setTranslatedTitle("Ludicrouser Skips")
+setTranslatedDescription("Construct tier 7 Rocket!")
+
+addParent("Age5:Tier7RocketPlan")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:item_tier7_rocket>)
+setPos(497,132)

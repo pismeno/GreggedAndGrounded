@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:991>)
+setTranslatedTitle("I LuV Machine Hulls")
+setTranslatedDescription("Make LuV Machine Hull.")
+
+addParent("Age5:RhodiumPlatedPalladium")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:2062>)
+setPos(332,99)

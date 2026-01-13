@@ -1,0 +1,20 @@
+{
+  "name": "advanced",
+  "disable": false,
+  "tier": 3,
+  "color": "5a729c",
+  "armorPoints": 2,
+  "enchantability": 18,
+  "craftingMaterial": "null",
+  "forceRecipes": false,
+  "rarity": 0,
+  "capacity": 25000000,
+  "usage": 2048,
+  "speedVertical": 0.69,
+  "accelVertical": 0.14,
+  "speedSideways": 0.20,
+  "speedHoverDescend": 0.37,
+  "speedHover": 0.03,
+  "sprintSpeedMulti": 1.6,
+  "sprintFuelMulti": 3.5
+}

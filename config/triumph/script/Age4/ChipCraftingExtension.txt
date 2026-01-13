@@ -1,0 +1,12 @@
+setIcon(<projectred-transportation:routing_chip:8>)
+setTranslatedTitle("Item Crafting Extension Chip")
+setTranslatedDescription("Item Crafting Extension Chips can be inserted in the extensions tab of the chip (The chip will not be inserted as an item but rather as ghost item). Each extension slot corresponds to a slot in the crafting matrix. These chips can be used to tell the Item Crafting Chip that the ingredients for these specific slots have to be moved to the Routed Interface Pipe containing the specific Item Crafting Extension chip.")
+
+addParent("Age4:ChipCrafting")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transportation:routing_chip:8>)
+setPos(200,264)

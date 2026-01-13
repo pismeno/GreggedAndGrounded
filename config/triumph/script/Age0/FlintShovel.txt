@@ -1,0 +1,14 @@
+setIcon(<primal:flint_shovel>)
+setTranslatedTitle("Shovel")
+setTranslatedDescription("Craft Primal Flint Shovel.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+hideLines()
+
+criteria = addCriteria("FlintShovel", "minecraft:inventory_changed")
+criteria.addItem(<primal:flint_shovel>)
+setPos(187,62)

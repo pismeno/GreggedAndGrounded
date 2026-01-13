@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:1>)
+setTranslatedTitle("Small Steam Solid Fuel Boiler")
+setTranslatedDescription("Craft Small Steam Solid Fuel Boiler to boil steam out of water put coal and water in, but be carefull once it gets heated up and you run out of water it'll explode!")
+
+addParent("Age2:BrickedHull")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1>)
+setPos(63,33)

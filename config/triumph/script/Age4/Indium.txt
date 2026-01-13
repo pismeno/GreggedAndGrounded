@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_dust_small:48>)
+setTranslatedTitle("Indium")
+setTranslatedDescription("Obtain Small Indium dust.")
+
+addParent("Age4:EVChemicalReactor")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_dust_small:48>)
+setPos(431,-132)

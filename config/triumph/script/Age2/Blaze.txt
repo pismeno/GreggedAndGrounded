@@ -1,0 +1,12 @@
+setIcon(<minecraft:blaze_rod>)
+setTranslatedTitle("Hellish Rebuke")
+setTranslatedDescription("Slain Blaze. You might notice they do not drop blaze rods, they drop only sulfur dust and blaze chunks. Maybe you will find out how to make blaze rods with new technology...")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("killed_blaze", "minecraft:player_killed_entity")
+criteria.setEntityType("minecraft:blaze")
+setPos(360,0)

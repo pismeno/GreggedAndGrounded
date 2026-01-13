@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:1017>)
+setTranslatedTitle("On your way to charcoal!")
+setTranslatedDescription("Once you make glue you should be able to make this multiblock. It's called coke oven. Use JEI to see the multiblock structure. NOTE: to get this achievement craft the main Coke Oven control block.")
+
+addParent("Age1:PoorGlue")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1017>)
+setPos(227,31)

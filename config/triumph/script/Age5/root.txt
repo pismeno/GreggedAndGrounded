@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:749>)
+setTitle("Age 5: Futuristic")
+setDescription("High tier technology, more trips to more planets, total gregification and more!")
+setBackground("gregtech:textures/blocks/casings/voltage/iv/side.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+setPos(0,0)
+
+criteria = addCriteria("age4", "triumph:completed_advancement")
+criteria.setString("Age4:Tungstensteel")

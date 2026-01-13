@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_ingot:55>)
+setTranslatedTitle("Lead")
+setTranslatedDescription("Mine and craft Lead.")
+
+addParent("Age2:AdvancedProspector")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:55>)
+setPos(63,297)

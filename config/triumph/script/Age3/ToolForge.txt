@@ -1,0 +1,12 @@
+setIcon(<tconstruct:toolforge>)
+setTranslatedTitle("Tool Forge")
+setTranslatedDescription("Craft Tool forge, there you can create better tools, that mine areas!")
+
+addParent("Age3:Assembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:toolforge>)
+setPos(102,-132)

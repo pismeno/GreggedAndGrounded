@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:623>)
+setTranslatedTitle("Integrated Logic Circuits")
+setTranslatedDescription("Make Integrated Logic Circuit. NOTE: these are not necessarily cheaper or better, but you need them to progress.")
+
+addParent("Age3:IntegratedCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:623>)
+
+setPos(399,-66)

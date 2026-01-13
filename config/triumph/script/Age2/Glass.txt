@@ -1,0 +1,16 @@
+setIcon(<minecraft:glass>)
+setTranslatedTitle("Windows!")
+setTranslatedDescription("Macerate sand, mix it with some macerated flint, and make Glass in Alloy Smelter!")
+
+addParent("Age2:Steel")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:glass>)
+setPos(294,66)

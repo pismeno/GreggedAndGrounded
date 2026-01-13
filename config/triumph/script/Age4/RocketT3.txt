@@ -1,0 +1,18 @@
+setIcon(<galacticraftplanets:rocket_t3>)
+setTranslatedTitle("Giant Leaps")
+setTranslatedDescription("Construct Tier 3 Rocket.")
+
+addParent("Age4:EVAssembler")
+addParent("Age4:EVCompressor")
+addParent("Age4:Tier3RocketPlan")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftplanets:rocket_t3>)
+setPos(431,0)

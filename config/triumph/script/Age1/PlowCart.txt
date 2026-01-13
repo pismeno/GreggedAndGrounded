@@ -1,0 +1,12 @@
+setIcon(<astikorcarts:plowcart>)
+setTranslatedTitle("Advanced farming tech")
+setTranslatedDescription("Craft Transportation Cart. TIP: To attach horse to it press R. To start creating farmland right click the plow.")
+
+addParent("Age1:Hoe")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<astikorcarts:plowcart>)
+setPos(62,97)

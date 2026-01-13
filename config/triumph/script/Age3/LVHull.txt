@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine_casing:1>)
+setTranslatedTitle("Electric machines behavior")
+setTranslatedDescription("Keep them inside yidy-yada. Electric machines behave similarly to steam, except they run on electricity. They also do not have that steam hatch, but they have automatic output working same like the hatch. Also be carefull to not let too much volts in them, or you may burn your fingers. For details i suggest look for tutorials.")
+
+addParent("Age3:root")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+hideLines()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine_casing:1>)
+setPos(36,33)

@@ -1,0 +1,12 @@
+setIcon(<minecraft:saddle>)
+setTranslatedTitle("Cowboy acts")
+setTranslatedDescription("Now when you can produce leather, you can craft saddle!")
+
+addParent("Age0:Leather5")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Saddle", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:saddle>)
+setPos(352,227)

@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:plan_tier7>)
+setTranslatedTitle("Tier 7 Rocket Plan!")
+setTranslatedDescription("Find Uranus Dungeon, defeat the boss and steal his Tier 7 Rocket plan! NOTE: You still have to make schematic to construct rocket from it.")
+
+addParent("Age5:Uranus")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:plan_tier7>)
+setPos(464,99)

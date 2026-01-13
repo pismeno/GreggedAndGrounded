@@ -1,0 +1,14 @@
+setIcon(<minecraft:nether_star>)
+setTranslatedTitle("Soulbound")
+setTranslatedDescription("Defeat Wither, and get his star (dust). Pretty disappointing huh...")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+addRewardFunction("gregification:Minimap")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:nether_star>)
+setPos(360,-132)

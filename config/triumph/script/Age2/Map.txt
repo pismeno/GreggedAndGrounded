@@ -1,0 +1,14 @@
+setIcon(<minecraft:filled_map>)
+setTranslatedTitle("Minimap!")
+setTranslatedDescription("Craft Map. This unlocks minimap!!! NOTE: To enable it press J to open fullscreen map (if you didn't change keybinds) and enable minimap in settings.")
+
+addParent("Age2:Paper")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+addRewardFunction("gag:Minimap")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:map>)
+setPos(129,-33)

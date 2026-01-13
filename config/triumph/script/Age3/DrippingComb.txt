@@ -1,0 +1,20 @@
+setIcon(<forestry:bee_combs:5>)
+setTranslatedTitle("Dripping's Drippy")
+setTranslatedDescription("Obtain Dripping Comb.")
+
+addParent("Age3:Mixer")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria1 = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria1.addItem(<forestry:bee_combs:5>)
+criteria2 = addCriteria("age2", "triumph:completed_advancement")
+criteria2.setString("Age2:ElectronicCircuit")
+setPos(135,66)

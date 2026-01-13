@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:644>)
+setTranslatedTitle("Wetware Processor")
+setTranslatedDescription("Make Wetware Processor, and consider going outside...")
+
+addParent("Age6:NeuroCircuit")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:644>)
+setPos(198,0)

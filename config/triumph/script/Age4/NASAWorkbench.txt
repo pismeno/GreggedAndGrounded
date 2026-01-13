@@ -1,0 +1,16 @@
+setIcon(<galacticraftcore:rocket_workbench>)
+setTranslatedTitle("Chicane")
+setTranslatedDescription("With Empowered Restonia Crystals you can now make NASA Workbench.")
+
+addParent("Age4:Empowerer")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:rocket_workbench>)
+setPos(200,-99)

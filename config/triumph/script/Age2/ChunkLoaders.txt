@@ -1,0 +1,12 @@
+setIcon(<chunkloaders:single_chunk_loader>)
+setTranslatedTitle("Chunk Loaders")
+setTranslatedDescription("I suggest you start using chunk loaders. Craft Single Chunk Loader, place it down, open it, and select chunks to load them.")
+
+addParent("Age2:WroughtIron")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<chunkloaders:single_chunk_loader>)
+setPos(129,165)

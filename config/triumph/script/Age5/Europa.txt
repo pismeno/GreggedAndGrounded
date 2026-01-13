@@ -1,0 +1,14 @@
+setIcon(<extraplanets:europa:2>)
+setTranslatedTitle("Europa")
+setTranslatedDescription("Fly to Europa. Jupiter's moon.")
+
+addParent("Age5:RocketT4")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+hideLines()
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-1501)
+setPos(233,0)

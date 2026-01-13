@@ -1,0 +1,16 @@
+setIcon(<gregtech:steam_casing>)
+setTranslatedTitle("Steam machines behavior")
+setTranslatedDescription("To finnish this quest craft Bronze Hull. Steam machines need to be supplied with steam in order to do something, so attach pipe to them or put them next to boiler. They also have this steam hatch that cools the machine by letting out excess steam. And on that side there can't be any block placed. You can put it on different side with use of wrench. AND MOSTLY steam machines will explode when exposed to rain, so keep them inside. TIP: use hoppers for input and output items.")
+
+addParent("Age2:root")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:steam_casing>)
+setPos(30,0)

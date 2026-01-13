@@ -1,0 +1,12 @@
+setIcon(<forestry:frame_impregnated>)
+setTranslatedTitle("Impregnator 2000")
+setTranslatedDescription("Craft Impregnated Frame.")
+
+addParent("Age2:Nether")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:frame_impregnated>)
+setPos(360,-66)

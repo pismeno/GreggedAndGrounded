@@ -1,0 +1,15 @@
+setIcon(<gregtech:meta_item_1:261>)
+setTranslatedTitle("Research")
+setTranslatedDescription("You will need to get data sticks, and use Scanner to research some recipe. You can see how to do that in JEI. Also you will need Data Access Hatch to input data sticks to the Assembly Line. NOTE: Get both to finish this")
+
+addParent("Age5:root")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:261>)
+criteria.addItem(<gregtech:machine:1404>)
+setPos(332,-99)

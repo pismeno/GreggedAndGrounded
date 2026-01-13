@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:283>)
+setTranslatedTitle("Why does this look worse! :'(")
+setTranslatedDescription("Make Gravi Star!")
+
+addParent("Age6:Neutronium")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:283>)
+setPos(462,-33)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:1035>)
+setTranslatedTitle("Hygiene")
+setTranslatedDescription("Build Cleanroom. It is a room without contamination, and you can make it as big as you want! I suggest you make it big enough for Laser Fabricator and other non-multiblock machines to fit in there. You will need that.")
+
+addParent("Age4:Hull")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1035>)
+setPos(134,99)

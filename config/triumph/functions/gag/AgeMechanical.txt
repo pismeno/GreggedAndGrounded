@@ -1,0 +1,6 @@
+gamestage silentadd @s one
+summon fireworks_rocket ~-6 ~1 ~ {LifeTime:25,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;2651799,12801229],FadeColors:[I;14188952,6719955]}]}}}}
+summon fireworks_rocket ~6 ~1 ~ {LifeTime:25,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;2651799,12801229],FadeColors:[I;14188952,6719955]}]}}}}
+summon fireworks_rocket ~ ~1 ~6 {LifeTime:20,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;3887386,14602026],FadeColors:[I;4312372,15435844]}]}}}}
+summon fireworks_rocket ~ ~1 ~-6 {LifeTime:20,FireworksItem:{id:fireworks,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;3887386,14602026],FadeColors:[I;4312372,15435844]}]}}}}
+give @s simple_trophies:trophy 1 0 {TrophyVariant:"neon",TrophyColorGreen:94,TrophyShowsTooltip:1b,TrophyItem:{id:"gregtech:meta_gear",Count:1b,Damage:1617s},TrophyColorBlue:41,TrophyName:"Mechanical Age",TrophyColorRed:104,TrophyEarnedAt:1747760651L}

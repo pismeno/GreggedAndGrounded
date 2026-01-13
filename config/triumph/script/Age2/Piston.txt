@@ -1,0 +1,16 @@
+setIcon(<minecraft:piston>)
+setTranslatedTitle("Pistons")
+setTranslatedDescription("Craft Piston.")
+
+addParent("Age2:RedAlloy")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:piston>)
+setPos(162,33)

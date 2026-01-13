@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_ingot_hot:288>)
+setTranslatedTitle("Ouch, when does it stop hurting?")
+setTranslatedDescription("Cook Kanthal dust.")
+
+addParent("Age3:ULPIC")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot_hot:288>)
+
+setPos(399,0)

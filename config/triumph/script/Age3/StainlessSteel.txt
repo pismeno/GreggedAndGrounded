@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_ingot:323>)
+setTranslatedTitle("Stainlesssteel")
+setTranslatedDescription("Finally make Stainless Steel. Manganese is mainly obtained from Pyrolusite ores and other ores you can find next to it.")
+
+addParent("Age3:ULPIC")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:323>)
+
+setPos(399,-33)

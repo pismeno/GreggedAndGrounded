@@ -1,0 +1,14 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "oil_medium", Amount: 1000}}>)
+setTranslatedTitle("American dream")
+setTranslatedDescription("Second way is to get a Pump and place it above oil deposit. NOTE: To finish this quest get an empty cell and fill it up with Raw Oil, if you get any other it is ok. And i suggest you rather do not drill above an ocean, since there may be a flaw in pump logic.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "oil_medium", Amount: 1000}}>)
+
+setPos(201,198)

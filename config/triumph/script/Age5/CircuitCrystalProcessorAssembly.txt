@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:641>)
+setTranslatedTitle("Crystal Processor Assembly!")
+setTranslatedDescription("Assemble Crystal Processor Assembly.")
+
+addParent("Age5:CircuitCrystalProcessor")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:641>)
+setPos(596,0)

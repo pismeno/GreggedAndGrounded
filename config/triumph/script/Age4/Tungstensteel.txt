@@ -1,0 +1,19 @@
+setIcon(<gregtech:meta_ingot:2013>)
+setTranslatedTitle("Tungstensteel: Futuristic Age")
+setTranslatedDescription("Make Tungsten Steel, main material in for Insane Voltage.")
+
+addParent("Age4:RTMCoil")
+addParent("Age4:Tungsten")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeFuturistic")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:2013>)
+setPos(538,33)

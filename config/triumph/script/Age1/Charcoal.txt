@@ -1,0 +1,16 @@
+setIcon(<minecraft:coal:1>)
+setTranslatedTitle("Charcoal!")
+setTranslatedDescription("Use your coke oven to create your first charcoal. Coke Oven also produces Creosote as byproduct, which is solid fuel option. It can smelt 32 items! Use clay bucket to pick it up. TIP: break the control block to void creosote.")
+
+addParent("Age1:CokeOven")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:coal:1>)
+setPos(260,64)

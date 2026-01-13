@@ -1,0 +1,12 @@
+setIcon(<forestry:alveary.heater>)
+setTranslatedTitle("Alveary Heater")
+setTranslatedDescription("You can also add modifier blocks to it. They need to be in the first two layers. NOTE: For the purpose of this quest craft Alveary Heater")
+
+addParent("Age3:Alveary")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:alveary.heater>)
+setPos(135,-66)

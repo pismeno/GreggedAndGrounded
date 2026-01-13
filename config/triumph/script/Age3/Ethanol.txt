@@ -1,0 +1,13 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "ethanol", Amount: 1000}}>)
+setTranslatedTitle("Ethanol")
+setTranslatedDescription("Distillate one of your bio products into Ethanol. Then to get ethylene put it with Sulfuric Acid into chemical reactor. TIP: Do not use it as fuel. It is not good. Use Benzene instead.")
+
+addParent("Age3:Distillery")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "ethanol", Amount: 1000}}>)
+
+setPos(267,132)

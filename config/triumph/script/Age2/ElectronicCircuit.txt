@@ -1,0 +1,20 @@
+setIcon(<gregtech:meta_item_1:621>)
+setTranslatedTitle("Electronic Circuit")
+setTranslatedDescription("Craft Electronic Circuit.")
+
+addParent("Age2:Resistor")
+addParent("Age2:CircuitBoard")
+addParent("Age2:VacuumTube")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeIndustrial")
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:621>)
+setPos(475,66)

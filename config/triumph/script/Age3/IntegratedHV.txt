@@ -1,0 +1,19 @@
+setIcon(<gregtech:meta_item_1:625>)
+setTranslatedTitle("High-Voltage Circuits")
+setTranslatedDescription("Make Advanced Integrated Circuit.")
+
+addParent("Age3:RAM")
+addParent("Age3:IntegratedMV")
+addParent("Age3:Transistor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:625>)
+
+setPos(531,-99)

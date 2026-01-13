@@ -1,0 +1,14 @@
+setIcon(<ceramics:clay_bucket>)
+setTranslatedTitle("Bucketry")
+setTranslatedDescription("You can pretty easily craft Clay Bucket and use it to transport or move other fluids than just water and actually place them in world! You can even pick up lava, it just breaks when placing it.")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<ceramics:clay_bucket>)
+setPos(95,-35)

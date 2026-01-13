@@ -1,0 +1,16 @@
+setIcon(<extraplanets:eris>)
+setTranslatedTitle("Eris")
+setTranslatedDescription("Fly to Eris. There's a tier 10 rocket schematic! Also you can mine Black Quartz here.")
+
+addParent("Age6:RocketT9")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-21)
+setPos(231,-33)

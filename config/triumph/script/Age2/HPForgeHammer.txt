@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:14>)
+setTranslatedTitle("High Pressure Forge Hammer")
+setTranslatedDescription("Craft High Pressure Forge Hammer, it is faster and consumes more steam.")
+
+addParent("Age2:Steel")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:14>)
+setPos(294,297)

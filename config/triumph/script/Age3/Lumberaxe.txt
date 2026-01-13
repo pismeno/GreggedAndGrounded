@@ -1,0 +1,12 @@
+setIcon(<tconstruct:lumberaxe, nbt: {TinkerData: {Materials: ["hss_e", "cobalt", "ardite", "naquadah_alloy"]}}>)
+setTranslatedTitle("Lumberaxe!")
+setTranslatedDescription("Craft any Lumberaxe. It mines 3x3!")
+
+addParent("Age3:ToolForge")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:lumberaxe>)
+setPos(135,-198)

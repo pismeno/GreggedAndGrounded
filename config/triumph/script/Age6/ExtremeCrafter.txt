@@ -1,0 +1,16 @@
+setIcon(<avaritia:extreme_crafting_table>)
+setTranslatedTitle("Only Extreme? :'(")
+setTranslatedDescription("Assemble Extreme Crafting Table.")
+
+addParent("Age6:Neutronium")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<avaritia:extreme_crafting_table>)
+setPos(462,33)

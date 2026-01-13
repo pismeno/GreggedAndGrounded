@@ -1,0 +1,16 @@
+setIcon(<actuallyadditions:block_display_stand>)
+setTranslatedTitle("Display(s)! Stands...")
+setTranslatedDescription("Assemble Display Stands. You will need 5 total.")
+
+addParent("Age4:Assembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:block_display_stand>)
+setPos(134,-99)

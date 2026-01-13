@@ -1,0 +1,14 @@
+setIcon(<gregtech:fluid_pipe_small:2037>)
+setTranslatedTitle("Upgrades")
+setTranslatedDescription("Craft Small Potin Pipe. Potin is not that expensive and the pipes can transport a lot of fluid!")
+
+addParent("Age2:WaterPump")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:fluid_pipe_small:2037>)
+setPos(129,-66)

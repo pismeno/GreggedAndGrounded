@@ -1,0 +1,16 @@
+setIcon(<extraplanets:item_tier8_rocket>)
+setTranslatedTitle("Ludicrouser Leaps")
+setTranslatedDescription("Construct tier 8 Rocket!")
+
+addParent("Age6:Darmstadium")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:item_tier8_rocket>)
+setPos(99,-66)

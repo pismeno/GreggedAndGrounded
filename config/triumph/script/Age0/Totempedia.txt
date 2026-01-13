@@ -1,0 +1,12 @@
+setIcon(<totemic:totempedia>)
+setTranslatedTitle("Totempedia")
+setTranslatedDescription("Craft Totempedia. Totempedia will guide you thru Totemic and help you perform ceremonies.")
+
+addParent("Age0:Leather5")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Totempedia", "minecraft:inventory_changed")
+criteria.addItem(<totemic:totempedia>)
+setPos(352,62)

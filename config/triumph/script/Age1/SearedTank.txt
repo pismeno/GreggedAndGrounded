@@ -1,0 +1,12 @@
+setIcon(<tconstruct:seared_tank>)
+setTranslatedTitle("Seared Tank")
+setTranslatedDescription("Craft seared tank, You have to include in the multiblock and fill it with lava in order to melt things. TIP: You can also use it to store other liquids!")
+
+addParent("Age1:SearedBrick")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:seared_tank>)
+setPos(326,-2)

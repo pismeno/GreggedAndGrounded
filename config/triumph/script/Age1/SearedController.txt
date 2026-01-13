@@ -1,0 +1,16 @@
+setIcon(<tconstruct:smeltery_controller>)
+setTranslatedTitle("Smeltery Controller")
+setTranslatedDescription("Craft seared controller, it is the controller of Tinker's Smeltery. It is a multiblock structure, you can consult Materials and You book, if you need help with the multiblock Structure.")
+
+addParent("Age1:SearedBrick")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:smeltery_controller>)
+setPos(326,31)

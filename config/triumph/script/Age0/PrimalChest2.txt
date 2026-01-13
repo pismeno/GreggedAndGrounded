@@ -1,0 +1,12 @@
+setIcon(<primalchests:primal_chest_advanced>)
+setTranslatedTitle("Advanced Storage")
+setTranslatedDescription("Once you have leather you can upgrade your storage.")
+
+addParent("Age0:PrimalChest")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("PrimalChest2", "minecraft:inventory_changed")
+criteria.addItem(<primalchests:primal_chest_advanced>)
+setPos(286,-4)

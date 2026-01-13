@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_ingot:429>)
+setTranslatedTitle("No, not the periodic table song")
+setTranslatedDescription("Make Indium Tin Barium Titanium Cuprate Ingot, the material for LuV Superconductors. It is needed in large quantities for fusion reactor.")
+
+addParent("Age5:LuVMixer")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:429>)
+setPos(464,165)

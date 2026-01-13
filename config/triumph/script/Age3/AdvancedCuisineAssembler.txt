@@ -1,0 +1,14 @@
+setIcon(<gregtech:machine:8519>)
+setTranslatedTitle("Advanced Cuisine Assembler")
+setTranslatedDescription("Craft Advanced Cuisine Assembler and make youself some nice dinner.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:8519>)
+
+setPos(201,297)

@@ -1,0 +1,12 @@
+setIcon(<openglider:hang_glider_basic>)
+setTranslatedTitle("Glide!")
+setTranslatedDescription("Craft Hang Glider. It is quite effective for travelling!")
+
+addParent("Age2:Steel")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<openglider:hang_glider_basic>)
+setPos(294,-33)

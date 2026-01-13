@@ -1,0 +1,34 @@
+{
+  "name": "gregtech.veins.ore.lithium",
+  "weight": 20,
+  "density": 0.1,
+  "min_height": 20,
+  "max_height": 60,
+  "dimension_filter": [
+    "dimension_id:-1510"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      17,
+      19
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:lithium"
+      },
+      {
+        "secondary": "ore:spodumene"
+      },
+      {
+        "between": "ore:lepidolite"
+      },
+      {
+        "sporadic": "ore:gypsum"
+      }
+    ]
+  }
+}

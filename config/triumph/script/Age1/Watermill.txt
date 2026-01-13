@@ -1,0 +1,12 @@
+setIcon(<betterwithmods:axle_generator:1>)
+setTranslatedTitle("Love on first sight")
+setTranslatedDescription("You can now craft Water Wheel, even when it's pretty expensive it means no more gearbox breaking etc.!")
+
+addParent("Age1:CokeOven")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:axle_generator:1>)
+setPos(260,31)

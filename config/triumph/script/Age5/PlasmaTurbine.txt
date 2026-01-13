@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:1012>)
+setTranslatedTitle("Large Plasma Turbines")
+setTranslatedDescription("Make Large Plasma Turbine. To transport plasma you need pipe that can handle them (look in their item descriptions).")
+
+addParent("Age5:FusionReactor1")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1012>)
+setPos(530,33)

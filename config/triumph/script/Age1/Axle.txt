@@ -1,0 +1,12 @@
+setIcon(<betterwithmods:wooden_axle>)
+setTranslatedTitle("Axles")
+setTranslatedDescription("This thing can transport kinetic energy. NOTE: You can't put more than 3 in a row. You will need Gearbox to reset the range.")
+
+addParent("Age1:Windmill")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:wooden_axle>)
+setPos(161,-35)

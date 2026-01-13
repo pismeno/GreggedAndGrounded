@@ -1,0 +1,12 @@
+setIcon(<projectred-transmission:wire>)
+setTranslatedTitle("Redstone on walls!?")
+setTranslatedDescription("Craft Red Alloy Redstone Wire. It can go on walls and it has infinte signal!!")
+
+addParent("Age3:Wiremill")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transmission:wire>)
+setPos(102,165)

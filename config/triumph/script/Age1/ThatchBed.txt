@@ -1,0 +1,12 @@
+setIcon(<primal_tech:leaf_bed>)
+setTranslatedTitle("Bed of Thatch")
+setTranslatedDescription("Craft Bed of Thatch, but be carefull it is very fragile.")
+
+addParent("Age1:Thatch")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<primal_tech:leaf_bed>)
+setPos(128,-68)

@@ -1,0 +1,17 @@
+setIcon(<extraplanets:item_tier9_rocket>)
+setTranslatedTitle("Ultimate Leaps")
+setTranslatedDescription("Construct tier 9 Rocket!")
+
+addParent("Age6:Tritanium")
+addParent("Age6:Tier9RocketPlan")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:item_tier9_rocket>)
+setPos(198,-33)

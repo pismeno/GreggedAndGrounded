@@ -1,0 +1,17 @@
+setIcon(<gregtech:wire_coil:1>)
+setTranslatedTitle("Perfect Kanthal Tilt")
+setTranslatedDescription("Assemble Kanthal Coils. When you upgrade your EBF with it, it will be able to handle higher temperatures.")
+
+addParent("Age3:KanthalIngot")
+addParent("Age3:AdvancedAssembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:wire_coil:1>)
+setPos(465,33)

@@ -1,0 +1,20 @@
+setIcon(<gregtech:meta_item_1:406>)
+setTranslatedTitle("Elite Circuit Boards")
+setTranslatedDescription("Make Elite Circuit Board.")
+
+addParent("Age5:root")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria1 = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria1.addItem(<gregtech:meta_item_1:406>)
+criteria2 = addCriteria("age4", "triumph:completed_advancement")
+criteria2.setString("Age4:TungstenSteel")
+setPos(563,-33)

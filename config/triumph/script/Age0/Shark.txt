@@ -1,0 +1,12 @@
+setIcon(<primal:shark_tooth>)
+setTranslatedTitle("Baby Shark")
+setTranslatedDescription("Obtain Shark Tooth from Water Strainer.")
+
+addParent("Age0:DenseStrainer")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("SharkT", "minecraft:inventory_changed")
+criteria.addItem(<primal:shark_tooth>)
+setPos(418,-4)

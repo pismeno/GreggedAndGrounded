@@ -1,0 +1,12 @@
+setIcon(<minecraft:elytra>)
+setTranslatedTitle("Ender Airlines")
+setTranslatedDescription("Obtain an Elytra.")
+
+addParent("Age3:TheEnd")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:elytra>)
+setPos(300,-99)

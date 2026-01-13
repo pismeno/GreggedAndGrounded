@@ -1,0 +1,16 @@
+setIcon(<betterwithmods:axle_generator>)
+setTranslatedTitle("Wind Generator")
+setTranslatedDescription("Craft Windmill. It will allow you to power more advanced machines almost without doing anything. But there's a catch. The problem is it can break the closest gearbox during rain or thunderstorm. But you can actually turn the gearbox off using redstone lever!")
+
+addParent("Age1:Thatch")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:axle_generator>)
+setPos(128,-2)

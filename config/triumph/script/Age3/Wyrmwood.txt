@@ -1,0 +1,18 @@
+setIcon(<stygian:endplanks>)
+setTranslatedTitle("Wyrmwood")
+setTranslatedDescription("Make Wyrmwood Planks. To find it you need to look around the islands, where end cities are.")
+
+addParent("Age3:TheEnd")
+addParent("Age3:AdvancedSaw")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<stygian:endplanks>)
+
+setPos(300,-66)

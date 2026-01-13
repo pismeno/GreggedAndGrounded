@@ -1,0 +1,21 @@
+setIcon(<extraplanets:tier1_space_suit_helmet>)
+setTranslatedTitle("Space Suit")
+setTranslatedDescription("To survive in space craft Tier 1 Space Suit.")
+
+addParent("Age4:root")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extraplanets:tier1_space_suit_helmet>)
+criteria.addItem(<extraplanets:tier1_space_suit_chest>)
+criteria.addItem(<extraplanets:tier1_space_suit_legings>)
+criteria.addItem(<extraplanets:tier1_space_suit_boots>)
+setPos(233,-165)

@@ -1,0 +1,14 @@
+setIcon("betterwithmods:hemp")
+setTranslatedTitle("Hemp Seeds")
+setTranslatedDescription("Break grass to get Hemp Seeds.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+hideLines()
+
+criteria = addCriteria("HempSeed", "minecraft:inventory_changed")
+criteria.addItem("betterwithmods:hemp")
+setPos(154,95)

@@ -1,0 +1,14 @@
+setIcon(<projectred-expansion:machine1:1>)
+setTranslatedTitle("Electrotine Power")
+setTranslatedDescription("If you want faster autocrafting + being able to pur more recipe plans into your Auto Crafting Bench, you must get Electrotine Generator, put some Electrotine Dust inside and transfer the energy with Low Load Power Lines.")
+
+addParent("Age4:Assembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projectred-expansion:machine1:1>)
+setPos(134,297)

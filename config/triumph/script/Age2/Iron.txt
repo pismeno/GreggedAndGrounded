@@ -1,0 +1,12 @@
+setIcon(<minecraft:iron_ingot>)
+setTranslatedTitle("Iron")
+setTranslatedDescription("Mine and craft Iron.")
+
+addParent("Age2:AdvancedProspector")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:iron_ingot>)
+setPos(63,165)

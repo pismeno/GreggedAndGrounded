@@ -1,0 +1,20 @@
+setIcon(<gregtech:meta_ingot:2042>)
+setTranslatedTitle("Naquadah Alloy")
+setTranslatedDescription("Make Naquadah Alloy, the main material for ZPM. It is also really good for tools.")
+
+addParent("Age6:root")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria1 = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria1.addItem(<gregtech:meta_ingot:2042>)
+criteria2 = addCriteria("age2", "triumph:completed_advancement")
+criteria2.setString("Age5:CircuitCrystalProcessorMainframe")
+setPos(33,33)

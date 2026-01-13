@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:1025>)
+setTranslatedTitle("Steam Grinding")
+setTranslatedDescription("Construct Steam Grinder. It is a multiblock and I have a feeling it's gonna be useful for a big time.")
+
+addParent("Age2:PipePotin")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1025>)
+setPos(162,-33)

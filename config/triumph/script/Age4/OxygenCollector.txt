@@ -1,0 +1,14 @@
+setIcon(<galacticraftcore:collector>)
+setTranslatedTitle("Breath in")
+setTranslatedDescription("Craft Oxygen Collector. It can be used only by placing it next to Oxygen Bubble Distributor or Oxygen Sealer, but it produces a lot of oxygen!")
+
+addParent("Age4:Hull")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:collector>)
+setPos(167,-165)

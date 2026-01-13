@@ -1,0 +1,16 @@
+setIcon(<actuallyadditions:item_crystal:5>)
+setTitle("Age 4: Modern")
+setDescription("Reconstructing atoms, more machines, trips to other planets and more!")
+setBackground("minecraft:textures/blocks/concrete_white.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+setPos(0,33)
+
+criteria = addCriteria("age3", "triumph:completed_advancement")
+criteria.setString("Age3:AtomicReconstructor")

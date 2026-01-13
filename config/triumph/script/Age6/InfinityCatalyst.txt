@@ -1,0 +1,16 @@
+setIcon(<avaritia:resource:5>)
+setTranslatedTitle("Infinite")
+setTranslatedDescription("Craft infinity catalyst.")
+
+addParent("Age6:ExtremeCrafter")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<avaritia:resource:5>)
+setPos(495,33)

@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_dust:351>)
+setTranslatedTitle("Gallium Arsenide")
+setTranslatedDescription("To get Arsenic you will need to mine and centrifuge Realgar. You have more options for Gallium, look into it in JEI. You can for example electrolyze Sphalerite.")
+
+addParent("Age3:Mixer")
+addParent("Age3:Centrifuge")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_dust:351>)
+setPos(135,33)

@@ -1,0 +1,14 @@
+setIcon(<storagedrawers:upgrade_storage:1>)
+setTranslatedTitle("Storage upgrades: Drawer 1")
+setTranslatedDescription("Make iron drawer upgrade.")
+
+addParent("Age3:root")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<storagedrawers:upgrade_storage:1>)
+setPos(102,-264)

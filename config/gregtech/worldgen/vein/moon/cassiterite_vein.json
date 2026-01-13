@@ -1,0 +1,34 @@
+{
+  "name": "gregtech.veins.ore.cassiterite",
+  "weight": 55,
+  "density": 0.2,
+  "max_height": 60,
+  "min_height": 40,
+  "dimension_filter": [
+    "dimension_id:-28"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      17,
+      24
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:tin"
+      },
+      {
+        "secondary": "ore:cassiterite"
+      },
+      {
+        "between": "ore:cassiterite_sand"
+      },
+      {
+        "sporadic": "ore:tin"
+      }
+    ]
+  }
+}

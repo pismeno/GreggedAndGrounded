@@ -1,0 +1,14 @@
+setIcon(<ironchest:gold_diamond_chest_upgrade>)
+setTranslatedTitle("Storage upgrades: Gold to Dia")
+setTranslatedDescription("Craft Gold to Diamond chest upgrade.")
+
+addParent("Age3:root")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<ironchest:gold_diamond_chest_upgrade>)
+setPos(69,-264)

@@ -1,0 +1,12 @@
+setIcon(<totemic:buffalo_items:1>)
+setTranslatedTitle("Buffalo Tooth")
+setTranslatedDescription("Kill grown Buffalos to get their teeth.")
+
+addParent("Age0:Buffalos")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<totemic:buffalo_items:1>)
+setPos(451,62)

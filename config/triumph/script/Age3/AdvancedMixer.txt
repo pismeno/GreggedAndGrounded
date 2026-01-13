@@ -1,0 +1,14 @@
+setIcon(<gregtech:machine:471>)
+setTranslatedTitle("Advanced Mixer")
+setTranslatedDescription("Craft Advanced Mixer.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:471>)
+
+setPos(201,264)

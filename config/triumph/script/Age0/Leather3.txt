@@ -1,0 +1,13 @@
+setIcon(<primal:hide_dried>)
+setTranslatedTitle("Dryin' Hides")
+setTranslatedDescription("Leather Pt. 3: Dry Salted Hides on a Drying Rack.")
+
+addParent("Age0:Leather2")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("hidedried", "minecraft:inventory_changed")
+criteria.addItem(<primal:hide_dried>)
+setPos(319,95)

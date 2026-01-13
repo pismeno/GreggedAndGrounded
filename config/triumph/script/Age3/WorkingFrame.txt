@@ -1,0 +1,12 @@
+setIcon(<gregtech:gt.frame_working>)
+setTranslatedTitle("Working Frame")
+setTranslatedDescription("Assemble Working Frame.")
+
+addParent("Age3:AdvancedAssembler")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:gt.frame_working>)
+setPos(465,99)

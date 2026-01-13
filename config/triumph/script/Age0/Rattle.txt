@@ -1,0 +1,12 @@
+setIcon(<totemic:rattle>)
+setTranslatedTitle("Rattle")
+setTranslatedDescription("Craft rattle to perform ceremonies.")
+
+addParent("Age0:Totempedia")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Rattle", "minecraft:inventory_changed")
+criteria.addItem(<totemic:rattle>)
+setPos(385,161)

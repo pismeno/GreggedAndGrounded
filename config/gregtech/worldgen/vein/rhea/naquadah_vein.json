@@ -1,0 +1,34 @@
+{
+  "name": "gag.veins.ore.plutonium_naquadah",
+  "weight": 30,
+  "density": 0.15,
+  "min_height": 10,
+  "max_height": 90,
+  "dimension_filter": [
+    "dimension_id:-1508"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      20,
+      32
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:plutonium"
+      },
+      {
+        "secondary": "ore:ardite"
+      },
+      {
+        "between": "ore:naquadah"
+      },
+      {
+        "sporadic": "ore:naquadah"
+      }
+    ]
+  }
+}

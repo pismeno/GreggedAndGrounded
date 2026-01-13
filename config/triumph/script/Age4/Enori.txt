@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_plate:32003>)
+setTranslatedTitle("Crystal Plates!")
+setTranslatedDescription("Make Enori Crystal Plates.")
+
+addParent("Age4:root")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_plate:32003>)
+setPos(35,33)

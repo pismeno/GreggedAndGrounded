@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_gear:1617>)
+setTitle("Age 1: Mechanical")
+setDescription("In this age you're going to learn about mechanical machinery and make your first bronze!")
+setBackground("backgrounds:planks.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+setPos(-6,31)
+
+criteria = addCriteria("age0", "triumph:completed_advancement")
+criteria.setString("Age0:WoodenGear")

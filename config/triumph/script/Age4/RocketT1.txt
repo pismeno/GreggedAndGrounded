@@ -1,0 +1,17 @@
+setIcon(<galacticraftcore:rocket_t1>)
+setTranslatedTitle("No steps yet...")
+setTranslatedDescription("Craft Tier 1 Rocket!")
+
+addParent("Age4:NASAWorkbench")
+addParent("Age4:FuelLoader")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:rocket_t1>)
+setPos(233,-99)

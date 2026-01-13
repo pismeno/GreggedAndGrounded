@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "titanium_tetrachloride", Amount: 1000}}>)
+setTranslatedTitle("Titanium Tetrachloride")
+setTranslatedDescription("Make that thing from rutile dust, which you can make from Bauxite ores.")
+
+addParent("Age4:ChemicalReactor")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "titanium_tetrachloride", Amount: 1000}}>)
+
+setPos(266,33)

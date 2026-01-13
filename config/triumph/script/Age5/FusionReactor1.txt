@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:1020>)
+setTranslatedTitle("Fusion Reactor")
+setTranslatedDescription("Construct Fusion Reactor Computer Mark 1. The more Energy Hatches you have, the more EU it can store. When it has enough EU to start it consumes it, converts it to heat and keeps running. Once the recipe finishes the heat starts to go down slowly. But if you start another recipe the heat gets substracted from the EU to start. TIP: fill the structure with hatches where you can, as shown in JEI to save resources.")
+
+addParent("Age5:Trinium")
+addParent("Age5:IndiumTinBariumTitaniumCuprate")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1020>)
+setPos(497,66)

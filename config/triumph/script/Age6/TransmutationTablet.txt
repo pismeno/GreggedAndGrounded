@@ -1,0 +1,20 @@
+setIcon(<projecte:item.pe_transmutation_tablet>)
+setTranslatedTitle("How did you get here?")
+setTranslatedDescription("This is it... the end of our little adventure... Craft Transmutation Tablet.")
+
+addParent("Age6:InfinityCatalyst")
+addParent("Age6:Certificate")
+addParent("Age6:UltimateBattery")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeCreative")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<projecte:item.pe_transmutation_tablet>)
+setPos(538,0)

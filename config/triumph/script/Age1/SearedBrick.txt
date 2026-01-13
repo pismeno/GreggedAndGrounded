@@ -1,0 +1,17 @@
+setIcon(<tconstruct:materials>)
+setTranslatedTitle("Seared bricks...")
+setTranslatedDescription("Craft seared bricks. I can't really tell you how much you will need because tinker's smeltery furnace can be really how big you want. But i will suggest you prepare plenty (creating seared bricks by melting stone in tc furnace is disabled).")
+
+addParent("Age1:Charcoal")
+addParent("Age1:FilterHopper")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:materials:0>)
+setPos(293,31)

@@ -1,0 +1,12 @@
+setIcon(<chisel:chisel_iron>)
+setTranslatedTitle("Architectury")
+setTranslatedDescription("Craft Chisel.")
+
+addParent("Age2:Iron")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<chisel:chisel_iron>)
+setPos(96,231)

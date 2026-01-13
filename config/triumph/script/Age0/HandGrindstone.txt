@@ -1,0 +1,12 @@
+setIcon(<horsepower:hand_grindstone>)
+setTranslatedTitle("Grindstone")
+setTranslatedDescription("Craft Hand Grindstone. Place item on it and grind with right click!")
+
+addParent("Age0:Grill")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Grindstone", "minecraft:inventory_changed")
+criteria.addItem(<horsepower:hand_grindstone>)
+setPos(253,62)

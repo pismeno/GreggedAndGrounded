@@ -1,0 +1,16 @@
+setIcon(<betterwithmods:bellows>)
+setTranslatedTitle("That is what i call fire!")
+setTranslatedDescription("Now when you got the Windmill (Hand Crank isn't powerfull enough) you can power bellows. Use it to stoke fires under the Cauldron! TIP: Put some gearbox to the axles and put redstone lever on it. You can now reactivate the Bellows")
+
+addParent("Age1:Windmill")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:bellows>)
+setPos(161,-2)

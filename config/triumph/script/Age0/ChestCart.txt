@@ -1,0 +1,13 @@
+setIcon(<astikorcarts:cargocart>)
+setTranslatedTitle("Going for Holiday")
+setTranslatedDescription("Craft Transportation Cart. TIP: To attach horse to it press R.")
+
+addParent("Age0:Saddle")
+
+setShowToast(true)
+alwaysVisible()
+hideLines()
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<astikorcarts:cargocart>)
+setPos(418,227)

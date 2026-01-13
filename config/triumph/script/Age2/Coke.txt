@@ -1,0 +1,12 @@
+setIcon(<gregtech:meta_gem:319>)
+setTranslatedTitle("Coke")
+setTranslatedDescription("Put coal into Coke Oven and create Coke. It is better fuel than coal and charcoal and later you will use it to create steel. NOTE: Steel needs 2 charcoal or 1 coke to be created.")
+
+addParent("Age2:Coal")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_gem:319>)
+setPos(96,363)

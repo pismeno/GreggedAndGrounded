@@ -1,0 +1,14 @@
+setIcon(<gregtech:fluid_pipe_small:260>)
+setTranslatedTitle("Greggy Pipes")
+setTranslatedDescription("To transport steam you have to use metal fluid pipes. Gregtech pipes connect to the block you place them to and to connect it to other blocks use wrench. NOTE: To finish this quest craft Small Bronze Pipe.")
+
+addParent("Age2:WaterPump")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:fluid_pipe_small:260>)
+setPos(96,-66)

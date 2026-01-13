@@ -1,0 +1,16 @@
+setIcon(<extraplanets:saturn:1>)
+setTranslatedTitle("Saturn")
+setTranslatedDescription("Fly to Saturn. There's a tier 6 rocket schematic!")
+
+addParent("Age5:RocketT5")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("entered_planet", "minecraft:location")
+criteria.setDimID(-16)
+setPos(299,-33)

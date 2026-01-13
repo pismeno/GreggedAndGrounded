@@ -1,0 +1,13 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "naphtha", Amount: 1000}}>)
+setTranslatedTitle("Naphtha")
+setTranslatedDescription("Distillate oil into naphtha and desulfurize the result in chemical reactor. The best way to get Ethylene now is cracking naphtha with steam and distilling it. TIP: you can recycle hydrogen sulfide in Electrolyzer. Place it next to your chemical reactor and use screwdriver to enable input from output side!")
+
+addParent("Age3:Distillery")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "naphtha", Amount: 1000}}>)
+
+setPos(267,231)

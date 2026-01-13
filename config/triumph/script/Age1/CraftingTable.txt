@@ -1,0 +1,16 @@
+setIcon(<minecraft:crafting_table>)
+setTranslatedTitle("Finally, Crafting Table!")
+setTranslatedDescription("Once you unlocked mechanical age you can craft vanilla crafting table. You need it to craft recipes from this age on. TIP: U can craft easily Crafting Station which holds the components in grid!")
+
+addParent("Age1:root")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:crafting_table>)
+setPos(29,-35)

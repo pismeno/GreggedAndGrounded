@@ -1,0 +1,14 @@
+setIcon(<extrautils2:wateringcan>)
+setTranslatedTitle("Watering Can")
+setTranslatedDescription("You can make Watering Can. Fill it with water and water your plants!")
+
+addParent("Age2:Iron")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<extrautils2:wateringcan>)
+setPos(129,198)

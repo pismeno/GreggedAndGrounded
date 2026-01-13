@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:249>)
+setTranslatedTitle("Elite Cutter!")
+setTranslatedDescription("Craft Elite Cutting Machine. For the Laminated Glass you will need polyvinyl butyral, for which you also need distillation tower and Large Chemical Reactor.")
+
+addParent("Age5:root")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:249>)
+setPos(35,-33)

@@ -1,0 +1,14 @@
+setIcon(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "argon", Amount: 1000}}>)
+setTranslatedTitle("Aragorn, or something")
+setTranslatedDescription("To get Argon you need to distillate liquid air, made in Vacuum Freezer. NOTE: To finish this quest click the slot where Argon is while hovering Empty Cell.")
+
+addParent("Age4:VacuumFreezer")
+addParent("Age4:DistillationTower")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:78, nbt:{Fluid: {FluidName: "biomass", Amount: 1000}}>)
+
+setPos(299,165)

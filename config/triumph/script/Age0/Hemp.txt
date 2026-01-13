@@ -1,0 +1,12 @@
+setIcon(<betterwithmods:material:2>)
+setTranslatedTitle("Hemp")
+setTranslatedDescription("Grow Hemp on Farmland.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Hemp", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:material:2>)
+setPos(187,95)

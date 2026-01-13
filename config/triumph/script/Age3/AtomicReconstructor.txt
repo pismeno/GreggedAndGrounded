@@ -1,0 +1,18 @@
+setIcon(<actuallyadditions:block_atomic_reconstructor>)
+setTranslatedTitle("Atomic Reconstructor: Modern Age")
+setTranslatedDescription("Craft Atomic Reconstructor. TIP: Switch it's mode by holding a redstone torch.")
+
+addParent("Age3:IntegratedHV")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeModern")
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:block_atomic_reconstructor>)
+setPos(570,-99)

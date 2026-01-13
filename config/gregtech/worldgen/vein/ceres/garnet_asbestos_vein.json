@@ -1,0 +1,34 @@
+{
+  "name": "gregtech.veins.ore.garnet_asbestos",
+  "weight": 80,
+  "density": 0.2,
+  "max_height": 60,
+  "min_height": 50,
+  "dimension_filter": [
+    "dimension_id:-20"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      17,
+      24
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:asbestos"
+      },
+      {
+        "secondary": "ore:garnet_sand"
+      },
+      {
+        "between": "ore:tin"
+      },
+      {
+        "sporadic": "ore:diatomite"
+      }
+    ]
+  }
+}

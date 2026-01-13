@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:563>)
+setTranslatedTitle("Extremely Precise!")
+setTranslatedDescription("Craft Advanced Precision Laser Engraver III.")
+
+addParent("Age4:Mars")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:563>)
+setPos(398,-165)

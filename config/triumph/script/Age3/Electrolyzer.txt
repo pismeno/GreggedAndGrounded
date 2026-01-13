@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine:275>)
+setTranslatedTitle("Basic Electrolyzer")
+setTranslatedDescription("Craft Basic Electrolyzer. It is used to separate dusts etc. You will now need it to obtain Oxygen, which you need for your Arc Furnace to Run. Either electrolyze Water or Silicon Dioxide. TIP: Never void Oxygen.")
+
+addParent("Age3:root")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:275>)
+setPos(36,66)

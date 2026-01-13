@@ -1,0 +1,12 @@
+setIcon(<gregtech:machine:1026>)
+setTranslatedTitle("This mines...")
+setTranslatedDescription("You can make Basic Ore Drilling Plant. It mines ores and crushes them at the same time. It also gives you 3 time more crushed ores! NOTE: To run this you will need Drilling Fluid.")
+
+addParent("Age4:EVAssembler")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1026>)
+setPos(431,-66)

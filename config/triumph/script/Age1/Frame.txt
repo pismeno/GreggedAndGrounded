@@ -1,0 +1,16 @@
+setIcon(<forestry:frame_untreated>)
+setTranslatedTitle("Frames")
+setTranslatedDescription("Craft Untreated Frame. It will speed up the production of combs!")
+
+addParent("Age1:Apiary")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<forestry:frame_untreated>)
+setPos(128,64)

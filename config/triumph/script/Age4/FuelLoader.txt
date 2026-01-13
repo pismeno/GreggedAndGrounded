@@ -1,0 +1,16 @@
+setIcon(<galacticraftcore:fuel_loader>)
+setTranslatedTitle("Pump it!")
+setTranslatedDescription("Craft Fuel Loader so you can fuel your Tier 1 Rocket! You have to use either Rocket Fuel or Diesel to fill it.")
+
+addParent("Age4:Carbon")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:fuel_loader>)
+setPos(200,-66)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_ingot:324>)
+setTranslatedTitle("That was such a steel, took it!")
+setTranslatedDescription("Make Steel in the Blast furnace, you have to use either 2 charcoal/coal for 1 steel ingot or 1 coke for 1. And keep the furnaces runnin'!")
+
+addParent("Age2:PBF")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:324>)
+setPos(261,66)

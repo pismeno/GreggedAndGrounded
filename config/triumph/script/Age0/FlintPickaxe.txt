@@ -1,0 +1,16 @@
+setIcon(<primal:flint_pickaxe>)
+setTranslatedTitle("First Pickaxe")
+setTranslatedDescription("Craft Primal Flint Pickaxe.")
+
+addParent("Age0:CraftingStump")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("FlintPickaxe", "minecraft:inventory_changed")
+criteria.addItem(<primal:flint_pickaxe>)
+setPos(154,29)

@@ -1,0 +1,12 @@
+setIcon(<totemic:totem_pole, nbt: {totem: "totemic:buffalo"}>)
+setTranslatedTitle("Buffalo Dance")
+setTranslatedDescription("Perform buffalo dance ceremony to transform cows into buffalos. Use Totempedia to learn how. TIP: To transport cows to your ceremony, you can shift R-click them to pick them up! Also i suggest you bring at least two so you can breed them.")
+
+addParent("Age0:Chime")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("performed", "totemic:perform_ceremony")
+criteria.setCeremony("totemic:buffalo_dance")
+setPos(418,62)

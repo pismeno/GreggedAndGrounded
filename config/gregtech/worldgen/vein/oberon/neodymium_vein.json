@@ -1,0 +1,34 @@
+{
+  "name": "totalgregification.veins.ore.neodymium",
+  "weight": 30,
+  "density": 0.25,
+  "min_height": 20,
+  "max_height": 40,
+  "dimension_filter": [
+    "dimension_id:-1509"
+  ],
+  "generator": {
+    "type": "layered",
+    "radius": [
+      14,
+      16
+    ]
+  },
+  "filler": {
+    "type": "layered",
+    "values": [
+      {
+        "primary": "ore:bastnasite"
+      },
+      {
+        "secondary": "ore:neodymium"
+      },
+      {
+        "between": "ore:neodymium"
+      },
+      {
+        "sporadic": "ore:monazite"
+      }
+    ]
+  }
+}

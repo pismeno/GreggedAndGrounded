@@ -1,0 +1,12 @@
+setIcon(<totemic:flute>)
+setTranslatedTitle("Flute")
+setTranslatedDescription("Craft flute to perform ceremonies.")
+
+addParent("Age0:BoneShears")
+
+setShowToast(true)
+alwaysVisible()
+
+criteria = addCriteria("Flute", "minecraft:inventory_changed")
+criteria.addItem(<totemic:flute>)
+setPos(385,128)

@@ -1,0 +1,17 @@
+setIcon(<galacticraftplanets:rocket_t2>)
+setTranslatedTitle("Big jumps!")
+setTranslatedDescription("Craft Tier 2 Rocket!")
+
+addParent("Age4:Tier2RocketPlan")
+addParent("Age4:Titanium")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftplanets:rocket_t2>)
+setPos(332,33)

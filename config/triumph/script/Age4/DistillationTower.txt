@@ -1,0 +1,14 @@
+setIcon(<gregtech:machine:1005>)
+setTranslatedTitle("Distillation Tower")
+setTranslatedDescription("Construct Distillation Tower. You can process oil with it make Argon and more!")
+
+addParent("Age4:root")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1005>)
+setPos(266,165)

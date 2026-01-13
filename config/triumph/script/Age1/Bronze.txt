@@ -1,0 +1,20 @@
+setIcon(<gregtech:meta_ingot:260>)
+setTranslatedTitle("Bronze: Bronze Age")
+setTranslatedDescription("Cast Bronze from Tinker's smeltery. You create bronze by mixing Copper and Tin in the smeltery in ratio of 3:1. I suggest you use the basin rather than the casting table, because you will not have to create milions of clay casts. Do not be scared to badge craft lot of it.")
+
+addParent("Age1:Prospector")
+addParent("Age1:SearedController")
+addParent("Age1:SearedTank")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("challenge")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+addRewardFunction("gag:AgeBronze")
+
+criteria = addCriteria("itemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:260>)
+setPos(368,31)

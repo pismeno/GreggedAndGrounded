@@ -1,0 +1,19 @@
+setIcon(<gregtech:wire_coil:4>)
+setTranslatedTitle("HSS-G Coils")
+setTranslatedDescription("Upgrade your coils. Once again...")
+
+addParent("Age5:HSSG")
+addParent("Age5:IVAssembler")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria1 = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria1.addItem(<gregtech:wire_coil:4>)
+criteria2 = addCriteria("age2", "triumph:completed_advancement")
+criteria2.setString("Age4:TungstenSteel")
+setPos(68,33)

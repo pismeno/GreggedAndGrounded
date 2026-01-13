@@ -1,0 +1,16 @@
+setIcon("horsepower:chopping_block")
+setTranslatedTitle("Chopping Logs")
+setTranslatedDescription("You can now cut down some trees with the flint hatchet. Use wood to craft Chopping Block. You can put wood onto it and repeatedly left click with axe to turn it into planks.")
+
+addParent("Age0:FlintHatchet")
+
+setShowToast(true)
+alwaysVisible()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ChopBlock", "minecraft:inventory_changed")
+criteria.addItem("horsepower:chopping_block")
+setPos(88,62)

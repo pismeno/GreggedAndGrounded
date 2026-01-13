@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:753>)
+setTranslatedTitle("Still not the end...")
+setTranslatedDescription("Assemble Ultimate Battery!")
+
+addParent("Age6:GraviStar")
+
+setShowToast(true)
+visibleIf("Age6:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:753>)
+setPos(495,-33)

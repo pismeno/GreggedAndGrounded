@@ -1,0 +1,12 @@
+setIcon(<actuallyadditions:block_giant_chest_large>)
+setTranslatedTitle("Large Storage Crate")
+setTranslatedDescription("Assemble quite large Large Storage Crate.")
+
+addParent("Age5:HSSS")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<actuallyadditions:block_giant_chest_large>)
+setPos(134,66)

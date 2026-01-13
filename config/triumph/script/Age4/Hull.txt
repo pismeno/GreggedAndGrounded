@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:988>)
+setTranslatedTitle("High Voltage Machine Hull")
+setTranslatedDescription("Craft HV Machine Hull.")
+
+addParent("Age4:Enori")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:988>)
+setPos(68,33)

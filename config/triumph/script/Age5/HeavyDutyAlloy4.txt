@@ -1,0 +1,16 @@
+setIcon(<gagtweaks:heavy_duty_composite4>)
+setTranslatedTitle("Heavy Duties...")
+setTranslatedDescription("Make Heavy Duty Alloy for tier 4 rocket!")
+
+addParent("Age5:HSSE")
+
+setShowToast(true)
+visibleIf("Age5:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gagtweaks:heavy_duty_composite4>)
+setPos(134,33)

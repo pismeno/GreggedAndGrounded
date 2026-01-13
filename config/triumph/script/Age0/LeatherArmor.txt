@@ -1,0 +1,19 @@
+setIcon(<minecraft:leather_chestplate>)
+setTranslatedTitle("Clothing")
+setTranslatedDescription("Craft leather armor set.")
+
+addParent("Age0:Leather5")
+
+setShowToast(true)
+visibleIf("Age0:root")
+
+criteria = addCriteria("ItemInv1", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:leather_helmet>)
+criteria = addCriteria("ItemInv2", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:leather_chestplate>)
+criteria = addCriteria("ItemInv3", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:leather_leggings>)
+criteria = addCriteria("ItemInv4", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:leather_boots>)
+
+setPos(352,260)

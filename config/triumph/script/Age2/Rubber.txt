@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_ingot:1068>)
+setTranslatedTitle("Rubber ducks possible")
+setTranslatedDescription("Create Rubber Bar.")
+
+addParent("Age2:Sulfur")
+addParent("Age2:Extractor")
+
+setShowToast(true)
+visibleIf("Age2:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_ingot:1068>)
+setPos(393,66)

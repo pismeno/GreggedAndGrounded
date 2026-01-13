@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:1001>)
+setTranslatedTitle("This will be a Blast!")
+setTranslatedDescription("Construct Blast Furnace. For the coil blocks use the Cupronickel ones you just made. Input/Output Bus is for items. Input/Output Hatch is for Fluids. Maintenance Hatch is used to maintain the machine, have all tools in inventory and R-click.")
+
+addParent("Age3:Invar")
+addParent("Age3:CupronickelCoils")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:1001>)
+setPos(135,-33)

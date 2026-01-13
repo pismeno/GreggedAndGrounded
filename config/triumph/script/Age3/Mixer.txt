@@ -1,0 +1,16 @@
+setIcon(<gregtech:machine:470>)
+setTranslatedTitle("Basic Mixer")
+setTranslatedDescription("Craft Basic Mixer, used to make mixing things more cost effective and unlocking new recipes.")
+
+addParent("Age3:LVMotor")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:470>)
+setPos(69,33)

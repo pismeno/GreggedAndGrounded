@@ -1,0 +1,19 @@
+setIcon(<gregtech:machine:261>)
+setTranslatedTitle("Advanced Distillery!")
+setTranslatedDescription("Craft Advanced Distillery, it is more or less worse Distillation Tower. You will need it to make Ethylene, either by the biomass way or the oil way.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+addParent("Age3:Biomass")
+addParent("Age3:Oil")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:261>)
+setPos(234,165)

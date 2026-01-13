@@ -1,0 +1,16 @@
+setIcon(<betterwithmods:single_machine:2>)
+setTranslatedTitle("Filtered Hopper")
+setTranslatedDescription("You will need filtered hopper to filter Grout. You will also need Wicker so prepare that as well. To use it open its inventory and insert wicker into filter slow and then drop Grout onto it and BOOM.")
+
+addParent("Age1:CokeOven")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<betterwithmods:single_machine:2>)
+setPos(260,-2)

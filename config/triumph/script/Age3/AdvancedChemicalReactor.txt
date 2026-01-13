@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine:216>)
+setTranslatedTitle("Shit you cook, isn't shit anymore")
+setTranslatedDescription("Craft Advanced Chemical Reactor.")
+
+addParent("Age3:Aluminum")
+addParent("Age3:GoodCircuit")
+
+setShowToast(true)
+visibleIf("Age3:root")
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:machine:216>)
+
+setPos(201,-33)

@@ -1,0 +1,16 @@
+setIcon(<gregtech:meta_item_1:708>)
+setTitle("Age 6: Transcendent")
+setDescription("Combining Biology and Circuitry, getting close to creative age and more!")
+setBackground("gregtech:textures/blocks/casings/voltage/uv/side.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+setFrameType("challenge")
+setUncompletedIconColor(204, 168, 10)
+setCompletedIconColor(91, 0, 201)
+
+setPos(-4,0)
+
+criteria = addCriteria("age5", "triumph:completed_advancement")
+criteria.setString("Age5:CircuitCrystalProcessorMainframe")

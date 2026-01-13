@@ -1,0 +1,14 @@
+setIcon(<tconstruct:book>)
+setTranslatedTitle("Materials and You")
+setTranslatedDescription("Craft Materials and you which is Tinker's Construct guide book!")
+
+addParent("Age1:SearedBrick")
+
+setShowToast(true)
+visibleIf("Age1:root")
+
+hideLines()
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:book>)
+setPos(293,-35)
