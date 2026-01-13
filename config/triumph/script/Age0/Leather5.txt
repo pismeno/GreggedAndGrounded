@@ -2,10 +2,11 @@ setIcon(<minecraft:leather>)
 setTranslatedTitle("Finally, Leather.")
 setTranslatedDescription("Leather Pt. 5: Finish making Leather by drying it. TIP: Do not be scared to craft a lot of it, you will need it later as well.")
 
-addParent("Age0:Grill")
+addParent("Age0:Leather4")
 
 setShowToast(true)
 alwaysVisible()
+hideLines()
 
 setFrameType("goal")
 setUncompletedIconColor(#525252)

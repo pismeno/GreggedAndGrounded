@@ -7,6 +7,10 @@ addParent("Age0:Flute")
 setShowToast(true)
 alwaysVisible()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("itemInv", "minecraft:inventory_changed")
 criteria.addItem(<totemic:cedar_sapling>)
-setPos(418,128)
+setPos(418,95)

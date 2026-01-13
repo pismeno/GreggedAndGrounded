@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Farmland", "minecraft:inventory_changed")
 criteria.addItem(<forestry:humus>)
-setPos(154,128)
+setPos(154,95)

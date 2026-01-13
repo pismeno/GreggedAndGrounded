@@ -2,11 +2,11 @@ setIcon("antiqueatlas:antique_atlas")
 setTranslatedTitle("Atlas")
 setTranslatedDescription("Until you acces minimap or normal maps, you can get Antique Atlas by trading with villagers. They will give you Atlas for 3 Plant Cloths.")
 
-addParent("Age0:CraftingStump")
+addParent("Age0:HorsePress")
 
 setShowToast(true)
 alwaysVisible()
 
 criteria = addCriteria("Atlas", "minecraft:inventory_changed")
 criteria.addItem("antiqueatlas:empty_antique_atlas")
-setPos(253,194)
+setPos(286,161)

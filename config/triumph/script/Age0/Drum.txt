@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Drum", "minecraft:inventory_changed")
 criteria.addItem(<totemic:drum>)
-setPos(385,95)
+setPos(385,62)

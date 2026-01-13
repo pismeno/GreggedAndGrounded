@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Backpack", "minecraft:inventory_changed")
 criteria.addItem(<usefulbackpacks:backpack>)
-setPos(352,194)
+setPos(352,161)

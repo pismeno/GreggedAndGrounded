@@ -8,6 +8,10 @@ setShowToast(true)
 alwaysVisible()
 hideLines()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("hideraw", "minecraft:inventory_changed")
 criteria.addItem(<primal:hide_raw>)
 setPos(319,161)

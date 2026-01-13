@@ -9,6 +9,10 @@ alwaysVisible()
 
 hideLines()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("HempSeed", "minecraft:inventory_changed")
 criteria.addItem("betterwithmods:hemp")
-setPos(154,95)
+setPos(154,128)

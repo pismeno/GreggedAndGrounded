@@ -260,6 +260,12 @@ Recipes.addShaped("Compost3", stage, <forestry:fertilizer_bio>,
   [<betterwithmods:dirt_pile>,<gregtech:meta_dust:254>,<betterwithmods:dirt_pile>],
   ]);
 
+Recipes.addShaped("Humus", stage, <forestry:humus> * 8,
+ [[<minecraft:dirt>,<minecraft:dirt>,<minecraft:dirt>],
+  [<minecraft:dirt>,<forestry:fertilizer_bio>,<minecraft:dirt>],
+  [<minecraft:dirt>,<minecraft:dirt>,<minecraft:dirt>],
+  ]);
+
 Recipes.addShaped("Piles1", stage, <minecraft:dirt>,
  [[<betterwithmods:dirt_pile>,<betterwithmods:dirt_pile>],
   [<betterwithmods:dirt_pile>,<betterwithmods:dirt_pile>]

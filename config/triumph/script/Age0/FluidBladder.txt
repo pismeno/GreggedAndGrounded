@@ -3,10 +3,15 @@ setTranslatedTitle("Bucket, kind off...")
 setTranslatedDescription("Craft Fluid Bladder. You can use it to fill it with water.")
 
 addParent("Age0:Hemp")
+addParent("Age0:HorsePress")
 
 setShowToast(true)
 alwaysVisible()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("bladder", "minecraft:inventory_changed")
 criteria.addItem(<primal_tech:fluid_bladder>)
-setPos(286,95)
+setPos(286,128)

@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Grindstone", "minecraft:inventory_changed")
 criteria.addItem(<horsepower:hand_grindstone>)
-setPos(253,62)
+setPos(253,194)

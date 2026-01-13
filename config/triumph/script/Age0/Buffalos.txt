@@ -7,6 +7,10 @@ addParent("Age0:Chime")
 setShowToast(true)
 alwaysVisible()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("performed", "totemic:perform_ceremony")
 criteria.setCeremony("totemic:buffalo_dance")
-setPos(418,62)
+setPos(418,29)

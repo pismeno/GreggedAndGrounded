@@ -2,11 +2,14 @@ setIcon(<primal:hide_salted>)
 setTranslatedTitle("Saltin' Hides")
 setTranslatedDescription("Leather Pt. 2: Salt Raw Hides. You can find salt generating on the surface in big salt flats.")
 
-addParent("Age0:Leather1")
+addParent("Age0:FluidBladder")
 
 setShowToast(true)
 alwaysVisible()
-hideLines()
+
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
 
 criteria = addCriteria("hidesalted", "minecraft:inventory_changed")
 criteria.addItem(<primal:hide_salted>)

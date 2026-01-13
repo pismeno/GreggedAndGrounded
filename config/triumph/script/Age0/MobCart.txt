@@ -10,4 +10,4 @@ hideLines()
 
 criteria = addCriteria("itemInv", "minecraft:inventory_changed")
 criteria.addItem(<astikorcarts:mobcart>)
-setPos(385,227)
+setPos(385,194)

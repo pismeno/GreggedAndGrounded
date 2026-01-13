@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Rattle", "minecraft:inventory_changed")
 criteria.addItem(<totemic:rattle>)
-setPos(385,161)
+setPos(385,128)

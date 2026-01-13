@@ -49,7 +49,17 @@ val Assoc = {
 <forestry:logs.6:1> : <forestry:planks.1:9>,
 <forestry:logs.6:2> : <forestry:planks.1:10>,
 <forestry:logs.6:3> : <forestry:planks.1:11>,
-<forestry:logs.7> : <forestry:planks.1:12>
+<forestry:logs.7> : <forestry:planks.1:12>,
+<gregtechfoodoption:gtfo_log_0> : <gregtechfoodoption:gtfo_planks_0>,
+<gregtechfoodoption:gtfo_log_0:4> : <gregtechfoodoption:gtfo_planks_0:1>,
+<gregtechfoodoption:gtfo_log_0:8> : <gregtechfoodoption:gtfo_planks_0:2>,
+<gregtechfoodoption:gtfo_log_0:12> : <gregtechfoodoption:gtfo_planks_0:3>,
+<gregtechfoodoption:gtfo_log_1> : <gregtechfoodoption:gtfo_planks_0:4>,
+<gregtechfoodoption:gtfo_log_1:4> : <gregtechfoodoption:gtfo_planks_0:5>,
+<gregtechfoodoption:gtfo_log_1:8> : <gregtechfoodoption:gtfo_planks_0:6>,
+<gregtechfoodoption:gtfo_log_1:12> : <gregtechfoodoption:gtfo_planks_0:7>,
+<gregtechfoodoption:gtfo_log_2> : <gregtechfoodoption:gtfo_planks_0:8>,
+<gregtechfoodoption:gtfo_log_2:4> : <gregtechfoodoption:gtfo_planks_0:9>
 } as IItemStack[IItemStack];
 
 for key, value in Assoc {

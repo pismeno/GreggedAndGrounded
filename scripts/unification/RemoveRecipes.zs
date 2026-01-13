@@ -30,6 +30,7 @@ val removeRecipe = [
 <projectred-transportation:routing_chip:6>,
 <projectred-transportation:routing_chip:7>,
 <projectred-transportation:routing_chip:8>,
+<forestry:humus>,
 <actuallyadditions:item_disenchanting_lens>,
 <actuallyadditions:item_more_damage_lens>,
 <extraplanets:tier2_pressure_layer>,

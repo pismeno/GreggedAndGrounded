@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("itemInv", "minecraft:inventory_changed")
 criteria.addItem(<totemic:baykok_bow>)
-setPos(451,161)
+setPos(451,128)

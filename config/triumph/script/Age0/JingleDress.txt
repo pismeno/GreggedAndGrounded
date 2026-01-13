@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("JingleD", "minecraft:inventory_changed")
 criteria.addItem(<totemic:jingle_dress>)
-setPos(352,161)
+setPos(352,128)

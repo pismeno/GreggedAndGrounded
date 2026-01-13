@@ -1,5 +1,5 @@
 setIcon(<totemic:wind_chime>)
-setTranslatedTitle("Totempedia")
+setTranslatedTitle("Wind Chimes")
 setTranslatedDescription("Craft Wind Chime to perform ceremonies.")
 
 addParent("Age0:Totempedia")
@@ -7,6 +7,10 @@ addParent("Age0:Totempedia")
 setShowToast(true)
 alwaysVisible()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("Chime", "minecraft:inventory_changed")
 criteria.addItem(<totemic:wind_chime>)
-setPos(385,62)
+setPos(385,29)

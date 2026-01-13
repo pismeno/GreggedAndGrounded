@@ -45,7 +45,7 @@ Mill.addRecipe([<ore:plantBlue>], [<plants2:generic:2>]);
 Mill.addRecipe([<ore:plantRed>], [<minecraft:dye:1>]);
 Mill.addRecipe([<ore:plantYellow>], [<minecraft:dye:11>]);
 Mill.addRecipe([<forestry:peat>], [<gagtweaks:peat_dust>]);
-Mill.addRecipe([<minecraft:bone>], [<minecraft:dye:15> * 3]);
+Mill.addRecipe([<minecraft:bone>], [<minecraft:dye:15> * 4]);
 Mill.addRecipe([<minecraft:sand> * 5, <minecraft:clay_ball>* 3, <betterwithmods:material:12>], [<gagtweaks:coke_oven_clay> * 3]);
 Mill.addRecipe([<primal:rush_stems> * 5], [<primal:thatching_wet> * 2]);
 Mill.addRecipe([<ore:charcoal>], [<gregtech:meta_dust_small:266> * 2]);

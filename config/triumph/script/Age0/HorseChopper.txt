@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("chopper", "minecraft:inventory_changed")
 criteria.addItem(<horsepower:chopper>)
-setPos(253,128)
+setPos(253,227)

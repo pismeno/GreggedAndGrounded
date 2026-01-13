@@ -13,4 +13,4 @@ setCompletedIconColor(91, 0, 201)
 
 criteria = addCriteria("PrimalCrafter", "minecraft:inventory_changed")
 criteria.addItem("primal_tech:work_stump")
-setPos(120,62)
+setPos(121,62)

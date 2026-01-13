@@ -7,6 +7,10 @@ addParent("Age0:Buffalos")
 setShowToast(true)
 alwaysVisible()
 
+setFrameType("goal")
+setUncompletedIconColor(#525252)
+setCompletedIconColor(91, 0, 201)
+
 criteria = addCriteria("itemInv", "minecraft:inventory_changed")
 criteria.addItem(<totemic:buffalo_items:1>)
-setPos(451,62)
+setPos(451,29)

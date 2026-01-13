@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Bread", "minecraft:inventory_changed")
 criteria.addItem(<minecraft:bread>)
-setPos(286,128)
+setPos(286,93)

@@ -18,7 +18,8 @@ val SetStageZero = [
 "primal",
 "primal_tech",
 "death_compass",
-"gravestone"
+"gravestone",
+"plants"
 ] as string[];
 
 for id in SetStageZero{

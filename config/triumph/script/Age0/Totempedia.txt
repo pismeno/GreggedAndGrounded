@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Totempedia", "minecraft:inventory_changed")
 criteria.addItem(<totemic:totempedia>)
-setPos(352,62)
+setPos(352,29)

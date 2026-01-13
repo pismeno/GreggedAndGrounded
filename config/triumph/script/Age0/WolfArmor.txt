@@ -16,4 +16,4 @@ criteria.addItem(<primal:armor_wolf_legs>)
 criteria = addCriteria("ItemInv4", "minecraft:inventory_changed")
 criteria.addItem(<primal:armor_wolf_feet>)
 
-setPos(385,260)
+setPos(385,227)

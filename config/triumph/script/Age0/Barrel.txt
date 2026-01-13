@@ -6,8 +6,7 @@ addParent("Age0:WorkBlade")
 
 setShowToast(true)
 alwaysVisible()
-hideLines()
 
 criteria = addCriteria("Barrel", "minecraft:inventory_changed")
 criteria.addItem(<primal:barrel>)
-setPos(286,194)
+setPos(187,-4)

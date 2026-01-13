@@ -9,4 +9,4 @@ alwaysVisible()
 
 criteria = addCriteria("Saddle", "minecraft:inventory_changed")
 criteria.addItem(<minecraft:saddle>)
-setPos(352,227)
+setPos(352,194)
