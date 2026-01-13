@@ -506,6 +506,7 @@ static RemoveRecipeByName as string[] = [
   "gregtech:vacuum_tube",
   "primal:cobblestone_1",
   "primal:bucket",
+  "primal:paper",
   "primal:hopper_crude_iron",
   "galacticraftcore:furnace",
   "minecraft:bone_meal_from_bone",
@@ -583,10 +584,13 @@ static RemoveRecipeByName as string[] = [
   "extrautils2:angel_ring_3",
   "extrautils2:angel_ring_4",
   "extrautils2:angel_ring_5",
+  "extrautils2:shortcut_hopper",
   "gregtech:block_compress_cobalt",
   "gregtech:block_decompress_cobalt",
   "gregtech:nugget_assembling_cobalt",
-  "gregtech:nugget_disassembling_cobalt"
+  "gregtech:nugget_disassembling_cobalt",
+  "actuallyadditions:recipes23",
+  "forestry:letter_recycling"
 ];
 
 

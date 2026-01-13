@@ -98,7 +98,9 @@ function init() as void {
     for stage, mods in modStagingMap{
         for mod in mods {
             ItemStages.stageModItems(stage, mod);
-            Recipes.setRecipeStageByMod(stage, mod);
+            if (mod != "gregtech"){
+                Recipes.setRecipeStageByMod(stage, mod);
+            }
         }
     }
 }

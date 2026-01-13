@@ -60,6 +60,7 @@ function init() as void {
     addFurnace(287, <gregtech:meta_block_compressed_17:15>, <liquid:invar>);
     addFurnace(274, <gregtech:meta_block_compressed_17:2>, <liquid:cupronickel>);
     addFurnace(328, <gregtech:meta_block_compressed_20:8>, <liquid:tin_alloy>);
+    addFurnace(335, <gregtech:meta_block_compressed_20:15>, <liquid:wrought_iron>);
 
     Alloy.addRecipe(<liquid:bronze> * 3, [<liquid:copper> * 3, <liquid:tin> * 1]);
     Alloy.addRecipe(<liquid:knightslime> * 1, [<liquid:tin_alloy> * 1, <liquid:purpleslime> * 1]);

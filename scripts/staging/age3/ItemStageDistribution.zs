@@ -301,7 +301,6 @@ static setStageThreeLiquid as ILiquidStack[] = [
     <liquid:soldering_alloy>,
     <liquid:ruridit>,
     <liquid:bismuth_bronze>,
-    <liquid:wrought_iron>,
     <liquid:yttrium_barium_cuprate>,
     <liquid:osmiridium>,
     <liquid:gallium_arsenide>,

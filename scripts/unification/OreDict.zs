@@ -406,7 +406,7 @@ function init() as void {
     <ore:dustImpure>.add(<gregtech:meta_dust_impure:321>);
     <ore:blockFluix>.add(<appliedenergistics2:fluix_block>);
     <ore:gemFluix>.add(<appliedenergistics2:material:7>);
-    <ore:peltSmall>.add(<minecraft:rabbit_hide>);
+    <ore:peltSmall>.add(<minecraft:rabbit_hide>,<primal:wolf_head_item>);
     <ore:peltMedium>.add(<netherex:black_salamander_hide>,<netherex:orange_salamander_hide>);
     <ore:peltLarge>.add(<primal:pigman_leather>,<totemic:buffalo_items>);
 
