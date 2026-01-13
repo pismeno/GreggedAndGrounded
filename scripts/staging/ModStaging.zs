@@ -41,6 +41,7 @@ static modStagingMap as string[][string] = {
 
     STAGE_TWO.stage : [
         "ironchest",
+        "iron_barrels",
         "netherex",
         "witherskelefix",
         "openglider"

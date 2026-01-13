@@ -175,9 +175,9 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
 
 <ironchest:iron_chest:2> : [
         [
-            [<gregtech:meta_plate:276>,<gregtech:meta_plate_double:276>,<gregtech:meta_plate:276>],
-            [<gregtech:meta_plate_double:276>,<minecraft:chest>,<gregtech:meta_plate_double:276>],
-            [<gregtech:meta_plate:276>,<gregtech:meta_plate_double:276>,<gregtech:meta_plate:276>]
+            [<gregtech:meta_plate:276>,<gregtech:meta_gear:276>,<gregtech:meta_plate:276>],
+            [<gregtech:meta_plate:276>,<minecraft:chest>,<gregtech:meta_plate:276>],
+            [<gregtech:meta_plate:276>,<gregtech:meta_plate:276>,<gregtech:meta_plate:276>]
         ]
     ],
 

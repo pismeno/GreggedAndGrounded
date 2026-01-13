@@ -107,6 +107,8 @@ static setStageThree as IIngredient[] = [
     <minecraft:chorus_flower>,
     <extraplanets:apple_diamond:*>,
     <actuallyadditions:block_xp_solidifier>,
+    <extrautils2:enderlilly>,
+    <ironchest:iron_chest:5>,
     <extrautils2:endershard>,
     <minecraft:lingering_potion>,
     <tconstruct:ingots:1>,

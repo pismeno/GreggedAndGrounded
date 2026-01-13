@@ -214,6 +214,7 @@ static removeRecipe as IIngredient[] = [
   <ironchest:iron_shulker_box_green:*>,
   <ironchest:iron_shulker_box_red:*>,
   <ironchest:iron_shulker_box_black:*>,
+  <gregtech:machine:245>,
   <gregtech:machine:246>,
   <gregtech:machine:247>,
   <gregtech:machine:248>,

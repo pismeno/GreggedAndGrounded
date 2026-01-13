@@ -259,6 +259,9 @@ function init() as void {
 
         <recipemap:centrifuge>.findRecipe(5, [<minecraft:magma_cream:0>], null).remove();
 
+        <recipemap:thermal_centrifuge>.findRecipe(30, [<metaitem:crushedPurifiedChromite>], null).remove();
+        <recipemap:thermal_centrifuge>.findRecipe(30, [<metaitem:crushedChromite>], null).remove();
+
         <recipemap:chemical_reactor>.findRecipe(1920, [<metaitem:wafer.central_processing_unit>, <metaitem:carbon.fibers> * 16], [<liquid:glowstone> * 576]).remove();
         <recipemap:chemical_reactor>.findRecipe(480, [<metaitem:dustCarbon>, <metaitem:dustSulfur>], null).remove();
 
@@ -1759,7 +1762,7 @@ function init() as void {
         <recipemap:assembler>.recipeBuilder()
                 .inputs(<gregtech:meta_stick_long:1648> * 4, <gregtech:meta_stick:1648> * 4, <betterwithmods:rope>)
                 .fluidInputs(<liquid:glue> * 500)
-                .outputs(<gregtech:meta_item_1:518> * 8)
+                .outputs(<forestry:alveary.plain>)
                 .duration(300)
                 .EUt(30)
                 .buildAndRegister();
@@ -2175,9 +2178,9 @@ function init() as void {
                 .buildAndRegister();
 
         <recipemap:assembler>.recipeBuilder()
-                .inputs(<tconstruct:tooltables:3>, <gregtech:meta_plate_dense:51> * 4, <gregtech:meta_plate_double:324> * 3)
+                .inputs(<tconstruct:tooltables:3>, <gregtech:meta_plate_double:51> * 18, <gregtech:meta_plate_double:324> * 3)
                 .outputs(<tconstruct:toolforge>)
-                .duration(300)
+                .duration(400)
                 .EUt(30)
                 .buildAndRegister();
 
@@ -2668,6 +2671,21 @@ function init() as void {
                 .EUt(8)
                 .buildAndRegister();
 
+        <recipemap:thermal_centrifuge>.recipeBuilder()
+                .inputs(<gregtech:meta_crushed_purified:267>)
+                .outputs(<gregtech:meta_crushed_centrifuged:267>)
+                .chancedOutput(<gregtech:meta_dust:69>, 3333, 0)
+                .duration(400)
+                .EUt(30)
+                .buildAndRegister();
+
+        <recipemap:thermal_centrifuge>.recipeBuilder()
+                .inputs(<gregtech:meta_crushed:267>)
+                .outputs(<gregtech:meta_crushed_centrifuged:267>,<gregtech:meta_dust:1599>)
+                .chancedOutput(<gregtech:meta_dust:69>, 3333, 0)
+                .duration(400)
+                .EUt(30)
+                .buildAndRegister();
 
 
         addPackaging(<minecraft:cobblestone>, <extrautils2:compressedcobblestone>, 7);
