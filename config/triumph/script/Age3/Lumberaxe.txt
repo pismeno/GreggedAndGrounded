@@ -1,6 +1,6 @@
 setIcon(<tconstruct:lumberaxe, nbt: {TinkerData: {Materials: ["hss_e", "cobalt", "ardite", "naquadah_alloy"]}}>)
 setTranslatedTitle("Lumberaxe!")
-setTranslatedDescription("Craft any Lumberaxe. It mines 3x3!")
+setTranslatedDescription("Craft any Lumberaxe. It chops down whole trees!")
 
 addParent("Age3:ToolForge")
 

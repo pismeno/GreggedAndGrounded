@@ -10,6 +10,7 @@ import scripts.ProcessUtils;
 import scripts.Stages.STAGE_THREE;
 
 static setStageThree as IIngredient[] = [
+    <extrautils2:largishchest>,
     <actuallyadditions:item_food:13>,
     <tconstruct:edible:30>,
     <tconstruct:edible:31>,
@@ -48,7 +49,6 @@ static setStageThree as IIngredient[] = [
     <tconstruct:soil:1>,
     <tconstruct:soil:2>,
     <tconstruct:soil:3>,
-    <tconstruct:soil:4>,
     <tconstruct:soil:5>,
     <tconstruct:clear_glass>,
     <tconstruct:ingots:1>,
@@ -120,7 +120,6 @@ static setStageThree as IIngredient[] = [
     <tconstruct:nuggets:2>,
     <tconstruct:nuggets:3>,
     <tconstruct:nuggets:4>,
-    <tconstruct:materials:17>,
     <tconstruct:ore:1>,
     <tconstruct:fancy_frame:6>,
     <minecraft:concrete:*>,
@@ -133,7 +132,6 @@ static setStageThree as IIngredient[] = [
     <gregtech:machine:11008>,
     <gregtech:machine:11009>,
     <gregtech:machine:11018>,
-    <tconstruct:materials:17>,
     <tconstruct:materials:16>,
     <tconstruct:materials:15>,
     <tconstruct:materials:11>,

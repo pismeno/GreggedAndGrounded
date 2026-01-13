@@ -2174,6 +2174,13 @@ function init() as void {
                 .EUt(1920)
                 .buildAndRegister();
 
+        <recipemap:assembler>.recipeBuilder()
+                .inputs(<tconstruct:tooltables:3>, <gregtech:meta_plate_dense:51> * 4, <gregtech:meta_plate_double:324> * 3)
+                .outputs(<tconstruct:toolforge>)
+                .duration(300)
+                .EUt(30)
+                .buildAndRegister();
+
 
         <recipemap:canner>.recipeBuilder()
                 .inputs(<projectred-expansion:empty_battery>, <projectred-core:resource_item:105> * 6)
