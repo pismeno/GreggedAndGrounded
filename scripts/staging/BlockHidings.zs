@@ -8,7 +8,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
 
-val RemoveFromGame = [
+static RemoveFromGame as IIngredient[] = [
 <minecraft:gold_ore>,
 <minecraft:iron_ore>,
 <minecraft:coal_ore>,
@@ -16,21 +16,23 @@ val RemoveFromGame = [
 <minecraft:diamond_ore>,
 <minecraft:redstone_ore>,
 <minecraft:emerald_ore>
-] as IIngredient[];
+];
 
-val RemoveFromGameNether = [
+static RemoveFromGameNether as IIngredient[] = [
 <minecraft:quartz_ore>,
 <netherex:amethyst_ore>,
 <netherex:quartz_ore>
-] as IIngredient[];
+];
 
-for block in RemoveFromGame{
-    OreStages.addReplacement("removed", block);
+function init() as void {
+    for block in RemoveFromGame{
+        OreStages.addReplacement("removed", block);
+    }
+
+    for block in RemoveFromGameNether{
+        OreStages.addReplacement("removed", block, <minecraft:netherrack>);
+    }
+
+    OreStages.addReplacement("removed", <netherex:rime_ore>, <netherex:icy_netherrack>);
+    OreStages.addReplacement("four", <integrateddynamics:menril_log_filled>, <integrateddynamics:menril_log>);
 }
-
-for block in RemoveFromGameNether{
-    OreStages.addReplacement("removed", block, <minecraft:netherrack>);
-}
-
-OreStages.addReplacement("removed", <netherex:rime_ore>, <netherex:icy_netherrack>);
-OreStages.addReplacement("four", <integrateddynamics:menril_log_filled>, <integrateddynamics:menril_log>);

@@ -7,17 +7,19 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "minecraft:blaze_powder",
 "netherex:basalt"
-] as string[];
+];
 
-val originalTable = LootTweaker.getTable("netherex:chest/base_village");
-val newTable = originalTable.addPool("primal", 1, 6, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("netherex:chest/base_village");
+    val newTable = originalTable.addPool("primal", 1, 6, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("arctic_abyss_base_pool").removeEntry(entry);
+    for entry in removedEntries {
+        originalTable.getPool("arctic_abyss_base_pool").removeEntry(entry);
+    }
+
+    newTable.addItemEntry(<gagtweaks:blaze_chunk>, 18, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
+    newTable.addItemEntry(<primal:sharp_bone>, 25);
 }
-
-newTable.addItemEntry(<gagtweaks:blaze_chunk>, 18, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
-newTable.addItemEntry(<primal:sharp_bone>, 25);

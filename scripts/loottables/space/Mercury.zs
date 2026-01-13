@@ -7,7 +7,7 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "galacticraftplanets:desh_boots",
 "galacticraftplanets:desh_chestplate",
 "galacticraftplanets:desh_helmet",
@@ -17,9 +17,9 @@ val removedEntries = [
 "minecraft:redstone",
 "galacticraftplanets:basic_item_venus",
 "minecraft:gold_nugget"
-] as string[];
+];
 
-val addedEntries = [
+static addedEntries as IItemStack[] = [
 <galacticraftcore:item_basic_moon:2>,
 <gregtech:meta_ingot:2012>,
 <gregtech:meta_ingot:323>,
@@ -28,17 +28,19 @@ val addedEntries = [
 <gregtech:meta_item_1:500>,
 <gregtech:meta_gem:2004>,
 <gregtech:meta_ingot:113>
-] as IItemStack[];
+];
 
-val originalTable = LootTweaker.getTable("extraplanets:dungeon_mercury");
-val newTable = originalTable.addPool("gag", 5, 10, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("extraplanets:dungeon_mercury");
+    val newTable = originalTable.addPool("gag", 5, 10, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("dungeon_tier_3").removeEntry(entry);
+    for entry in removedEntries {
+        originalTable.getPool("dungeon_tier_3").removeEntry(entry);
+    }
+
+    for entry in addedEntries {
+        newTable.addItemEntry(entry, 18, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
+    }
+
+    newTable.addItemEntry(<primal:sharp_bone>, 25);
 }
-
-for entry in addedEntries {
-    newTable.addItemEntry(entry, 18, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
-}
-
-newTable.addItemEntry(<primal:sharp_bone>, 25);

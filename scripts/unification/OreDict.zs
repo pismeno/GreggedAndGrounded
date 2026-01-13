@@ -1,5 +1,3 @@
-#priority 10000
-
 /*
 // This script was made for the Gregged & Grounded modpack.
 // Do not copy it, but feel free to look at it and use the knowledge you gain from it!
@@ -8,7 +6,7 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-val ores = [
+static ores as IItemStack[] = [
 <gregtech:ore_beryllium_0:*>,
 <gregtech:ore_aluminium_0:*>,
 <gregtech:ore_cobalt_0:*>,
@@ -377,40 +375,42 @@ val ores = [
 <gregtech:ore_kemacite_2:*>,
 <gregtech:ore_taenite_2:*>,
 <gregtech:ore_cobardite_2:*>
-] as IItemStack[];
+];
 
-<ore:stickWood>.remove(<primal:ironwood_stick>,<primal:yew_stick>,<primal:corypha_stick>,<primal:lacquer_stick>,<betterwithmods:shaft>);
-<ore:logWood>.remove(<stygian:endlog>,<integrateddynamics:menril_log>,<integrateddynamics:menril_log_filled>);
-<ore:toolSaw>.remove(<primal:bone_saw>,<primal:flint_saw>,<primal:iron_saw>,<primal:quartz_saw>,<primal:copper_saw>,<primal:diamond_saw>,<primal:emerald_saw>,<primal:obsidian_saw>);
-<ore:dyeBlue>.remove(<gregtech:meta_gem:316>,<gregtech:meta_dust:289>,<gregtech:meta_gem:289>,<gregtech:meta_dust:316>);
-<ore:leather>.remove(<primal:pigman_leather>);
-<ore:string>.remove(<primal_tech:twine>);
-<ore:string>.remove(<primal_tech:twine>);
-<ore:gearWood>.remove(<betterwithmods:material>);
-<ore:boneWithered>.remove(<netherex:wither_bone>);
-<ore:plankWood>.remove(<stygian:endplanks>);
-<ore:blockGlass>.remove(<tconstruct:clear_glass>);
-<ore:logWood>.remove(<primal:logs_stripped>);
-<ore:dyeWhite>.remove(<minecraft:dye:15>);
-<ore:dyeBlue>.remove(<minecraft:dye:4>);
-<ore:dyeBlack>.remove(<minecraft:dye>);
-<ore:oreAmethyst>.remove(<netherex:amethyst_ore>);
-<ore:oreQuartz>.remove(<netherex:quartz_ore>);
-<ore:dye>.remove(<minecraft:dye>,<minecraft:dye:4>,<minecraft:dye:15>);
-<ore:blockQuartzBlack>.remove(<actuallyadditions:block_misc:2>);
-<ore:ingotElectrotineAlloy>.remove(<projectred-core:resource_item:104>);
-<ore:ingotElectrotine>.add(<projectred-core:resource_item:104>);
-<ore:ore>.add(<gregtech:meta_crushed:*>);
-<ore:ingot>.add(<gregtech:meta_ingot:*>, <minecraft:iron_ingot>, <minecraft:gold_ingot>);
-<ore:gem>.add(<gregtech:meta_gem:*>, <minecraft:emerald>, <minecraft:diamond>);
-<ore:dust>.add(<gregtech:meta_dust:*>);
-<ore:dustImpure>.add(<gregtech:meta_dust_impure:321>);
-<ore:blockFluix>.add(<appliedenergistics2:fluix_block>);
-<ore:gemFluix>.add(<appliedenergistics2:material:7>);
-<ore:peltSmall>.add(<minecraft:rabbit_hide>);
-<ore:peltMedium>.add(<netherex:black_salamander_hide>,<netherex:orange_salamander_hide>);
-<ore:peltLarge>.add(<primal:pigman_leather>);
+function init() as void {
+    <ore:stickWood>.remove(<primal:ironwood_stick>,<primal:yew_stick>,<primal:corypha_stick>,<primal:lacquer_stick>,<betterwithmods:shaft>);
+    <ore:logWood>.remove(<stygian:endlog>,<integrateddynamics:menril_log>,<integrateddynamics:menril_log_filled>);
+    <ore:toolSaw>.remove(<primal:bone_saw>,<primal:flint_saw>,<primal:iron_saw>,<primal:quartz_saw>,<primal:copper_saw>,<primal:diamond_saw>,<primal:emerald_saw>,<primal:obsidian_saw>);
+    <ore:dyeBlue>.remove(<gregtech:meta_gem:316>,<gregtech:meta_dust:289>,<gregtech:meta_gem:289>,<gregtech:meta_dust:316>);
+    <ore:leather>.remove(<primal:pigman_leather>);
+    <ore:string>.remove(<primal_tech:twine>);
+    <ore:string>.remove(<primal_tech:twine>);
+    <ore:gearWood>.remove(<betterwithmods:material>);
+    <ore:boneWithered>.remove(<netherex:wither_bone>);
+    <ore:plankWood>.remove(<stygian:endplanks>);
+    <ore:blockGlass>.remove(<tconstruct:clear_glass>);
+    <ore:logWood>.remove(<primal:logs_stripped>);
+    <ore:dyeWhite>.remove(<minecraft:dye:15>);
+    <ore:dyeBlue>.remove(<minecraft:dye:4>);
+    <ore:dyeBlack>.remove(<minecraft:dye>);
+    <ore:oreAmethyst>.remove(<netherex:amethyst_ore>);
+    <ore:oreQuartz>.remove(<netherex:quartz_ore>);
+    <ore:dye>.remove(<minecraft:dye>,<minecraft:dye:4>,<minecraft:dye:15>);
+    <ore:blockQuartzBlack>.remove(<actuallyadditions:block_misc:2>);
+    <ore:ingotElectrotineAlloy>.remove(<projectred-core:resource_item:104>);
+    <ore:ingotElectrotine>.add(<projectred-core:resource_item:104>);
+    <ore:ore>.add(<gregtech:meta_crushed:*>);
+    <ore:ingot>.add(<gregtech:meta_ingot:*>, <minecraft:iron_ingot>, <minecraft:gold_ingot>);
+    <ore:gem>.add(<gregtech:meta_gem:*>, <minecraft:emerald>, <minecraft:diamond>);
+    <ore:dust>.add(<gregtech:meta_dust:*>);
+    <ore:dustImpure>.add(<gregtech:meta_dust_impure:321>);
+    <ore:blockFluix>.add(<appliedenergistics2:fluix_block>);
+    <ore:gemFluix>.add(<appliedenergistics2:material:7>);
+    <ore:peltSmall>.add(<minecraft:rabbit_hide>);
+    <ore:peltMedium>.add(<netherex:black_salamander_hide>,<netherex:orange_salamander_hide>);
+    <ore:peltLarge>.add(<primal:pigman_leather>,<totemic:buffalo_items>);
 
-for ingredient in ores{
-    <ore:ore>.add(ingredient);
+    for ingredient in ores{
+        <ore:ore>.add(ingredient);
+    }
 }

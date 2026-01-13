@@ -7,7 +7,7 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "minecraft:diamond",
 "minecraft:iron_ingot",
 "minecraft:gold_ingot",
@@ -19,46 +19,48 @@ val removedEntries = [
 "minecraft:golden_horse_armor",
 "minecraft:diamond_horse_armor",
 "minecraft:book"
-] as string[];
+];
 
-val removedEntriesBees = [
+static removedEntriesBees as string[] = [
 "bee_steadfast_drone",
 "bee_tropical_drone",
 "empty"
-] as string[];
+];
 
-val removedEntriesTrees = [
+static removedEntriesTrees as string[] = [
 "forestry:sapling",
 "empty"
-] as string[];
+];
 
-val addedEntries = [
+static addedEntries as IItemStack[] = [
 <betterwithmods:bat_wing>,
 <primal:plant_cordage>,
 <minecraft:stick>,
 <actuallyadditions:item_solidified_experience>,
 <primal:plant_cloth>
-] as IItemStack[];
+];
 
-val originalTable = LootTweaker.getTable("minecraft:chests/jungle_temple");
-val newTable = originalTable.addPool("gag", 3, 8, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("minecraft:chests/jungle_temple");
+    val newTable = originalTable.addPool("gag", 3, 8, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("main").removeEntry(entry);
+    for entry in removedEntries {
+        originalTable.getPool("main").removeEntry(entry);
+    }
+
+    for entry in removedEntriesBees {
+        originalTable.getPool("forestry_apiculture_bees").removeEntry(entry);
+    }
+
+    for entry in removedEntriesTrees {
+        originalTable.getPool("forestry_arboriculture_items").removeEntry(entry);
+    }
+
+    originalTable.getPool("moms_spaghetti").removeEntry("moms_spaghetti");
+
+    for entry in addedEntries {
+        newTable.addItemEntry(entry, 20, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
+    }
+
+    newTable.addItemEntry(<primal:sharp_bone>, 25);
 }
-
-for entry in removedEntriesBees {
-    originalTable.getPool("forestry_apiculture_bees").removeEntry(entry);
-}
-
-for entry in removedEntriesTrees {
-    originalTable.getPool("forestry_arboriculture_items").removeEntry(entry);
-}
-
-originalTable.getPool("moms_spaghetti").removeEntry("moms_spaghetti");
-
-for entry in addedEntries {
-    newTable.addItemEntry(entry, 20, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
-}
-
-newTable.addItemEntry(<primal:sharp_bone>, 25);

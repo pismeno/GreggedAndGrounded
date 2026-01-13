@@ -1,17 +1,14 @@
-#priority 20
-
 /*
 // This script was made for the Gregged & Grounded modpack.
 // Do not copy it, but feel free to look at it and use the knowledge you gain from it!
 */
 
 import crafttweaker.item.IIngredient;
-import crafttweaker.item.IItemStack;
-import mods.ItemStages;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
+import scripts.ProcessUtils;
 
-val SetStageTwo = [
+import scripts.Stages.STAGE_TWO;
+
+static setStageTwo as IIngredient[] = [
 <gregtech:machine:11000>,
 <gregtech:machine:1625>,
 <gregtech:machine:11001>,
@@ -1461,21 +1458,8 @@ val SetStageTwo = [
 <gregtech:screwdriver>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:invar"}}),
 <gregtech:knife>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:invar"}}),
 <gregtech:wire_cutter>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:invar"}})*/
-] as IIngredient[];
+];
 
-
-val SetRecipeStage = [
-
-] as string[];
-
-for item in SetStageTwo{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("two", item);
-    mods.recipestages.Recipes.setRecipeStage("two", item);
+function init() as void {
+  ProcessUtils.processIngredientStaging(setStageTwo, STAGE_TWO);
 }
-
-for x in SetRecipeStage{
-  mods.recipestages.Recipes.setRecipeStage("two", x);
-}
-
-mods.recipestages.Recipes.setRecipeStage("two", "gregtech:gear_wood");

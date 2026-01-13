@@ -7,7 +7,7 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "minecraft:beetroot_seeds",
 "minecraft:saddle",
 "minecraft:diamond_sword",
@@ -25,25 +25,27 @@ val removedEntries = [
 "actuallyadditions:drillCore",
 "actuallyadditions:quartz",
 "actuallyadditions:batWings"
-] as string[];
+];
 
-val addedEntries = [
+static addedEntries as IItemStack[] = [
 <gregtech:meta_ingot:2012>,
 <tconstruct:ingots:2>,
 <gregtech:meta_ingot:2>,
 <gregtech:meta_ingot:61>,
 <gregtech:meta_ingot:100>
-] as IItemStack[];
+];
 
-val originalTable = LootTweaker.getTable("minecraft:chests/end_city_treasure");
-val newTable = originalTable.addPool("primal", 2, 6, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("minecraft:chests/end_city_treasure");
+    val newTable = originalTable.addPool("primal", 2, 6, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("main").removeEntry(entry);
+    for entry in removedEntries {
+        originalTable.getPool("main").removeEntry(entry);
+    }
+
+    for entry in addedEntries {
+        newTable.addItemEntry(entry, 20, 1, [{"count": {"min": 1.0, "max": 7.0}, "function": "minecraft:set_count"}], []);
+    }
+
+    newTable.addItemEntry(<minecraft:golden_apple>, 25);
 }
-
-for entry in addedEntries {
-    newTable.addItemEntry(entry, 20, 1, [{"count": {"min": 1.0, "max": 7.0}, "function": "minecraft:set_count"}], []);
-}
-
-newTable.addItemEntry(<minecraft:golden_apple>, 25);

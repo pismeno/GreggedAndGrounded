@@ -1,6 +1,6 @@
 setIcon(<primal_tech:wooden_basin>)
 setTranslatedTitle("Wooden Basin")
-setTranslatedDescription("Craft Wooden Basin.")
+setTranslatedDescription("Craft Wooden Basin. NOTE: The items of the recipes have to be put in in the correct order as shown in JEI.")
 
 addParent("Age0:Grill")
 

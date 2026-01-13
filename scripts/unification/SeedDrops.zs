@@ -1,11 +1,11 @@
-import crafttweaker.item.WeightedItemStack;
-
 /*
 // This script was made for the Gregged & Grounded modpack.
 // Do not copy it, but feel free to look at it and use the knowledge you gain from it!
 */
 
-val addSeeds = [
+import crafttweaker.item.WeightedItemStack;
+
+static addSeeds as WeightedItemStack[] = [
 <minecraft:wheat_seeds> % 20,
 <minecraft:pumpkin_seeds> % 10,
 <minecraft:melon_seeds> % 10,
@@ -18,11 +18,13 @@ val addSeeds = [
 <primal:tall_grass_seeds> % 10,
 <minecraft:carrot> % 5,
 <minecraft:potato> % 5
-] as WeightedItemStack[];
+];
 
-vanilla.seeds.removeSeed(<minecraft:wheat_seeds>);
-vanilla.seeds.removeSeed(<betterwithmods:hemp>);
+function init() as void {
+    vanilla.seeds.removeSeed(<minecraft:wheat_seeds>);
+    vanilla.seeds.removeSeed(<betterwithmods:hemp>);
 
-for seed in addSeeds {
-    vanilla.seeds.addSeed(seed);
+    for seed in addSeeds {
+        vanilla.seeds.addSeed(seed);
+    }
 }

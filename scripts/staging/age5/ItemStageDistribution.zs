@@ -1,16 +1,14 @@
-#priority 50
-
 /*
 // This script was made for the Gregged & Grounded modpack.
 // Do not copy it, but feel free to look at it and use the knowledge you gain from it!
 */
 
 import crafttweaker.item.IIngredient;
-import mods.ItemStages;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
+import scripts.ProcessUtils;
 
-val SetStageFive = [
+import scripts.Stages.STAGE_FIVE;
+
+static setStageFive as IIngredient[] = [
 <extrautils2:compressedcobblestone:*>,
 <avaritiaddons:avaritiaddons_chest>,
 <extrautils2:compresseddirt:*>,
@@ -20,10 +18,8 @@ val SetStageFive = [
 <gregtech:machine:1020>,
 <gregtech:machine:1021>,
 <gregtech:machine:1022>
-] as IIngredient[];
+];
 
-for item in SetStageFive{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("five", item);
-    mods.recipestages.Recipes.setRecipeStage("five", item);
+function init() as void {
+    ProcessUtils.processIngredientStaging(setStageFive, STAGE_FIVE);
 }

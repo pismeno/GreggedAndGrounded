@@ -7,42 +7,44 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "minecraft:coal",
 "minecraft:gold_nugget",
 "minecraft:stone_axe",
 "minecraft:emerald",
 "actuallyadditions:batWings"
-] as string[];
+];
 
-val removedEntriesBees = [
+static removedEntriesBees as string[] = [
 "bee_steadfast_drone",
 "bee_wintry_drone",
 "empty"
-] as string[];
+];
 
-val addedEntries = [
+static addedEntries as IItemStack[] = [
 <forestry:humus>,
 <primal:plant_cordage>,
 <minecraft:stick>,
 <actuallyadditions:item_solidified_experience>
-] as IItemStack[];
+];
 
-val originalTable = LootTweaker.getTable("minecraft:chests/igloo_chest");
-val newTable = originalTable.addPool("gag", 5, 14, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("minecraft:chests/igloo_chest");
+    val newTable = originalTable.addPool("gag", 5, 14, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("main").removeEntry(entry);
+    for entry in removedEntries {
+        originalTable.getPool("main").removeEntry(entry);
+    }
+
+    for entry in removedEntriesBees {
+        originalTable.getPool("forestry_apiculture_bees").removeEntry(entry);
+    }
+
+    originalTable.getPool("pool1").removeEntry("minecraft:golden_apple");
+
+    for entry in addedEntries {
+        newTable.addItemEntry(entry, 18, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
+    }
+
+    newTable.addItemEntry(<primal:sharp_bone>, 25);
 }
-
-for entry in removedEntriesBees {
-    originalTable.getPool("forestry_apiculture_bees").removeEntry(entry);
-}
-
-originalTable.getPool("pool1").removeEntry("minecraft:golden_apple");
-
-for entry in addedEntries {
-    newTable.addItemEntry(entry, 18, 1, [{"count": {"min": 1.0, "max": 4.0}, "function": "minecraft:set_count"}], []);
-}
-
-newTable.addItemEntry(<primal:sharp_bone>, 25);

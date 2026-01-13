@@ -7,7 +7,7 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "minecraft:golden_apple",
 "minecraft:golden_apple#0",
 "minecraft:record_13",
@@ -22,35 +22,37 @@ val removedEntries = [
 "actuallyadditions:drillCore",
 "actuallyadditions:quartz",
 "actuallyadditions:batWings"
-] as string[];
+];
 
-val removedEntriesPool1 = [
+static removedEntriesPool1 as string[] = [
 "minecraft:iron_ingot",
 "minecraft:gold_ingot",
 "minecraft:bucket",
 "minecraft:redstone",
 "minecraft:coal"
-] as string[];
+];
 
-val addedEntries = [
+static addedEntries as IItemStack[] = [
 <forestry:humus>,
 <primal:plant_cordage>,
 <minecraft:stick>,
 <actuallyadditions:item_solidified_experience>,
 <primal:sharp_bone>
-] as IItemStack[];
+];
 
-val originalTable = LootTweaker.getTable("minecraft:chests/woodland_mansion");
-val newTable = originalTable.addPool("gag", 1, 5, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("minecraft:chests/woodland_mansion");
+    val newTable = originalTable.addPool("gag", 1, 5, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("main").removeEntry(entry);
-}
+    for entry in removedEntries {
+        originalTable.getPool("main").removeEntry(entry);
+    }
 
-for entry in removedEntriesPool1 {
-    originalTable.getPool("pool1").removeEntry(entry);
-}
+    for entry in removedEntriesPool1 {
+        originalTable.getPool("pool1").removeEntry(entry);
+    }
 
-for entry in addedEntries {
-    newTable.addItemEntry(entry, 20);
+    for entry in addedEntries {
+        newTable.addItemEntry(entry, 20);
+    }
 }

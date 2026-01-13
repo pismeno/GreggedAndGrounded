@@ -7,7 +7,7 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
+static removedEntries as string[] = [
 "minecraft:ender_pearl",
 "minecraft:diamond",
 "minecraft:iron_ingot",
@@ -27,33 +27,35 @@ val removedEntries = [
 "minecraft:golden_horse_armor",
 "minecraft:diamond_horse_armor",
 "minecraft:book"
-] as string[];
+];
 
-val removedEntriesBees = [
+static removedEntriesBees as string[] = [
 "bee_steadfast_drone",
 "empty"
-] as string[];
+];
 
-val addedEntries = [
+static addedEntries as IItemStack[] = [
 <betterwithmods:bat_wing>,
 <primal:plant_cordage>,
 <minecraft:stick>,
 <actuallyadditions:item_solidified_experience>,
 <primal:plant_cloth>,
 <primal:hide_raw>
-] as IItemStack[];
+];
 
-val originalTable = LootTweaker.getTable("minecraft:chests/stronghold_corridor");
-val newTable = originalTable.addPool("gag", 3, 8, 0, 0);
+function init() {
+    val originalTable = LootTweaker.getTable("minecraft:chests/stronghold_corridor");
+    val newTable = originalTable.addPool("gag", 3, 8, 0, 0);
 
-for entry in removedEntries {
-    originalTable.getPool("main").removeEntry(entry);
-}
+    for entry in removedEntries {
+        originalTable.getPool("main").removeEntry(entry);
+    }
 
-for entry in removedEntriesBees {
-    originalTable.getPool("forestry_apiculture_bees").removeEntry(entry);
-}
+    for entry in removedEntriesBees {
+        originalTable.getPool("forestry_apiculture_bees").removeEntry(entry);
+    }
 
-for entry in addedEntries {
-    newTable.addItemEntry(entry, 20);
+    for entry in addedEntries {
+        newTable.addItemEntry(entry, 20);
+    }
 }

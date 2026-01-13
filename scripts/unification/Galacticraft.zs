@@ -5,14 +5,10 @@
 
 import mods.GalacticraftTweaker;
 
-val spaceStations = [
-    -26,
-    -27
-] as int[];
+function init() as void {
+    GalacticraftTweaker.removeCompressorRecipe(<galacticraftcore:heavy_plating> * 2);
+    GalacticraftTweaker.removeCompressorRecipe(<galacticraftcore:basic_item:*>);
 
-GalacticraftTweaker.removeCompressorRecipe(<galacticraftcore:heavy_plating> * 2);
-GalacticraftTweaker.removeCompressorRecipe(<galacticraftcore:basic_item:*>);
-
-for ID in spaceStations {
-    GalacticraftTweaker.modifySpaceStationRecipe(ID, <xtones:base> * 64, <gregtech:meta_plate:324> * 64, <gregtech:meta_plate:1012> * 32, <tconstruct:clear_glass> * 16, null);
+    GalacticraftTweaker.modifySpaceStationRecipe(-26, <xtones:base> * 64, <gregtech:meta_plate:324> * 64, <gregtech:meta_plate:1012> * 32, <tconstruct:clear_glass> * 16, null);
+    GalacticraftTweaker.modifySpaceStationRecipe(-27, <xtones:base> * 64, <gregtech:meta_plate:324> * 64, <gregtech:meta_plate:1012> * 32, <tconstruct:clear_glass> * 16, null);
 }

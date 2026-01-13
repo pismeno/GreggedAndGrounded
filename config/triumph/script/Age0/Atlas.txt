@@ -1,6 +1,6 @@
 setIcon("antiqueatlas:antique_atlas")
 setTranslatedTitle("Atlas")
-setTranslatedDescription("Until you acces minimap or normal maps, you can get Antique Atlas by trading with villagers. They will give you Atlas for 3 Plant Cloths.")
+setTranslatedDescription("Until you acces minimap or normal maps, you can get Antique Atlas by trading with villagers. They will give you Atlas for 3 Plant Papyruses.")
 
 addParent("Age0:HorsePress")
 

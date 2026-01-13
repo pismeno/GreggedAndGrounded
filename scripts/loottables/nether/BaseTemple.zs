@@ -7,16 +7,12 @@ import loottweaker.LootTweaker;
 import loottweaker.LootTable;
 import crafttweaker.item.IItemStack;
 
-val removedEntries = [
-"netherex:wither_bone",
-"minecraft:golden_pickaxe"
-] as string[];
+function init() {
+    val originalTable = LootTweaker.getTable("netherex:chest/base_temple");
+    val newTable = originalTable.addPool("primal", 1, 6, 0, 0);
 
-val originalTable = LootTweaker.getTable("netherex:chest/base_temple");
-val newTable = originalTable.addPool("primal", 1, 6, 0, 0);
+    originalTable.getPool("arctic_abyss_base_pool").removeEntry("netherex:wither_bone");
+    originalTable.getPool("arctic_abyss_base_pool").removeEntry("minecraft:golden_pickaxe");
 
-for entry in removedEntries {
-    originalTable.getPool("arctic_abyss_base_pool").removeEntry(entry);
+    newTable.addItemEntry(<primal:sharp_bone>, 25);
 }
-
-newTable.addItemEntry(<primal:sharp_bone>, 25);
