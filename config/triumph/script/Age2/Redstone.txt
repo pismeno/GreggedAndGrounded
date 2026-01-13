@@ -9,4 +9,4 @@ visibleIf("Age2:root")
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<minecraft:redstone>)
-setPos(96,132)
+setPos(96,99)

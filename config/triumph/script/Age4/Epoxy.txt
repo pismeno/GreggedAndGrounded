@@ -15,4 +15,4 @@ hideLines()
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<gregtech:meta_plate:1013>)
-setPos(365,165)
+setPos(365,198)

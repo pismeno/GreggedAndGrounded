@@ -13,4 +13,4 @@ setCompletedIconColor(91, 0, 201)
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<gregtech:meta_item_1:634>)
-setPos(497,132)
+setPos(497,165)

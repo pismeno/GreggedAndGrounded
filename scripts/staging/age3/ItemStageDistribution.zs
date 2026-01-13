@@ -132,6 +132,7 @@ static setStageThree as IIngredient[] = [
     <gregtech:machine:11007>,
     <gregtech:machine:11008>,
     <gregtech:machine:11009>,
+    <gregtech:machine:11018>,
     <tconstruct:materials:17>,
     <tconstruct:materials:16>,
     <tconstruct:materials:15>,

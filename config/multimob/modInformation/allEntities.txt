@@ -108,6 +108,9 @@ gregtech:powderbarrel
 gregtech:itnt
 ichunutil:entity_block
 integrateddynamics:entityitemtargetted
+testdummy:dummy
+testdummy:floating_number
+testdummy:floating_number_dps
 multimob:dummy
 primalboat:primalboat
 primitivemobs:chameleon
@@ -141,9 +144,6 @@ primitivemobs:thrown_block
 primitivemobs:primitive_egg
 primitivemobs:spider_egg
 realdrops:item_loot
-testdummy:dummy
-testdummy:floating_number
-testdummy:floating_number_dps
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
 tconstruct:blueslime
@@ -267,7 +267,7 @@ extraplanets:extraplanets.evolvediceslimeboss
 extraplanets:extraplanets.evolvedsnowmanboss
 extraplanets:extraplanets.evolvedspacemanboss
 extraplanets:extraplanets.evolvedgiantzombieboss
-forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
+forestry:butterflyge
 gravestone:player_ghost

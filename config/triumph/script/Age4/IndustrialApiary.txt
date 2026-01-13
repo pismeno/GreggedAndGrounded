@@ -1,0 +1,12 @@
+setIcon(<gendustry:industrial_apiary>)
+setTranslatedTitle("Industrial Revolution (for bees)")
+setTranslatedDescription("Craft Industrial Apiary. It has many advantages, you can put upgrades in it, which can simulate biomes, increase productivity and more! Also you now can craft things from Gendustry, which will help you with your bees! NOTE: to breed GT bees, any apiary needs to be placed on top of block of the desired GT material.")
+
+addParent("Age4:Mars")
+
+setShowToast(true)
+visibleIf("Age4:root")
+
+criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
+criteria.addItem(<gendustry:industrial_apiary>)
+setPos(398,132)

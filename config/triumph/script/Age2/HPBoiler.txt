@@ -2,11 +2,11 @@ setIcon(<gregtech:machine:4>)
 setTranslatedTitle("High Pressure Solar Boiler")
 setTranslatedDescription("Craft High Pressure Solar Boiler, it is faster and consumes more steam.")
 
-addParent("Age2:Steel")
+addParent("Age2:Glass")
 
 setShowToast(true)
 visibleIf("Age2:root")
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<gregtech:machine:4>)
-setPos(294,132)
+setPos(327,99)

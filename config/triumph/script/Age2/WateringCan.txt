@@ -11,4 +11,4 @@ hideLines()
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<extrautils2:wateringcan>)
-setPos(129,198)
+setPos(129,165)

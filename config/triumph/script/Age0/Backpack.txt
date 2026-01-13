@@ -8,5 +8,5 @@ setShowToast(true)
 alwaysVisible()
 
 criteria = addCriteria("Backpack", "minecraft:inventory_changed")
-criteria.addItem(<usefulbackpacks:backpack>)
+criteria.addItem(<usefulbackpacks:backpack:0>)
 setPos(352,161)

@@ -2,7 +2,6 @@ setIcon(<gregtech:machine:8>)
 setTranslatedTitle("High Pressure Extractor")
 setTranslatedDescription("Craft High Pressure Extractor, it is faster and consumes more steam.")
 
-addParent("Age2:Steel")
 addParent("Age2:Extractor")
 
 setShowToast(true)

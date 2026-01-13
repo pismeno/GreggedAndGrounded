@@ -19,6 +19,10 @@ static removeFromGame as IIngredient[] = [
     <forestry:resources>,
     <forestry:resources:1>,
     <forestry:resources:2>,
+    <gendustry:industrial_grafter:*>,
+    <gendustry:industrial_scoop:*>,
+    <gendustry:power_module>,
+    <gendustry:mutagen_tank>,
     <extrautils2:decorativesolid:4>,
     <primal:void_grass>,
     <primal:void_fiber>,
@@ -984,7 +988,6 @@ static removeFromGame as IIngredient[] = [
     <primal:ignis_fatuus>,
     <plants2:nether_log>,
     <primal:redstone_sand>,
-    <primal:ovis_atre_wool>,
     <primal:calcified_paraffin>,
     <primal:nether_path>,
     <primal:cinis_block>,
@@ -1585,7 +1588,8 @@ static removeFromGame as IIngredient[] = [
     <extrautils2:ingredients:9>,
     <extrautils2:ingredients:5>,
     <extrautils2:ingredients:4>,
-    <extrautils2:ingredients:3>
+    <extrautils2:ingredients:3>,
+    <witherskelefix:blade2>
 ];
 
 function init() as void {

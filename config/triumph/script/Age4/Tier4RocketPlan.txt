@@ -13,4 +13,4 @@ setCompletedIconColor(91, 0, 201)
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<gagtweaks:plan_tier4>)
-setPos(498,-33)
+setPos(497,-33)

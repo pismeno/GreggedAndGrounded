@@ -1003,6 +1003,102 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
         [
             [<gregtech:meta_bolt:324>,<gregtech:meta_screw:324>,<ore:craftingToolScrewdriver>]
         ]
+    ],
+
+    <gendustry:bee_receptacle> : [
+        [
+            [<gregtech:meta_plate:1013>,<gregtech:meta_plate:1013>,<gregtech:meta_plate:1013>],
+            [<gregtech:meta_plate:32018>,<gregtech:meta_spring:41>,<gregtech:meta_plate:32018>],
+            [<gregtech:meta_plate:1013>,<gregtech:meta_plate:1013>,<gregtech:meta_plate:1013>]
+        ]
+    ],
+
+    <gendustry:industrial_apiary> : [
+        [
+            [<gregtech:meta_plate:301>,<gendustry:bee_receptacle>,<gregtech:meta_plate:301>],
+            [<ore:circuitEv>,<gregtech:machine:989>,<ore:circuitEv>],
+            [<gregtech:meta_plate:301>,<ore:cableGtSingleAluminium>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:mutagen_producer> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:160>,<gregtech:meta_plate:301>],
+            [<ore:circuitEv>,<gregtech:machine:989>,<ore:circuitEv>],
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:250>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:mutatron> : [
+        [
+            [<gendustry:bee_receptacle>,<gendustry:genetics_processor>,<gregtech:meta_plate:301>],
+            [<ore:circuitEv>,<gregtech:machine:989>,<gendustry:bee_receptacle>],
+            [<gendustry:bee_receptacle>,<gregtech:meta_item_1:250>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:mutatron_advanced> : [
+        [
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>],
+            [<gendustry:genetics_processor>,<gendustry:mutatron>,<gendustry:genetics_processor>],
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:extractor> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:160>,<gregtech:meta_plate:301>],
+            [<gendustry:genetics_processor>,<gregtech:machine:989>,<gendustry:genetics_processor>],
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:transposer> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_gear_small:260>,<gregtech:meta_plate:301>],
+            [<gendustry:genetics_processor>,<gregtech:machine:989>,<gendustry:genetics_processor>],
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:imprinter> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:160>,<gregtech:meta_plate:301>],
+            [<gendustry:bee_receptacle>,<gregtech:machine:989>,<gendustry:bee_receptacle>],
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:sampler> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:160>,<gregtech:meta_plate:301>],
+            [<gendustry:bee_receptacle>,<gregtech:machine:989>,<ore:circuitEv>],
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:liquifier> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:160>,<gregtech:meta_plate:301>],
+            [<gregtech:meta_item_1:175>,<gregtech:machine:989>,<gregtech:meta_item_1:175>],
+            [<gregtech:meta_plate:301>,<ore:circuitEv>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:replicator> : [
+        [
+            [<gregtech:meta_plate:301>,<gendustry:genetics_processor>,<gregtech:meta_plate:301>],
+            [<ore:circuitEv>,<gregtech:machine:989>,<ore:circuitEv>],
+            [<gregtech:meta_plate:301>,<gendustry:genetics_processor>,<gregtech:meta_plate:301>]
+        ]
+    ],
+
+    <gendustry:climate_module> : [
+        [
+            [<gregtech:meta_plate:301>,<gregtech:meta_rotor:260>,<gregtech:meta_plate:301>],
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:130>,<gregtech:meta_plate:301>],
+            [<gregtech:meta_plate:301>,<gregtech:meta_item_1:250>,<gregtech:meta_plate:301>]
+        ]
     ]
 };
 

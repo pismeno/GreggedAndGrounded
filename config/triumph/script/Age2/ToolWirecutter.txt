@@ -11,4 +11,4 @@ hideLines()
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<gregtech:wire_cutter>)
-setPos(195,230)
+setPos(195,231)

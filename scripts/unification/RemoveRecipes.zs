@@ -462,7 +462,29 @@ static removeRecipe as IIngredient[] = [
   <projecte:collector_mk2>,
   <projecte:collector_mk3>,
   <projecte:item.pe_philosophers_stone>,
-  <buildinggadgets:constructionpastecontainer>
+  <buildinggadgets:constructionpastecontainer>,
+  <gendustry:labware>,
+  <gendustry:gene_sample_blank>,
+  <gendustry:bee_receptacle>,
+  <gendustry:power_module>,
+  <gendustry:genetics_processor>,
+  <gendustry:env_processor>,
+  <gendustry:upgrade_frame>,
+  <gendustry:climate_module>,
+  <gendustry:pollen_kit>,
+  <gendustry:eject_cover>,
+  <gendustry:import_cover>,
+  <gendustry:error_sensor_cover>,
+  <gendustry:mutagen_producer>,
+  <gendustry:mutatron>,
+  <gendustry:industrial_apiary>,
+  <gendustry:imprinter>,
+  <gendustry:sampler>,
+  <gendustry:mutatron_advanced>,
+  <gendustry:liquifier>,
+  <gendustry:extractor>,
+  <gendustry:transposer>,
+  <gendustry:replicator>
 ];
 
 static removeFurnaceRecipe as IIngredient[] = [
@@ -590,7 +612,27 @@ static RemoveRecipeByName as string[] = [
   "gregtech:nugget_assembling_cobalt",
   "gregtech:nugget_disassembling_cobalt",
   "actuallyadditions:recipes23",
-  "forestry:letter_recycling"
+  "forestry:letter_recycling",
+  "gendustry:recipe9",
+  "gendustry:recipe12",
+  "gendustry:recipe5",
+  "gendustry:recipe10",
+  "gendustry:recipe11",
+  "gendustry:recipe7",
+  "gendustry:recipe8",
+  "gendustry:recipe14",
+  "gendustry:recipe15",
+  "gendustry:recipe16",
+  "gendustry:recipe17",
+  "gendustry:recipe22",
+  "gendustry:recipe26",
+  "gendustry:recipe24",
+  "gendustry:recipe25",
+  "gendustry:recipe23",
+  "gendustry:recipe19",
+  "gendustry:recipe18",
+  "gendustry:recipe21",
+  "gendustry:recipe20"
 ];
 
 

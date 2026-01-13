@@ -9,7 +9,7 @@ import crafttweaker.item.IItemDefinition;
 import mods.recipestages.Recipes;
 import scripts.ProcessUtils;
 
-import scripts.Stages.STAGE_FOUR;
+import scripts.Stages.STAGE_THREE;
 
 static recipesShaped as IIngredient[][][][IItemStack] = {
 <gregtech:machine:11002> : [
@@ -244,11 +244,20 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
             [<gregtech:meta_plate:276>,<gregtech:meta_plate:276>,<gregtech:meta_plate:276>]
         ]
     ],
+
 <actuallyadditions:block_xp_solidifier> : [
         [  
             [<actuallyadditions:item_solidified_experience>,<actuallyadditions:item_solidified_experience>,<actuallyadditions:item_solidified_experience>],
             [<gregtech:meta_item_1:142>,<gregtech:machine_casing>,<gregtech:meta_item_1:142>],
             [<actuallyadditions:item_solidified_experience>,<actuallyadditions:item_solidified_experience>,<actuallyadditions:item_solidified_experience>]
+        ]
+    ],
+
+<gregtech:machine:11018> : [
+        [
+            [<ore:circuitMv>,<ore:pipeSmallFluidSteel>,<ore:circuitMv>],
+            [<ore:cableGtQuadrupleCopper>,<gregtech:meta_item_1:188>,<ore:cableGtQuadrupleCopper>],
+            [<ore:circuitMv>,<gregtech:machine:987>,<ore:circuitMv>]
         ]
     ]
 };
@@ -288,32 +297,32 @@ static IronShulkers as IItemStack[IItemDefinition] = {
 
 function init() as void {
     for key, value in IronShulkers {
-        Recipes.addShaped(STAGE_FOUR.stage, key.makeStack(0),[
+        Recipes.addShaped(STAGE_THREE.stage, key.makeStack(0),[
             [<gregtech:meta_plate:51>,<gregtech:meta_plate:335>,<gregtech:meta_plate:51>],
             [<gregtech:meta_plate:335>,value,<gregtech:meta_plate:335>],
             [<gregtech:meta_plate:51>,<gregtech:meta_plate:335>,<gregtech:meta_plate:51>]]);
 
-        Recipes.addShaped(STAGE_FOUR.stage, key.makeStack(1),[
+        Recipes.addShaped(STAGE_THREE.stage, key.makeStack(1),[
             [<gregtech:meta_plate:41>,<gregtech:meta_plate_double:41>,<gregtech:meta_plate:41>],
             [<gregtech:meta_plate_double:41>,value,<gregtech:meta_plate_double:41>],
             [<gregtech:meta_plate:41>,<gregtech:meta_plate_double:41>,<gregtech:meta_plate:41>]]);
 
-        Recipes.addShaped(STAGE_FOUR.stage, key.makeStack(2),[
+        Recipes.addShaped(STAGE_THREE.stage, key.makeStack(2),[
             [<gregtech:meta_plate:276>,<gregtech:meta_plate:276>,<gregtech:meta_plate:276>],
             [<gregtech:meta_plate:276>,value,<gregtech:meta_plate:276>],
             [<gregtech:meta_plate:276>,<gregtech:meta_plate:276>,<gregtech:meta_plate:276>]]);
 
-        Recipes.addShaped(STAGE_FOUR.stage, key.makeStack(3),[
+        Recipes.addShaped(STAGE_THREE.stage, key.makeStack(3),[
             [<gregtech:meta_plate:25>,<gregtech:meta_plate_double:25>,<gregtech:meta_plate:25>],
             [<gregtech:meta_plate_double:25>,value,<gregtech:meta_plate_double:25>],
             [<gregtech:meta_plate:25>,<gregtech:meta_plate_double:25>,<gregtech:meta_plate:25>]]);
 
-        Recipes.addShaped(STAGE_FOUR.stage, key.makeStack(4),[
+        Recipes.addShaped(STAGE_THREE.stage, key.makeStack(4),[
             [<gregtech:meta_plate:100>,<gregtech:meta_plate_double:100>,<gregtech:meta_plate:100>],
             [<gregtech:meta_plate_double:100>,value,<gregtech:meta_plate_double:100>],
             [<gregtech:meta_plate:100>,<gregtech:meta_plate_double:100>,<gregtech:meta_plate:100>]]);
     }
 
-    ProcessUtils.processRecipesShaped(recipesShaped, STAGE_FOUR);
-    ProcessUtils.processRecipesShapeless(recipesShapeless, STAGE_FOUR);
+    ProcessUtils.processRecipesShaped(recipesShaped, STAGE_THREE);
+    ProcessUtils.processRecipesShapeless(recipesShapeless, STAGE_THREE);
 }

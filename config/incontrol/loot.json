@@ -1,6 +1,10 @@
 [
     {
       "mob": "minecraft:blaze",
+      "remove": "minecraft:blaze_rod"
+    },
+    {
+      "mob": "minecraft:blaze",
       "item": "gagtweaks:blaze_chunk",
       "itemcount": "0-1/2-3/4-6"
     },
@@ -60,7 +64,7 @@
       "random": 0.5
     },
     {
-      "mob": "totemic:bufallo",
+      "mob": "totemic:buffalo",
       "item": "minecraft:bone",
       "itemcount": "0-2/2-4/5-7",
       "random": 0.5

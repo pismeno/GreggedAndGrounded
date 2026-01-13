@@ -9,4 +9,4 @@ visibleIf("Age2:root")
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
 criteria.addItem(<chunkloaders:single_chunk_loader>)
-setPos(129,165)
+setPos(129,132)

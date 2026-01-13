@@ -76,7 +76,8 @@ static modStagingMap as string[][string] = {
         "extrautils2",
         "integrateddynamics",
         "integratedtunnels",
-        "extraplanets"
+        "extraplanets",
+        "gendustry"
     ],
 
     STAGE_FIVE.stage : [

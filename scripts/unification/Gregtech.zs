@@ -2142,6 +2142,38 @@ function init() as void {
                 .EUt(96)
                 .buildAndRegister();
 
+        <recipemap:assembler>.recipeBuilder()
+                .inputs(<gregtech:meta_plate:112> * 4, <gregtech:meta_wire_fine:2517> * 8)
+                .outputs(<gendustry:upgrade_frame>)
+                .duration(40)
+                .circuit(8)
+                .EUt(1920)
+                .buildAndRegister();
+
+        <recipemap:assembler>.recipeBuilder()
+                .inputs(<gregtech:meta_plate:301> * 4, <gregtech:meta_item_1:187>)
+                .outputs(<gendustry:eject_cover>)
+                .duration(40)
+                .circuit(8)
+                .EUt(1920)
+                .buildAndRegister();
+
+        <recipemap:assembler>.recipeBuilder()
+                .inputs(<gregtech:meta_plate:301> * 4, <gregtech:meta_item_1:157>)
+                .outputs(<gendustry:import_cover>)
+                .duration(40)
+                .circuit(8)
+                .EUt(1920)
+                .buildAndRegister();
+
+        <recipemap:assembler>.recipeBuilder()
+                .inputs(<gregtech:meta_plate:301> * 4, <ore:circuitLv>)
+                .outputs(<gendustry:error_sensor_cover>)
+                .duration(40)
+                .circuit(8)
+                .EUt(1920)
+                .buildAndRegister();
+
 
         <recipemap:canner>.recipeBuilder()
                 .inputs(<projectred-expansion:empty_battery>, <projectred-core:resource_item:105> * 6)
@@ -2530,6 +2562,42 @@ function init() as void {
                 .duration(200)
                 .EUt(420)
                 .circuit(2)
+                .buildAndRegister();
+
+        <recipemap:laser_fabricator>.recipeBuilder()
+                .inputs(<gagtweaks:computing_chipset> * 2, <gregtech:meta_plate:32005>, <gregtech:meta_wire_fine:252> * 16)
+                .notConsumable(<gregtech:meta_lens:32005>)
+                .outputs(<gendustry:genetics_processor>)
+                .duration(800)
+                .EUt(420)
+                .circuit(8)
+                .buildAndRegister();
+
+        <recipemap:laser_fabricator>.recipeBuilder()
+                .inputs(<gagtweaks:logic_chipset> * 2, <gregtech:meta_plate:32006>, <gregtech:meta_wire_fine:23> * 16)
+                .notConsumable(<gregtech:meta_lens:32006>)
+                .outputs(<gendustry:env_processor>)
+                .duration(800)
+                .EUt(420)
+                .circuit(8)
+                .buildAndRegister();
+
+        <recipemap:laser_fabricator>.recipeBuilder()
+                .inputs(<tconstruct:clear_glass>)
+                .notConsumable(<ore:craftingLensWhite>)
+                .outputs(<gendustry:labware> * 2)
+                .duration(30)
+                .EUt(1920)
+                .circuit(8)
+                .buildAndRegister();
+
+        <recipemap:laser_fabricator>.recipeBuilder()
+                .inputs(<gregtech:meta_plate:32003>)
+                .notConsumable(<ore:craftingLensWhite>)
+                .outputs(<gendustry:gene_sample_blank>)
+                .duration(30)
+                .EUt(1920)
+                .circuit(8)
                 .buildAndRegister();
 
 
