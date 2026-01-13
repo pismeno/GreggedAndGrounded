@@ -136,6 +136,50 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
         ]
     ],
 
+    <minecraft:wooden_slab> : [
+        [
+            [<minecraft:planks>,<minecraft:planks>,<minecraft:planks>]
+        ]
+    ],
+
+    <minecraft:wooden_slab:1> : [
+        [
+            [<minecraft:planks:1>,<minecraft:planks:1>,<minecraft:planks:1>]
+        ]
+    ],
+
+    <minecraft:wooden_slab:2> : [
+        [
+            [<minecraft:planks:2>,<minecraft:planks:2>,<minecraft:planks:2>]
+        ]
+    ],
+
+    <minecraft:wooden_slab:3> : [
+        [
+            [<minecraft:planks:3>,<minecraft:planks:3>,<minecraft:planks:3>]
+        ]
+    ],
+
+    <minecraft:wooden_slab:4> : [
+        [
+            [<minecraft:planks:4>,<minecraft:planks:4>,<minecraft:planks:4>]
+        ]
+    ],
+
+    <minecraft:wooden_slab:5> : [
+        [
+            [<minecraft:planks:5>,<minecraft:planks:5>,<minecraft:planks:5>]
+        ]
+    ],
+
+    <gregtech:machine:1647> : [
+        [
+            [<minecraft:chest>,<ore:slabWood>,<minecraft:chest>],
+            [<ore:plankWood>,<minecraft:crafting_table>,<ore:plankWood>],
+            [<ore:plankWood>,<ore:craftingToolSoftHammer>,<ore:plankWood>]
+        ]
+    ],
+
     <betterwithmods:axle_generator:1> : [
         [
             [<betterwithmods:material:10>,<betterwithmods:material:10>,<betterwithmods:material:10>],

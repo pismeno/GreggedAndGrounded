@@ -154,7 +154,6 @@ static Green as IItemStack[] = [
 <plants2:desert_1:3>,
 <minecraft:cactus>,
 <minecraft:tallgrass:1>,
-<primal:rush_stems>,
 <plants2:desert_1:2>
 ];
 

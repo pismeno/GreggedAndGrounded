@@ -64,16 +64,16 @@ static Assoc as IItemStack[IItemStack] = {
 
 function init() as void {
         for key, value in Assoc {
-        ChoppingBlock.add(key, value * 2, 1, true);
-                Saw.add(key, [value * 4, <primal:bark_oak> * 4]);
+                ChoppingBlock.add(key, value * 2, 1, true);
+                        Saw.add(key, [value * 4, <primal:bark_oak> * 4]);
 
-        <recipemap:saw>.recipeBuilder()
-                .inputs(key)
-                .outputs(value * 8, <primal:bark_oak> * 4)
-                .chancedOutput(<gregtech:meta_dust:1617>, 7000, 420)
-                .duration(40)
-                .EUt(12)
-                .buildAndRegister();
+                <recipemap:saw>.recipeBuilder()
+                        .inputs(key)
+                        .outputs(value * 8, <primal:bark_oak> * 4)
+                        .chancedOutput(<gregtech:meta_dust:1617>, 7000, 420)
+                        .duration(40)
+                        .EUt(12)
+                        .buildAndRegister();
         }
 
         ChoppingBlock.add(<ore:plankWood>, <minecraft:stick> * 3, 1, true);

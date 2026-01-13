@@ -2,7 +2,7 @@ setIcon(<betterwithmods:single_machine>)
 setTranslatedTitle("Millstone")
 setTranslatedDescription("Upgrade your grindstone. This machine also provides new recipes. TIP: use handcrank to power it by placing it next to your millstone and R-clicking it.")
 
-addParent("Age1:Handcrank")
+addParent("Age1:root")
 
 setShowToast(true)
 visibleIf("Age1:root")

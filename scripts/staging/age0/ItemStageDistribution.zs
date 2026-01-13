@@ -49,6 +49,7 @@ static setStageZero as IIngredient[] = [
     <forestry:fruits:*>,
     <gregtech:rubber_leaves>,
     <betterwithmods:dirt_pile>,
+    <gregtechfoodoption:gtfo_meta_item:73>,
     <forestry:humus>,
     <betterwithmods:gravel_pile>,
     <betterwithmods:sand_pile>,

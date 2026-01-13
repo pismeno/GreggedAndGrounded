@@ -266,6 +266,7 @@ static setStageOne as IIngredient[] = [
     <gregtech:ore_chalcocite_0:*>,
     <gregtech:planks:1>,
     <gregtech:meta_item_1:474>,
+    <gregtech:machine:1647>,
     <gregtech:meta_item_1:476>,
     <gregtech:meta_stick:1648>,
     <gregtech:wood_slab:1>,

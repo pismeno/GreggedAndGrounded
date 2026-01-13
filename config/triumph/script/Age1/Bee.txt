@@ -1,6 +1,6 @@
-setIcon(<forestry:bee_queen_ge, nbt: {Genome:{Chromosomes:[{Slot:0b,UID0:"forestry.speciesMeadows"}]}}>)
+setIcon(<forestry:bee_princess_ge, nbt: {Genome:{Chromosomes:[{Slot:0b,UID0:"forestry.speciesMeadows"}]}}>)
 setTranslatedTitle("Bees")
-setTranslatedDescription("Obtain your first bee and bee queen by breaking bee hives with scoop.")
+setTranslatedDescription("Obtain your first bee and bee princess by breaking bee hives with scoop.")
 
 addParent("Age1:Scoop")
 
@@ -12,6 +12,6 @@ setUncompletedIconColor(#525252)
 setCompletedIconColor(91, 0, 201)
 
 criteria = addCriteria("ItemInv", "minecraft:inventory_changed")
-criteria.addItem(<forestry:bee_queen_ge>)
+criteria.addItem(<forestry:bee_princess_ge>)
 criteria.addItem(<forestry:bee_drone_ge>)
 setPos(62,64)

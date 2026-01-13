@@ -2,7 +2,7 @@ setIcon(<tconstruct:book>)
 setTranslatedTitle("Materials and You")
 setTranslatedDescription("Craft Materials and you which is Tinker's Construct guide book!")
 
-addParent("Age1:SearedBrick")
+addParent("Age1:root")
 
 setShowToast(true)
 visibleIf("Age1:root")

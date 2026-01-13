@@ -1,4 +1,9 @@
-#priority 100000000000
+#priority 10000
+
+/*
+// This script was made for the Gregged & Grounded modpack.
+// Do not copy it, but feel free to look at it and use the knowledge you gain from it!
+*/
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -44,8 +49,9 @@ function processRecipesShapeless(recipes as IIngredient[][][IItemStack], stage a
 function processIngredientStaging(ingredients as IIngredient[], stage as Stage) as void {
 	for ingredient in ingredients {
 		ItemStages.removeItemStage(ingredient);
+		mods.recipestages.Recipes.setRecipeStage(stage.stage, ingredient);
 	}
-	stage.addIngredients(ingredients, true);
+	stage.addIngredients(ingredients, false);
 }
 
 function addHoeRecipe(stage as Stage, ingot as IItemStack, plate as IItemStack, output as IItemStack) as void {

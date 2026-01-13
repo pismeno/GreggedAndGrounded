@@ -454,6 +454,7 @@ static removeRecipe as IIngredient[] = [
   <extrautils2:decorativesolid:3>,
   <extrautils2:ingredients:1>,
   <extrautils2:ingredients>,
+  <gregtech:machine:1647>,
   <extrautils2:passivegenerator:3>,
   <extrautils2:passivegenerator:4>,
   <extrautils2:ingredients:2>,
