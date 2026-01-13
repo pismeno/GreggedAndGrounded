@@ -22,8 +22,6 @@ function initOreDict() as void {
 
 function initStaging() as void {
     scripts.staging.ModStaging.init();
-    scripts.unification.RemoveItems.init();
-
     scripts.staging.age6.ItemStageDistribution.init();
     scripts.staging.age5.ItemStageDistribution.init();
     scripts.staging.age4.ItemStageDistribution.init();
@@ -31,6 +29,8 @@ function initStaging() as void {
     scripts.staging.age2.ItemStageDistribution.init();
     scripts.staging.age1.ItemStageDistribution.init();
     scripts.staging.age0.ItemStageDistribution.init();
+    
+    scripts.unification.RemoveItems.init();
 
     scripts.staging.age2.OreStageDistribution.init();
     scripts.staging.age1.OreStageDistribution.init();

@@ -1,6 +1,6 @@
 setIcon(<gregtech:knife, nbt: {"GT.Tool": {Material: "gregtech:flint"}}>)
 setTranslatedTitle("Poor man's knife")
-setTranslatedDescription("Your best friend from now on! NOTE: JEI may show only iron version, but once you see the recipe of it, it shows flint!")
+setTranslatedDescription("Your best friend from now on! NOTE: JEI may show metal version in recipes with the knife but you can use any, even flint!")
 
 addParent("Age0:CraftingStump")
 

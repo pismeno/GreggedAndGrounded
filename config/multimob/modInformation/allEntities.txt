@@ -267,7 +267,7 @@ extraplanets:extraplanets.evolvediceslimeboss
 extraplanets:extraplanets.evolvedsnowmanboss
 extraplanets:extraplanets.evolvedspacemanboss
 extraplanets:extraplanets.evolvedgiantzombieboss
+forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
-forestry:butterflyge
 gravestone:player_ghost
