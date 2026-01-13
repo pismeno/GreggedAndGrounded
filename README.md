@@ -7,10 +7,15 @@ The modpack focuses on deep integration between the mod that should feel very re
 
 It includes custom machines. multiblocks, Tinkers Construct materials and items!
 
-Related repositories: https://github.com/pismeno/GreggedAndGroundedTweaks, https://github.com/pismeno/GregsTinkering
+Related repositories: 
+https://github.com/pismeno/GreggedAndGroundedTweaks
+https://github.com/pismeno/GregsTinkering
 
 I would like to credit these Resource Packs, that I used some textures from!
 
-VannilaTweaks - https://vanillatweaks.net/picker/resource-packs/
-Colored GregTech Screwdriver and File - https://www.curseforge.com/minecraft/texture-packs/colored-gregtech-screwdriver-and-file
-Galacticraft 16x - https://www.curseforge.com/minecraft/texture-packs/galacticraft-16x
+VannilaTweaks:
+https://vanillatweaks.net/picker/resource-packs/
+Colored GregTech Screwdriver and File:
+https://www.curseforge.com/minecraft/texture-packs/colored-gregtech-screwdriver-and-file
+Galacticraft 16x:
+https://www.curseforge.com/minecraft/texture-packs/galacticraft-16x
