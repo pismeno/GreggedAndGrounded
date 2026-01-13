@@ -10,51 +10,59 @@
       "itemcount": "0-1/2-3/4-6"
     },
     {
-    "mob": "minecraft:wither_skeleton",
-    "remove": "netherex:wither_bone"
+      "mob": "minecraft:wither_skeleton",
+      "remove": "netherex:wither_bone"
     },
     {
-    "mob": "minecraft:bat",
-    "remove": "actuallyadditions:item_misc:15"
+      "mob": "minecraft:bat",
+      "remove": "actuallyadditions:item_misc:15"
     },
     {
-    "mob": "minecraft:witch",
-    "remove": "minecraft:glowstone_dust"
+      "mob": "minecraft:witch",
+      "remove": "minecraft:glowstone_dust"
     },
     {
-    "mob": "minecraft:witch",
-    "remove": "minecraft:redstone"
+      "mob": "minecraft:witch",
+      "remove": "minecraft:redstone"
     },
     {
-    "mob": "minecraft:witch",
-    "remove": "minecraft:glass_bottle"
+      "mob": "minecraft:witch",
+      "remove": "minecraft:glass_bottle"
     },
     {
-    "mob": "primitivemobs:blazing_juggernaut",
-    "remove": "minecraft:blaze_powder"
+      "mob": "primitivemobs:blazing_juggernaut",
+      "remove": "minecraft:blaze_powder"
     },
     {
-    "mob": "primitivemobs:blazing_juggernaut",
-    "remove": "minecraft:blaze_rod"
+      "mob": "primitivemobs:blazing_juggernaut",
+      "remove": "minecraft:blaze_rod"
+    },
+    {
+      "mob": "minecraft:zombie",
+      "remove": "minecraft:iron_ingot"
     },
     {
       "mob": "minecraft:cow",
       "item": "minecraft:bone",
-      "itemcount": "0-1/2-3/4-6"
+      "itemcount": "0-1/2-3/4-6",
+      "random": 0.5
     },
     {
       "mob": "minecraft:sheep",
       "item": "minecraft:bone",
-      "itemcount": "0-1/2-3/4-6"
+      "itemcount": "0-1/2-3/4-6",
+      "random": 0.5
     },
     {
       "mob": "minecraft:pig",
       "item": "minecraft:bone",
-      "itemcount": "0-1/2-3/4-6"
+      "itemcount": "0-1/2-3/4-6",
+      "random": 0.5
     },
     {
       "mob": "totemic:bufallo",
       "item": "minecraft:bone",
-      "itemcount": "0-2/2-4/5-7"
+      "itemcount": "0-2/2-4/5-7",
+      "random": 0.5
     }
 ]

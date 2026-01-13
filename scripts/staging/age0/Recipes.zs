@@ -45,6 +45,15 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
         [null,<ore:stickWood>,null],
       ]
     ],
+
+  <betterwithmods:rope> : [
+      [
+        [<betterwithmods:material:3>,<betterwithmods:material:3>],
+        [<betterwithmods:material:3>,<betterwithmods:material:3>],
+        [<betterwithmods:material:3>,<betterwithmods:material:3>],
+      ]
+    ],
+
   <primal_tech:wooden_basin> : [
       [
         [<primal:bark_oak>,<ore:stickWood>,<primal:bark_oak>],
@@ -52,6 +61,7 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
         [<minecraft:stone>,null,<minecraft:stone>],
       ]
     ],
+
   <primal:barrel> : [
       [
         [<ore:plankWood>,<ore:craftingToolKnife>,<ore:plankWood>],

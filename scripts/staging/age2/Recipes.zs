@@ -441,8 +441,15 @@ function init() as void {
     ProcessUtils.addKnifeRecipe(STAGE_TWO, <minecraft:iron_ingot>, <gregtech:meta_plate:51>, <gregtech:knife>.withTag({DisallowContainerItem: 0 as byte, "GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {MaxDurability: 255, AttackDamage: 2.0 as float, Durability: 0, Material: "gregtech:iron", AttackSpeed: 3.0 as float}}));
     ProcessUtils.addWirecutterRecipe(STAGE_TWO, <gregtech:meta_stick:51>, <gregtech:meta_plate:51>, <gregtech:meta_screw:51>, <gregtech:wire_cutter>.withTag({DisallowContainerItem: 0 as byte, "GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {MaxDurability: 255, ToolSpeed: 6.0 as float, AttackDamage: 1.0 as float, Durability: 0, Material: "gregtech:iron", HarvestLevel: 2, AttackSpeed: -2.4 as float}}));
 
-
     ProcessUtils.processRecipesShaped(recipesShaped, STAGE_TWO);
     ProcessUtils.processRecipesMirrored(recipesShapedMirrored, STAGE_TWO);
     ProcessUtils.processRecipesShapeless(recipesShapeless, STAGE_TWO);
+
+    for i in hammerIngredients {
+        Recipes.addShapedMirrored(STAGE_TWO.stage, i[1],[
+            [i[0],i[0],null],
+            [i[0],i[0],<ore:stickWood>],
+            [i[0],i[0],null]]
+        );
+    }
 }

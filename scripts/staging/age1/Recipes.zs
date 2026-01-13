@@ -55,8 +55,39 @@ static recipesShaped as IIngredient[][][][IItemStack] = {
         [
             [<primal:thatch>,<primal:thatch>,<primal:thatch>],
             [<ore:plankWood>,<ore:plankWood>,<ore:plankWood>]
-            ]
-        ],
+        ]
+    ],
+
+    <ceramics:clay_helmet_raw> : [
+        [
+            [<minecraft:clay_ball>,<minecraft:clay_ball>,<minecraft:clay_ball>],
+            [<minecraft:clay_ball>,null,<minecraft:clay_ball>]
+        ]
+    ],
+
+    <ceramics:clay_chestplate_raw> : [
+        [
+            [<minecraft:clay_ball>,null,<minecraft:clay_ball>],
+            [<minecraft:clay_ball>,<minecraft:clay_ball>,<minecraft:clay_ball>],
+            [<minecraft:clay_ball>,<minecraft:clay_ball>,<minecraft:clay_ball>]
+        ]
+    ],
+
+    <ceramics:clay_leggings_raw> : [
+        [
+            [<minecraft:clay_ball>,<minecraft:clay_ball>,<minecraft:clay_ball>],
+            [<minecraft:clay_ball>,null,<minecraft:clay_ball>],
+            [<minecraft:clay_ball>,null,<minecraft:clay_ball>]
+        ]
+    ],
+
+    <ceramics:clay_boots_raw> : [
+        [
+            [<minecraft:clay_ball>,null,<minecraft:clay_ball>],
+            [<minecraft:clay_ball>,null,<minecraft:clay_ball>]
+        ]
+    ],
+
     <betterwithmods:cooking_pot:1> : [
         [
             [<minecraft:stone>,null,<minecraft:stone>],
@@ -254,6 +285,14 @@ static recipesShapedMirrored as IIngredient[][][][IItemStack] = {
             [<minecraft:flint>,<minecraft:flint>,null],
             [null,<ore:stickWood>,null],
             [null,<ore:stickWood>,null]
+        ]
+    ],
+
+    <gregtech:mallet>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {MaxDurability: 47, ToolSpeed: 4.0 as float, AttackDamage: 1.0 as float, Durability: 0, Material: "wood", HarvestLevel: 1, AttackSpeed: -2.4 as float}}) : [
+        [
+            [<ore:plankWood>,<ore:plankWood>,null],
+            [<ore:plankWood>,<ore:plankWood>,<ore:stickWood>],
+            [<ore:plankWood>,<ore:plankWood>,null]
         ]
     ],
 

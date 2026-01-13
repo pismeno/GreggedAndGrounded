@@ -1,22 +1,5 @@
 [
     {
-      "mob": "primitivemobs:grovesprite",
-      "biometype": "forest",
-      "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-      "result": "allow"
-    },
-    {
-        "mob": "primitivemobs:grovesprite",
-        "mincount": {
-            "amount": 5,
-            "perplayer": true
-        },
-        "result": "deny"
-    },
-    {
         "mob": "primitivemobs:festive_creeper",
         "minlight": 7,
         "result": "deny"
@@ -90,15 +73,11 @@
         "result": "deny"
     },
     {
-        "mob": "primitivemobs:grovesprite",
-        "mincount": {
-            "amount": 6,
-            "perplayer": true
-        },
+        "mob": "gregtechfoodoption:italian_buffalo",
         "result": "deny"
     },
     {
-        "mob": "gregtechfoodoption:italian_buffalo",
+        "mob": "primitivemobs:grovesprite",
         "result": "deny"
     }
 ]

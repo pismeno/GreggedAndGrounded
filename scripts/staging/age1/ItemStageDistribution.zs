@@ -244,7 +244,9 @@ static setStageOne as IIngredient[] = [
     <primitivemobs:mysteryegg3>,
     <primitivemobs:spider_eggshell>,
 
+    <gregtech:meta_dust:266>,
     <gregtech:meta_dust_small:266>,
+    <gregtech:meta_dust_tiny:266>,
     <gregtech:meta_ingot:25>,
     <gregtech:meta_block_compressed_1:9>,
     <gregtech:meta_nugget:25>,
@@ -270,7 +272,6 @@ static setStageOne as IIngredient[] = [
     <gregtech:treated_wood_stairs>,
     <gregtech:treated_wood_fence>,
     <gregtech:treated_wood_fence_gate>,
-    <gregtech:meta_dust:266>,
     <gagtweaks:filtered_grout>,
     <gagtweaks:coke_oven_clay>,
     <gagtweaks:compressed_grout>,
@@ -278,9 +279,7 @@ static setStageOne as IIngredient[] = [
     <galacticraftcore:canvas>,
 
     <gregtech:hoe>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:flint"}}),
-    <gregtech:mallet>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:wood"}}),
-    <gregtech:mallet>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:wood"}}),
-    <gregtech:hoe>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "gregtech:flint"}})
+    <gregtech:mallet>.withTag({"GT.Behaviours": {}, HideFlags: 2, "GT.Tool": {Material: "wood"}})
 ];
 
 function init() as void {
